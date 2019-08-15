@@ -6,4 +6,5 @@ This is a repo for all my programming projects that will involve some use of the
 
 ## Kanji Memory game:
 ***This game is still being developped, using only JS (Jquery), CSS and HTML***
+
 This game's aim is to help with kanji recognition, by having the user match 2 cards of the same. This will need the player to memorize the kanji themselves and where they are on the board. 
