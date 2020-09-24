@@ -1,0 +1,15 @@
+head{
+
+}
+
+body{
+	text-align: center;
+}
+
+#kanji-search {
+    width: 100%;
+    outline: none;
+    border: none;
+    text-align: center;
+    margin-top: 100px;
+}
