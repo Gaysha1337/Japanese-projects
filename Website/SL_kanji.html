@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <!--http://localhost/projects/Japanese-projects/Website/-->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="SL_kanji.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>IB Kanji</title>
+  </head>
+  <body>
+    <div id=main-container>
+      <header style="text-align: center;"><h1>IB Kanji</h1></header>
+
+      <nav>
+        <ul class="nav justify-content-center">
+			<li class="nav-item">
+				<a class="nav-link active" href="index.php">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link active" href="SL_kanji.html">SL Kanji</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="HL_kanji.html">HL Kanji</a>
+			</li>
+        </ul>
+      </nav>
+      
+
+      <div class="kanji-display">
+      </div>
+    
+    </div>
+    <script>
+      $(function() {
+
+		  $.getJSON("ib kanji.json", function(data){
+			console.log(data.SL_Kanji, data.SL_Kanji.length);
+			$(".kanji-display").append("<h5 style='text-align:center;'>There are "+ data.SL_Kanji.length +" to learn for SL Japanese B</h5>")
+			$.each(data.SL_Kanji, function(index, kanji){
+				var $jisho_url = "https://jisho.org/search/"+ kanji+"%20%23kanji";
+				$(".kanji-display").append("<a class='SL-kanji'style='margin:50px;padding:5px;'href='"+$jisho_url+"'>"+kanji+"</a>");	
+			});			
+		  });
+        
+      });
+    </script>
+  </body>
+</html>
