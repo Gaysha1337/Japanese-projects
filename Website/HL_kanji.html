@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--Custom CSS-->
-    <link rel="stylesheet" href="HL_kanji.css">
+    <link rel="stylesheet" href="kanji.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -39,28 +39,54 @@
       
 
       <div class="kanji-display">
+        <!--TODO: On hover-->
+        <div class="links">
+          <a class="kanji jisho HL-kanji" style="margin:50px;padding:5px;" href="https://jisho.org/search/千%20%23kanji">千</a>
+          <a class="kanji kanji-damage HL-kanji" style="margin:50px;padding:5px;" href="http://www.kanjidamage.com/kanji/229-thousand-%E5%8D%83"></a>
+
+        </div>
       </div>
     
     </div>
     <script>
       $(function() {
 
-		  $.getJSON("ib kanji.json", function(data){
-			console.log(data.HL_Kanji, data.HL_Kanji.length);
-			$(".kanji-display").append("<h5 style='text-align:center;'>There are "+ data.HL_Kanji.length +" to learn for HL Japanese B: The SL 400 kanji + 200 extra</h5>")
-        $.each(data.SL_Kanji, function(index, kanji){
-          var $jisho_url = "https://jisho.org/search/"+ kanji+"%20%23kanji";
-              
-          $(".kanji-display").append("<a class='SL-kanji'style='margin:50px;padding:5px;'href='"+$jisho_url+"'>"+kanji+"</a>");	
-        });
+        $.getJSON("ib kanji.json", function(IB_JSON_DATA){
+          $.getJSON("KanjiDamageIBKanji.json", function(IB_KD_JSON_DATA){
+            $(".kanji-display").append("<h5 style='text-align:center;'>There are "+ IB_JSON_DATA.HL_Kanji.length +" to learn for HL Japanese B: The SL 400 kanji + 200 extra</h5>")
+            $.each(IB_JSON_DATA.SL_Kanji, function(IB_index, IB_kanji){
+              var $jisho_url = "https://jisho.org/search/"+ IB_kanji+"%20%23kanji";    
+              $(".kanji-display").append("<a class='kanji jisho HL-kanji'style='margin:50px;padding:5px;'href='"+$jisho_url+"'>"+IB_kanji+"</a>");	
 
-        $(".kanji-display").append("<br><br><h5 style='text-align:center;'>"+data.HL_Extra_Kanji.length +" extra kanji for HL Japanese B</h5>")
-        $.each(data.HL_Extra_Kanji, function(index, kanji){
-				  var $jisho_url = "https://jisho.org/search/"+ kanji+"%20%23kanji";
-				  $(".kanji-display").append("<a class='SL-kanji'style='margin:50px;padding:5px;'href='"+$jisho_url+"'>"+kanji+"</a>");	
-			  });			
-		  });
-        
+              $.each(IB_KD_JSON_DATA.SL_IB_AND_KD_JSON, function(KD_IB_index, KD_kanji){
+                if (KD_kanji === IB_kanji){
+                  console.log(KD_kanji);
+                }
+                
+              });
+              
+            });
+
+            $(".kanji-display").append("<br><br><h5 style='text-align:center;'>"+IB_JSON_DATA.HL_Extra_Kanji.length +" extra kanji for HL Japanese B</h5>")
+            $.each(IB_JSON_DATA.HL_Extra_Kanji, function(IB_index, IB_kanji){
+              var $jisho_url = "https://jisho.org/search/"+ IB_kanji+"%20%23kanji";
+              $(".kanji-display").append("<a id='"+IB_kanji+"' class='kanji jisho HL-kanji'style='margin:50px;padding:5px;'href='"+$jisho_url+"'>"+IB_kanji+"</a>");	
+            });			
+          
+            /* 
+            $(".kanji").hover(
+              function(e){
+                var $jisho_url = $(this).attr("href");
+                var $link_div = $(this).after("<div class=links id="+$(this).text()+"> </div>");
+                $link_div.append("<a class='pop-up-jisho'>Jisho link</a>").attr("href", $jisho_url);
+                $link_div.append("<a class='pop-up-kanjidamage'>Kanji Damage link</a>").attr("href", $jisho_url);
+                console.log($(this));
+            }, function(e){
+              $("#"+$(this).text()).remove();
+            });*/
+
+          });
+        });
       });
     </script>
   </body>

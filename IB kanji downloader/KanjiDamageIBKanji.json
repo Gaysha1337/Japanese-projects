@@ -1,0 +1,3590 @@
+{
+    "SL_IB_AND_KD_JSON": [
+        {
+            "一": "http://www.kanjidamage.com//kanji/1-one-line-radical-%E4%B8%80"
+        },
+        {
+            "二": "http://www.kanjidamage.com//kanji/2-two-%E4%BA%8C"
+        },
+        {
+            "三": "http://www.kanjidamage.com//kanji/3-three-%E4%B8%89"
+        },
+        {
+            "子": "http://www.kanjidamage.com//kanji/5-child-%E5%AD%90"
+        },
+        {
+            "女": "http://www.kanjidamage.com//kanji/6-woman-%E5%A5%B3"
+        },
+        {
+            "好": "http://www.kanjidamage.com//kanji/7-like-%E5%A5%BD"
+        },
+        {
+            "口": "http://www.kanjidamage.com//kanji/9-mouth-small-box-radical-%E5%8F%A3"
+        },
+        {
+            "品": "http://www.kanjidamage.com//kanji/10-products-%E5%93%81"
+        },
+        {
+            "言": "http://www.kanjidamage.com//kanji/11-say-%E8%A8%80"
+        },
+        {
+            "下": "http://www.kanjidamage.com//kanji/12-below-%E4%B8%8B"
+        },
+        {
+            "十": "http://www.kanjidamage.com//kanji/15-ten-%E5%8D%81"
+        },
+        {
+            "古": "http://www.kanjidamage.com//kanji/16-old-%E5%8F%A4"
+        },
+        {
+            "計": "http://www.kanjidamage.com//kanji/18-measure-%E8%A8%88"
+        },
+        {
+            "七": "http://www.kanjidamage.com//kanji/20-seven-%E4%B8%83"
+        },
+        {
+            "比": "http://www.kanjidamage.com//kanji/21-compare-%E6%AF%94"
+        },
+        {
+            "日": "http://www.kanjidamage.com//kanji/23-sun-day-%E6%97%A5"
+        },
+        {
+            "早": "http://www.kanjidamage.com//kanji/29-early-%E6%97%A9"
+        },
+        {
+            "白": "http://www.kanjidamage.com//kanji/31-white-%E7%99%BD"
+        },
+        {
+            "皆": "http://www.kanjidamage.com//kanji/32-everyone-%E7%9A%86"
+        },
+        {
+            "水": "http://www.kanjidamage.com//kanji/33-water-%E6%B0%B4"
+        },
+        {
+            "泳": "http://www.kanjidamage.com//kanji/37-swim-%E6%B3%B3"
+        },
+        {
+            "月": "http://www.kanjidamage.com//kanji/41-moon-organ-%E6%9C%88"
+        },
+        {
+            "明": "http://www.kanjidamage.com//kanji/43-bright-%E6%98%8E"
+        },
+        {
+            "朝": "http://www.kanjidamage.com//kanji/46-morning-%E6%9C%9D"
+        },
+        {
+            "火": "http://www.kanjidamage.com//kanji/47-fire-%E7%81%AB"
+        },
+        {
+            "田": "http://www.kanjidamage.com//kanji/56-rice-field-%E7%94%B0"
+        },
+        {
+            "町": "http://www.kanjidamage.com//kanji/57-neighborhood-small-town-%E7%94%BA"
+        },
+        {
+            "入": "http://www.kanjidamage.com//kanji/60-putgo-in-%E5%85%A5"
+        },
+        {
+            "人": "http://www.kanjidamage.com//kanji/61-person-%E4%BA%BA"
+        },
+        {
+            "何": "http://www.kanjidamage.com//kanji/62-what-%E4%BD%95"
+        },
+        {
+            "化": "http://www.kanjidamage.com//kanji/64-transform-%E5%8C%96"
+        },
+        {
+            "花": "http://www.kanjidamage.com//kanji/65-flower-%E8%8A%B1"
+        },
+        {
+            "内": "http://www.kanjidamage.com//kanji/70-the-inside-%E5%86%85"
+        },
+        {
+            "肉": "http://www.kanjidamage.com//kanji/71-meat-%E8%82%89"
+        },
+        {
+            "円": "http://www.kanjidamage.com//kanji/72-yencircle-%E5%86%86"
+        },
+        {
+            "市": "http://www.kanjidamage.com//kanji/73-small-city-dagger-radical-%E5%B8%82"
+        },
+        {
+            "姉": "http://www.kanjidamage.com//kanji/75-older-sister-%E5%A7%89"
+        },
+        {
+            "目": "http://www.kanjidamage.com//kanji/76-eye-%E7%9B%AE"
+        },
+        {
+            "自": "http://www.kanjidamage.com//kanji/78-my-own-%E8%87%AA"
+        },
+        {
+            "卒": "http://www.kanjidamage.com//kanji/83-graduate-%E5%8D%92"
+        },
+        {
+            "方": "http://www.kanjidamage.com//kanji/84-direction-method-person-%E6%96%B9"
+        },
+        {
+            "万": "http://www.kanjidamage.com//kanji/85-10000-%E4%B8%87"
+        },
+        {
+            "文": "http://www.kanjidamage.com//kanji/92-culture-sentence-%E6%96%87"
+        },
+        {
+            "心": "http://www.kanjidamage.com//kanji/98-heart-%E5%BF%83"
+        },
+        {
+            "必": "http://www.kanjidamage.com//kanji/99-surely-%E5%BF%85"
+        },
+        {
+            "思": "http://www.kanjidamage.com//kanji/102-think-%E6%80%9D"
+        },
+        {
+            "忙": "http://www.kanjidamage.com//kanji/105-busy-%E5%BF%99"
+        },
+        {
+            "忘": "http://www.kanjidamage.com//kanji/106-forget-%E5%BF%98"
+        },
+        {
+            "悪": "http://www.kanjidamage.com//kanji/113-bad-%E6%82%AA"
+        },
+        {
+            "夕": "http://www.kanjidamage.com//kanji/114-evening-%E5%A4%95"
+        },
+        {
+            "多": "http://www.kanjidamage.com//kanji/115-many-%E5%A4%9A"
+        },
+        {
+            "夜": "http://www.kanjidamage.com//kanji/117-late-night-%E5%A4%9C"
+        },
+        {
+            "名": "http://www.kanjidamage.com//kanji/119-name-famous-%E5%90%8D"
+        },
+        {
+            "死": "http://www.kanjidamage.com//kanji/120-death-%E6%AD%BB"
+        },
+        {
+            "外": "http://www.kanjidamage.com//kanji/122-outside-%E5%A4%96"
+        },
+        {
+            "上": "http://www.kanjidamage.com//kanji/123-above-%E4%B8%8A"
+        },
+        {
+            "点": "http://www.kanjidamage.com//kanji/126-point-%E7%82%B9"
+        },
+        {
+            "安": "http://www.kanjidamage.com//kanji/128-cheap-safe-%E5%AE%89"
+        },
+        {
+            "字": "http://www.kanjidamage.com//kanji/129-letter-%E5%AD%97"
+        },
+        {
+            "八": "http://www.kanjidamage.com//kanji/132-eight-%E5%85%AB"
+        },
+        {
+            "六": "http://www.kanjidamage.com//kanji/134-six-%E5%85%AD"
+        },
+        {
+            "公": "http://www.kanjidamage.com//kanji/137-public-%E5%85%AC"
+        },
+        {
+            "台": "http://www.kanjidamage.com//kanji/139-big-thing-counter-%E5%8F%B0"
+        },
+        {
+            "始": "http://www.kanjidamage.com//kanji/141-begin-%E5%A7%8B"
+        },
+        {
+            "立": "http://www.kanjidamage.com//kanji/148-stand-up-%E7%AB%8B"
+        },
+        {
+            "位": "http://www.kanjidamage.com//kanji/153-rank-%E4%BD%8D"
+        },
+        {
+            "音": "http://www.kanjidamage.com//kanji/156-sound-%E9%9F%B3"
+        },
+        {
+            "暗": "http://www.kanjidamage.com//kanji/155-dark-%E6%9A%97"
+        },
+        {
+            "意": "http://www.kanjidamage.com//kanji/157-meaning-%E6%84%8F"
+        },
+        {
+            "門": "http://www.kanjidamage.com//kanji/160-gate-%E9%96%80"
+        },
+        {
+            "間": "http://www.kanjidamage.com//kanji/162-a-period-of-time-%E9%96%93"
+        },
+        {
+            "問": "http://www.kanjidamage.com//kanji/163-question-problem-%E5%95%8F"
+        },
+        {
+            "前": "http://www.kanjidamage.com//kanji/865-before-%E5%89%8D"
+        },
+        {
+            "切": "http://www.kanjidamage.com//kanji/165-cut-important-%E5%88%87"
+        },
+        {
+            "分": "http://www.kanjidamage.com//kanji/169-understand-divide-minute-%E5%88%86"
+        },
+        {
+            "力": "http://www.kanjidamage.com//kanji/175-strong-%E5%8A%9B"
+        },
+        {
+            "男": "http://www.kanjidamage.com//kanji/180-man-%E7%94%B7"
+        },
+        {
+            "九": "http://www.kanjidamage.com//kanji/181-the-number-9-%E4%B9%9D"
+        },
+        {
+            "小": "http://www.kanjidamage.com//kanji/192-small-size-%E5%B0%8F"
+        },
+        {
+            "少": "http://www.kanjidamage.com//kanji/193-a-little-amount-%E5%B0%91"
+        },
+        {
+            "京": "http://www.kanjidamage.com//kanji/197-capital-%E4%BA%AC"
+        },
+        {
+            "糸": "http://www.kanjidamage.com//kanji/209-string-%E7%B3%B8"
+        },
+        {
+            "係": "http://www.kanjidamage.com//kanji/221-be-involved-with-%E4%BF%82"
+        },
+        {
+            "用": "http://www.kanjidamage.com//kanji/224-utilize-%E7%94%A8"
+        },
+        {
+            "千": "http://www.kanjidamage.com//kanji/229-thousand-%E5%8D%83"
+        },
+        {
+            "話": "http://www.kanjidamage.com//kanji/231-conversation-%E8%A9%B1"
+        },
+        {
+            "活": "http://www.kanjidamage.com//kanji/232-vivid-lively-%E6%B4%BB"
+        },
+        {
+            "半": "http://www.kanjidamage.com//kanji/186-half-%E5%8D%8A"
+        },
+        {
+            "平": "http://www.kanjidamage.com//kanji/187-equal-level-%E5%B9%B3"
+        },
+        {
+            "土": "http://www.kanjidamage.com//kanji/235-earth-%E5%9C%9F"
+        },
+        {
+            "黒": "http://www.kanjidamage.com//kanji/238-black-%E9%BB%92"
+        },
+        {
+            "仕": "http://www.kanjidamage.com//kanji/246-work-%E4%BB%95"
+        },
+        {
+            "者": "http://www.kanjidamage.com//kanji/255-professional-%E8%80%85"
+        },
+        {
+            "暑": "http://www.kanjidamage.com//kanji/260-hot-place-%E6%9A%91"
+        },
+        {
+            "無": "http://www.kanjidamage.com//kanji/264-without-%E7%84%A1"
+        },
+        {
+            "馬": "http://www.kanjidamage.com//kanji/270-horse-%E9%A6%AC"
+        },
+        {
+            "止": "http://www.kanjidamage.com//kanji/271-stop-%E6%AD%A2"
+        },
+        {
+            "歩": "http://www.kanjidamage.com//kanji/274-walk-%E6%AD%A9"
+        },
+        {
+            "足": "http://www.kanjidamage.com//kanji/277-foot-be-enough-%E8%B6%B3"
+        },
+        {
+            "正": "http://www.kanjidamage.com//kanji/280-correct-%E6%AD%A3"
+        },
+        {
+            "定": "http://www.kanjidamage.com//kanji/282-plan-%E5%AE%9A"
+        },
+        {
+            "走": "http://www.kanjidamage.com//kanji/286-run-%E8%B5%B0"
+        },
+        {
+            "駅": "http://www.kanjidamage.com//kanji/289-train-station-%E9%A7%85"
+        },
+        {
+            "昼": "http://www.kanjidamage.com//kanji/290-noon-%E6%98%BC"
+        },
+        {
+            "手": "http://www.kanjidamage.com//kanji/293-hand-%E6%89%8B"
+        },
+        {
+            "耳": "http://www.kanjidamage.com//kanji/309-ear-%E8%80%B3"
+        },
+        {
+            "最": "http://www.kanjidamage.com//kanji/311-most-%E6%9C%80"
+        },
+        {
+            "聞": "http://www.kanjidamage.com//kanji/1748-listen-ask-%E8%81%9E"
+        },
+        {
+            "竹": "http://www.kanjidamage.com//kanji/321-bamboo-%E7%AB%B9"
+        },
+        {
+            "簡": "http://www.kanjidamage.com//kanji/323-simplicity-%E7%B0%A1"
+        },
+        {
+            "作": "http://www.kanjidamage.com//kanji/325-make-%E4%BD%9C"
+        },
+        {
+            "昨": "http://www.kanjidamage.com//kanji/326-yesterday-%E6%98%A8"
+        },
+        {
+            "近": "http://www.kanjidamage.com//kanji/328-near-%E8%BF%91"
+        },
+        {
+            "達": "http://www.kanjidamage.com//kanji/332-pluraldelivery-%E9%81%94"
+        },
+        {
+            "木": "http://www.kanjidamage.com//kanji/335-tree-%E6%9C%A8"
+        },
+        {
+            "林": "http://www.kanjidamage.com//kanji/336-grove-%E6%9E%97"
+        },
+        {
+            "森": "http://www.kanjidamage.com//kanji/337-forest-%E6%A3%AE"
+        },
+        {
+            "本": "http://www.kanjidamage.com//kanji/338-book-the-real-%E6%9C%AC"
+        },
+        {
+            "体": "http://www.kanjidamage.com//kanji/339-body-%E4%BD%93"
+        },
+        {
+            "休": "http://www.kanjidamage.com//kanji/340-rest-%E4%BC%91"
+        },
+        {
+            "新": "http://www.kanjidamage.com//kanji/345-new-%E6%96%B0"
+        },
+        {
+            "集": "http://www.kanjidamage.com//kanji/346-collect-%E9%9B%86"
+        },
+        {
+            "東": "http://www.kanjidamage.com//kanji/357-east-%E6%9D%B1"
+        },
+        {
+            "練": "http://www.kanjidamage.com//kanji/358-practice-%E7%B7%B4"
+        },
+        {
+            "和": "http://www.kanjidamage.com//kanji/369-peace-japan-%E5%92%8C"
+        },
+        {
+            "私": "http://www.kanjidamage.com//kanji/371-me-private-%E7%A7%81"
+        },
+        {
+            "秒": "http://www.kanjidamage.com//kanji/372-one-second-%E7%A7%92"
+        },
+        {
+            "利": "http://www.kanjidamage.com//kanji/374-handy-%E5%88%A9"
+        },
+        {
+            "季": "http://www.kanjidamage.com//kanji/375-season-%E5%AD%A3"
+        },
+        {
+            "秋": "http://www.kanjidamage.com//kanji/378-fall-%E7%A7%8B"
+        },
+        {
+            "妹": "http://www.kanjidamage.com//kanji/382-little-sister-%E5%A6%B9"
+        },
+        {
+            "米": "http://www.kanjidamage.com//kanji/384-rice-america-%E7%B1%B3"
+        },
+        {
+            "来": "http://www.kanjidamage.com//kanji/394-comefuture-%E6%9D%A5"
+        },
+        {
+            "番": "http://www.kanjidamage.com//kanji/395-number-%E7%95%AA"
+        },
+        {
+            "大": "http://www.kanjidamage.com//kanji/397-big-%E5%A4%A7"
+        },
+        {
+            "映": "http://www.kanjidamage.com//kanji/406-project-reflect-%E6%98%A0"
+        },
+        {
+            "英": "http://www.kanjidamage.com//kanji/407-heroic-%E8%8B%B1"
+        },
+        {
+            "犬": "http://www.kanjidamage.com//kanji/408-dog-%E7%8A%AC"
+        },
+        {
+            "太": "http://www.kanjidamage.com//kanji/413-fat-%E5%A4%AA"
+        },
+        {
+            "漢": "http://www.kanjidamage.com//kanji/421-chinese-%E6%BC%A2"
+        },
+        {
+            "因": "http://www.kanjidamage.com//kanji/432-origin-%E5%9B%A0"
+        },
+        {
+            "回": "http://www.kanjidamage.com//kanji/437-rotate-times-%E5%9B%9E"
+        },
+        {
+            "王": "http://www.kanjidamage.com//kanji/444-king-%E7%8E%8B"
+        },
+        {
+            "国": "http://www.kanjidamage.com//kanji/438-country-%E5%9B%BD"
+        },
+        {
+            "理": "http://www.kanjidamage.com//kanji/445-reason-%E7%90%86"
+        },
+        {
+            "望": "http://www.kanjidamage.com//kanji/449-desire-%E6%9C%9B"
+        },
+        {
+            "主": "http://www.kanjidamage.com//kanji/454-mastermainly-%E4%B8%BB"
+        },
+        {
+            "注": "http://www.kanjidamage.com//kanji/458-pour-be-careful-%E6%B3%A8"
+        },
+        {
+            "住": "http://www.kanjidamage.com//kanji/460-dwell-%E4%BD%8F"
+        },
+        {
+            "害": "http://www.kanjidamage.com//kanji/462-damage-%E5%AE%B3"
+        },
+        {
+            "青": "http://www.kanjidamage.com//kanji/466-blue-%E9%9D%92"
+        },
+        {
+            "晴": "http://www.kanjidamage.com//kanji/470-weather-get-good-now-%E6%99%B4"
+        },
+        {
+            "生": "http://www.kanjidamage.com//kanji/473-life-birth-%E7%94%9F"
+        },
+        {
+            "遊": "http://www.kanjidamage.com//kanji/1753-play-around-%E9%81%8A"
+        },
+        {
+            "母": "http://www.kanjidamage.com//kanji/482-your-moms-%E6%AF%8D"
+        },
+        {
+            "毎": "http://www.kanjidamage.com//kanji/484-every-%E6%AF%8E"
+        },
+        {
+            "海": "http://www.kanjidamage.com//kanji/486-ocean-%E6%B5%B7"
+        },
+        {
+            "中": "http://www.kanjidamage.com//kanji/489-middle-%E4%B8%AD"
+        },
+        {
+            "所": "http://www.kanjidamage.com//kanji/506-area-attribute-%E6%89%80"
+        },
+        {
+            "見": "http://www.kanjidamage.com//kanji/520-look-%E8%A6%8B"
+        },
+        {
+            "現": "http://www.kanjidamage.com//kanji/524-present-time-%E7%8F%BE"
+        },
+        {
+            "親": "http://www.kanjidamage.com//kanji/525-parentskindness-%E8%A6%AA"
+        },
+        {
+            "兄": "http://www.kanjidamage.com//kanji/526-older-brother-%E5%85%84"
+        },
+        {
+            "買": "http://www.kanjidamage.com//kanji/533-buy-%E8%B2%B7"
+        },
+        {
+            "質": "http://www.kanjidamage.com//kanji/540-quality-%E8%B3%AA"
+        },
+        {
+            "員": "http://www.kanjidamage.com//kanji/544-clerk-%E5%93%A1"
+        },
+        {
+            "負": "http://www.kanjidamage.com//kanji/559-lose-%E8%B2%A0"
+        },
+        {
+            "魚": "http://www.kanjidamage.com//kanji/560-fish-%E9%AD%9A"
+        },
+        {
+            "売": "http://www.kanjidamage.com//kanji/564-sell-%E5%A3%B2"
+        },
+        {
+            "続": "http://www.kanjidamage.com//kanji/565-continue-%E7%B6%9A"
+        },
+        {
+            "読": "http://www.kanjidamage.com//kanji/566-read-%E8%AA%AD"
+        },
+        {
+            "元": "http://www.kanjidamage.com//kanji/571-original-%E5%85%83"
+        },
+        {
+            "完": "http://www.kanjidamage.com//kanji/572-complete-%E5%AE%8C"
+        },
+        {
+            "西": "http://www.kanjidamage.com//kanji/574-west-%E8%A5%BF"
+        },
+        {
+            "酒": "http://www.kanjidamage.com//kanji/578-liquor-%E9%85%92"
+        },
+        {
+            "要": "http://www.kanjidamage.com//kanji/581-important-%E8%A6%81"
+        },
+        {
+            "才": "http://www.kanjidamage.com//kanji/1744-skill-age-%E6%89%8D"
+        },
+        {
+            "閉": "http://www.kanjidamage.com//kanji/587-close-store-%E9%96%89"
+        },
+        {
+            "賛": "http://www.kanjidamage.com//kanji/589-agree-%E8%B3%9B"
+        },
+        {
+            "単": "http://www.kanjidamage.com//kanji/596-merely-%E5%8D%98"
+        },
+        {
+            "授": "http://www.kanjidamage.com//kanji/606-instruct-%E6%8E%88"
+        },
+        {
+            "客": "http://www.kanjidamage.com//kanji/611-customer-%E5%AE%A2"
+        },
+        {
+            "当": "http://www.kanjidamage.com//kanji/634-hit-the-target-%E5%BD%93"
+        },
+        {
+            "帰": "http://www.kanjidamage.com//kanji/638-go-back-home-%E5%B8%B0"
+        },
+        {
+            "曜": "http://www.kanjidamage.com//kanji/644-day-of-the-week-%E6%9B%9C"
+        },
+        {
+            "空": "http://www.kanjidamage.com//kanji/646-air-%E7%A9%BA"
+        },
+        {
+            "写": "http://www.kanjidamage.com//kanji/652-copy-%E5%86%99"
+        },
+        {
+            "号": "http://www.kanjidamage.com//kanji/656-id-number-%E5%8F%B7"
+        },
+        {
+            "考": "http://www.kanjidamage.com//kanji/657-consider-%E8%80%83"
+        },
+        {
+            "式": "http://www.kanjidamage.com//kanji/659-ritual-%E5%BC%8F"
+        },
+        {
+            "貸": "http://www.kanjidamage.com//kanji/664-lend-%E8%B2%B8"
+        },
+        {
+            "区": "http://www.kanjidamage.com//kanji/680-ward-%E5%8C%BA"
+        },
+        {
+            "四": "http://www.kanjidamage.com//kanji/694-the-numeral-4-%E5%9B%9B"
+        },
+        {
+            "欠": "http://www.kanjidamage.com//kanji/697-lack-%E6%AC%A0"
+        },
+        {
+            "歌": "http://www.kanjidamage.com//kanji/700-sing-%E6%AD%8C"
+        },
+        {
+            "数": "http://www.kanjidamage.com//kanji/703-integer-to-count-%E6%95%B0"
+        },
+        {
+            "教": "http://www.kanjidamage.com//kanji/710-teach-%E6%95%99"
+        },
+        {
+            "適": "http://www.kanjidamage.com//kanji/716-suitable-%E9%81%A9"
+        },
+        {
+            "起": "http://www.kanjidamage.com//kanji/721-wake-up-occur-%E8%B5%B7"
+        },
+        {
+            "記": "http://www.kanjidamage.com//kanji/723-diary-%E8%A8%98"
+        },
+        {
+            "配": "http://www.kanjidamage.com//kanji/724-distribute-%E9%85%8D"
+        },
+        {
+            "歴": "http://www.kanjidamage.com//kanji/731-chronicle-%E6%AD%B4"
+        },
+        {
+            "原": "http://www.kanjidamage.com//kanji/737-original-high-plain-%E5%8E%9F"
+        },
+        {
+            "反": "http://www.kanjidamage.com//kanji/739-anti-%E5%8F%8D"
+        },
+        {
+            "返": "http://www.kanjidamage.com//kanji/740-return-or-respond-%E8%BF%94"
+        },
+        {
+            "成": "http://www.kanjidamage.com//kanji/745-become-%E6%88%90"
+        },
+        {
+            "気": "http://www.kanjidamage.com//kanji/983-mood-%E6%B0%97"
+        },
+        {
+            "決": "http://www.kanjidamage.com//kanji/984-decide-%E6%B1%BA"
+        },
+        {
+            "感": "http://www.kanjidamage.com//kanji/755-feeling-%E6%84%9F"
+        },
+        {
+            "同": "http://www.kanjidamage.com//kanji/974-same-%E5%90%8C"
+        },
+        {
+            "旅": "http://www.kanjidamage.com//kanji/758-trip-%E6%97%85"
+        },
+        {
+            "遠": "http://www.kanjidamage.com//kanji/762-far-%E9%81%A0"
+        },
+        {
+            "園": "http://www.kanjidamage.com//kanji/763-public-park-%E5%9C%92"
+        },
+        {
+            "良": "http://www.kanjidamage.com//kanji/775-good-%E8%89%AF"
+        },
+        {
+            "階": "http://www.kanjidamage.com//kanji/786-story-of-a-building-%E9%9A%8E"
+        },
+        {
+            "院": "http://www.kanjidamage.com//kanji/788-institution-%E9%99%A2"
+        },
+        {
+            "都": "http://www.kanjidamage.com//kanji/791-major-city-%E9%83%BD"
+        },
+        {
+            "部": "http://www.kanjidamage.com//kanji/795-section-%E9%83%A8"
+        },
+        {
+            "倍": "http://www.kanjidamage.com//kanji/797-double-%E5%80%8D"
+        },
+        {
+            "寝": "http://www.kanjidamage.com//kanji/802-go-to-bed-%E5%AF%9D"
+        },
+        {
+            "北": "http://www.kanjidamage.com//kanji/803-north-%E5%8C%97"
+        },
+        {
+            "先": "http://www.kanjidamage.com//kanji/810-earlier-the-tip-%E5%85%88"
+        },
+        {
+            "洗": "http://www.kanjidamage.com//kanji/811-wash-%E6%B4%97"
+        },
+        {
+            "百": "http://www.kanjidamage.com//kanji/814-hundred-%E7%99%BE"
+        },
+        {
+            "宿": "http://www.kanjidamage.com//kanji/817-lodge-at-%E5%AE%BF"
+        },
+        {
+            "石": "http://www.kanjidamage.com//kanji/819-rock-%E7%9F%B3"
+        },
+        {
+            "山": "http://www.kanjidamage.com//kanji/823-mountain-%E5%B1%B1"
+        },
+        {
+            "島": "http://www.kanjidamage.com//kanji/835-island-%E5%B3%B6"
+        },
+        {
+            "頭": "http://www.kanjidamage.com//kanji/841-head-%E9%A0%AD"
+        },
+        {
+            "夏": "http://www.kanjidamage.com//kanji/842-summer-%E5%A4%8F"
+        },
+        {
+            "願": "http://www.kanjidamage.com//kanji/843-beseech-%E9%A1%98"
+        },
+        {
+            "題": "http://www.kanjidamage.com//kanji/849-topic-%E9%A1%8C"
+        },
+        {
+            "川": "http://www.kanjidamage.com//kanji/853-river-%E5%B7%9D"
+        },
+        {
+            "州": "http://www.kanjidamage.com//kanji/855-state-%E5%B7%9E"
+        },
+        {
+            "道": "http://www.kanjidamage.com//kanji/861-street-%E9%81%93"
+        },
+        {
+            "説": "http://www.kanjidamage.com//kanji/863-explain-%E8%AA%AC"
+        },
+        {
+            "南": "http://www.kanjidamage.com//kanji/869-south-%E5%8D%97"
+        },
+        {
+            "美": "http://www.kanjidamage.com//kanji/965-beauty-%E7%BE%8E"
+        },
+        {
+            "洋": "http://www.kanjidamage.com//kanji/872-pacific-ocean-the-west-%E6%B4%8B"
+        },
+        {
+            "遅": "http://www.kanjidamage.com//kanji/873-slow-late-%E9%81%85"
+        },
+        {
+            "着": "http://www.kanjidamage.com//kanji/875-wear-arrive-%E7%9D%80"
+        },
+        {
+            "様": "http://www.kanjidamage.com//kanji/879-important-person-%E6%A7%98"
+        },
+        {
+            "天": "http://www.kanjidamage.com//kanji/880-heaven-%E5%A4%A9"
+        },
+        {
+            "送": "http://www.kanjidamage.com//kanji/885-send-%E9%80%81"
+        },
+        {
+            "関": "http://www.kanjidamage.com//kanji/887-connected-to-%E9%96%A2"
+        },
+        {
+            "勝": "http://www.kanjidamage.com//kanji/891-win-%E5%8B%9D"
+        },
+        {
+            "弟": "http://www.kanjidamage.com//kanji/893-younger-brother-%E5%BC%9F"
+        },
+        {
+            "第": "http://www.kanjidamage.com//kanji/894-rank-or-number-in-series-%E7%AC%AC"
+        },
+        {
+            "費": "http://www.kanjidamage.com//kanji/896-expenses-%E8%B2%BB"
+        },
+        {
+            "強": "http://www.kanjidamage.com//kanji/897-burly-%E5%BC%B7"
+        },
+        {
+            "引": "http://www.kanjidamage.com//kanji/898-pull-%E5%BC%95"
+        },
+        {
+            "赤": "http://www.kanjidamage.com//kanji/900-red-%E8%B5%A4"
+        },
+        {
+            "変": "http://www.kanjidamage.com//kanji/904-change-%E5%A4%89"
+        },
+        {
+            "長": "http://www.kanjidamage.com//kanji/905-long-boss-%E9%95%B7"
+        },
+        {
+            "険": "http://www.kanjidamage.com//kanji/792-steep-risky-%E9%99%BA"
+        },
+        {
+            "金": "http://www.kanjidamage.com//kanji/909-gold-%E9%87%91"
+        },
+        {
+            "銀": "http://www.kanjidamage.com//kanji/915-silver-%E9%8A%80"
+        },
+        {
+            "茶": "http://www.kanjidamage.com//kanji/917-tea-%E8%8C%B6"
+        },
+        {
+            "全": "http://www.kanjidamage.com//kanji/919-all-%E5%85%A8"
+        },
+        {
+            "食": "http://www.kanjidamage.com//kanji/921-eat-%E9%A3%9F"
+        },
+        {
+            "飲": "http://www.kanjidamage.com//kanji/922-drink-%E9%A3%B2"
+        },
+        {
+            "飯": "http://www.kanjidamage.com//kanji/924-rice-meal-%E9%A3%AF"
+        },
+        {
+            "界": "http://www.kanjidamage.com//kanji/935-the-world-%E7%95%8C"
+        },
+        {
+            "合": "http://www.kanjidamage.com//kanji/936-to-suit-%E5%90%88"
+        },
+        {
+            "給": "http://www.kanjidamage.com//kanji/937-provide-%E7%B5%A6"
+        },
+        {
+            "答": "http://www.kanjidamage.com//kanji/941-answer-%E7%AD%94"
+        },
+        {
+            "今": "http://www.kanjidamage.com//kanji/943-now-%E4%BB%8A"
+        },
+        {
+            "冷": "http://www.kanjidamage.com//kanji/951-cold-thing-%E5%86%B7"
+        },
+        {
+            "冬": "http://www.kanjidamage.com//kanji/954-winter-%E5%86%AC"
+        },
+        {
+            "終": "http://www.kanjidamage.com//kanji/955-end-%E7%B5%82"
+        },
+        {
+            "次": "http://www.kanjidamage.com//kanji/956-next-%E6%AC%A1"
+        },
+        {
+            "寒": "http://www.kanjidamage.com//kanji/960-cold-%E5%AF%92"
+        },
+        {
+            "春": "http://www.kanjidamage.com//kanji/962-spring-sexy-%E6%98%A5"
+        },
+        {
+            "実": "http://www.kanjidamage.com//kanji/964-truth-%E5%AE%9F"
+        },
+        {
+            "村": "http://www.kanjidamage.com//kanji/994-hicktown-%E6%9D%91"
+        },
+        {
+            "寺": "http://www.kanjidamage.com//kanji/1000-temple-%E5%AF%BA"
+        },
+        {
+            "時": "http://www.kanjidamage.com//kanji/1002-time-%E6%99%82"
+        },
+        {
+            "持": "http://www.kanjidamage.com//kanji/1003-hold-%E6%8C%81"
+        },
+        {
+            "父": "http://www.kanjidamage.com//kanji/1008-dad-%E7%88%B6"
+        },
+        {
+            "交": "http://www.kanjidamage.com//kanji/1009-combine-%E4%BA%A4"
+        },
+        {
+            "対": "http://www.kanjidamage.com//kanji/1010-against-%E5%AF%BE"
+        },
+        {
+            "校": "http://www.kanjidamage.com//kanji/1011-school-%E6%A0%A1"
+        },
+        {
+            "画": "http://www.kanjidamage.com//kanji/1039-a-drawing-%E7%94%BB"
+        },
+        {
+            "両": "http://www.kanjidamage.com//kanji/1040-both-%E4%B8%A1"
+        },
+        {
+            "出": "http://www.kanjidamage.com//kanji/1024-pull-out-hand-over-%E5%87%BA"
+        },
+        {
+            "世": "http://www.kanjidamage.com//kanji/1029-society-%E4%B8%96"
+        },
+        {
+            "短": "http://www.kanjidamage.com//kanji/1046-short-brief-%E7%9F%AD"
+        },
+        {
+            "医": "http://www.kanjidamage.com//kanji/1047-doctor-%E5%8C%BB"
+        },
+        {
+            "族": "http://www.kanjidamage.com//kanji/1048-family-%E6%97%8F"
+        },
+        {
+            "知": "http://www.kanjidamage.com//kanji/1050-know-%E7%9F%A5"
+        },
+        {
+            "失": "http://www.kanjidamage.com//kanji/1051-miss-out-on-%E5%A4%B1"
+        },
+        {
+            "鉄": "http://www.kanjidamage.com//kanji/1052-iron-%E9%89%84"
+        },
+        {
+            "車": "http://www.kanjidamage.com//kanji/1058-car-%E8%BB%8A"
+        },
+        {
+            "重": "http://www.kanjidamage.com//kanji/1059-heavy-overlap-%E9%87%8D"
+        },
+        {
+            "乗": "http://www.kanjidamage.com//kanji/1061-ride-a-vehicle-%E4%B9%97"
+        },
+        {
+            "動": "http://www.kanjidamage.com//kanji/1078-movement-%E5%8B%95"
+        },
+        {
+            "働": "http://www.kanjidamage.com//kanji/1079-to-do-your-job-%E5%83%8D"
+        },
+        {
+            "軽": "http://www.kanjidamage.com//kanji/1088-lightweight-%E8%BB%BD"
+        },
+        {
+            "友": "http://www.kanjidamage.com//kanji/1105-friend-%E5%8F%8B"
+        },
+        {
+            "希": "http://www.kanjidamage.com//kanji/1095-request-uncommon-%E5%B8%8C"
+        },
+        {
+            "右": "http://www.kanjidamage.com//kanji/1097-right-%E5%8F%B3"
+        },
+        {
+            "左": "http://www.kanjidamage.com//kanji/1098-left-%E5%B7%A6"
+        },
+        {
+            "若": "http://www.kanjidamage.com//kanji/1099-young-%E8%8B%A5"
+        },
+        {
+            "有": "http://www.kanjidamage.com//kanji/1100-exist-%E6%9C%89"
+        },
+        {
+            "在": "http://www.kanjidamage.com//kanji/1103-be-real-%E5%9C%A8"
+        },
+        {
+            "存": "http://www.kanjidamage.com//kanji/1104-be-aware-of-%E5%AD%98"
+        },
+        {
+            "顔": "http://www.kanjidamage.com//kanji/1116-face-%E9%A1%94"
+        },
+        {
+            "店": "http://www.kanjidamage.com//kanji/1132-shop-%E5%BA%97"
+        },
+        {
+            "広": "http://www.kanjidamage.com//kanji/1139-wide-%E5%BA%83"
+        },
+        {
+            "席": "http://www.kanjidamage.com//kanji/1143-seat-%E5%B8%AD"
+        },
+        {
+            "度": "http://www.kanjidamage.com//kanji/1144-times-%E5%BA%A6"
+        },
+        {
+            "紙": "http://www.kanjidamage.com//kanji/1161-paper-%E7%B4%99"
+        },
+        {
+            "低": "http://www.kanjidamage.com//kanji/1162-low-%E4%BD%8E"
+        },
+        {
+            "民": "http://www.kanjidamage.com//kanji/1165-folk-%E6%B0%91"
+        },
+        {
+            "祭": "http://www.kanjidamage.com//kanji/1180-festival-%E7%A5%AD"
+        },
+        {
+            "開": "http://www.kanjidamage.com//kanji/1185-open-%E9%96%8B"
+        },
+        {
+            "発": "http://www.kanjidamage.com//kanji/1186-launch-%E7%99%BA"
+        },
+        {
+            "午": "http://www.kanjidamage.com//kanji/1192-noon-%E5%8D%88"
+        },
+        {
+            "牛": "http://www.kanjidamage.com//kanji/1194-cow-%E7%89%9B"
+        },
+        {
+            "特": "http://www.kanjidamage.com//kanji/1196-special-%E7%89%B9"
+        },
+        {
+            "物": "http://www.kanjidamage.com//kanji/1201-animal-thing-%E7%89%A9"
+        },
+        {
+            "場": "http://www.kanjidamage.com//kanji/1208-place-%E5%A0%B4"
+        },
+        {
+            "色": "http://www.kanjidamage.com//kanji/1210-color-%E8%89%B2"
+        },
+        {
+            "晩": "http://www.kanjidamage.com//kanji/1213-night-%E6%99%A9"
+        },
+        {
+            "勉": "http://www.kanjidamage.com//kanji/1215-try-hard-%E5%8B%89"
+        },
+        {
+            "家": "http://www.kanjidamage.com//kanji/1223-home-%E5%AE%B6"
+        },
+        {
+            "行": "http://www.kanjidamage.com//kanji/1229-go-%E8%A1%8C"
+        },
+        {
+            "徒": "http://www.kanjidamage.com//kanji/1232-pupil-follower-%E5%BE%92"
+        },
+        {
+            "後": "http://www.kanjidamage.com//kanji/1234-afterwards-behind-%E5%BE%8C"
+        },
+        {
+            "待": "http://www.kanjidamage.com//kanji/1236-wait-%E5%BE%85"
+        },
+        {
+            "育": "http://www.kanjidamage.com//kanji/1247-grow-up-be-raised-%E8%82%B2"
+        },
+        {
+            "流": "http://www.kanjidamage.com//kanji/1248-flow-%E6%B5%81"
+        },
+        {
+            "去": "http://www.kanjidamage.com//kanji/1257-past-tense-%E5%8E%BB"
+        },
+        {
+            "屋": "http://www.kanjidamage.com//kanji/1260-store-%E5%B1%8B"
+        },
+        {
+            "室": "http://www.kanjidamage.com//kanji/1261-room-suffix-%E5%AE%A4"
+        },
+        {
+            "留": "http://www.kanjidamage.com//kanji/1264-absent-stopped-%E7%95%99"
+        },
+        {
+            "転": "http://www.kanjidamage.com//kanji/1266-roll-over-%E8%BB%A2"
+        },
+        {
+            "伝": "http://www.kanjidamage.com//kanji/1267-transmit-%E4%BC%9D"
+        },
+        {
+            "会": "http://www.kanjidamage.com//kanji/1269-big-meeting-%E4%BC%9A"
+        },
+        {
+            "絵": "http://www.kanjidamage.com//kanji/1270-picture-%E7%B5%B5"
+        },
+        {
+            "熱": "http://www.kanjidamage.com//kanji/1279-hot-thing-fever-%E7%86%B1"
+        },
+        {
+            "真": "http://www.kanjidamage.com//kanji/1304-really-%E7%9C%9F"
+        },
+        {
+            "県": "http://www.kanjidamage.com//kanji/1306-prefecture-%E7%9C%8C"
+        },
+        {
+            "直": "http://www.kanjidamage.com//kanji/1308-correct-a-probem-direct-contact-%E7%9B%B4"
+        },
+        {
+            "別": "http://www.kanjidamage.com//kanji/1314-separate-%E5%88%A5"
+        },
+        {
+            "例": "http://www.kanjidamage.com//kanji/1318-example-%E4%BE%8B"
+        },
+        {
+            "彼": "http://www.kanjidamage.com//kanji/1326-him-%E5%BD%BC"
+        },
+        {
+            "予": "http://www.kanjidamage.com//kanji/1329-beforehand-%E4%BA%88"
+        },
+        {
+            "速": "http://www.kanjidamage.com//kanji/1339-fast-%E9%80%9F"
+        },
+        {
+            "通": "http://www.kanjidamage.com//kanji/1342-pass-%E9%80%9A"
+        },
+        {
+            "病": "http://www.kanjidamage.com//kanji/1347-sick-kanji-%E7%97%85"
+        },
+        {
+            "由": "http://www.kanjidamage.com//kanji/1374-freedom-reason-%E7%94%B1"
+        },
+        {
+            "雨": "http://www.kanjidamage.com//kanji/1383-rain-%E9%9B%A8"
+        },
+        {
+            "雪": "http://www.kanjidamage.com//kanji/1391-snow-%E9%9B%AA"
+        },
+        {
+            "業": "http://www.kanjidamage.com//kanji/1397-business-%E6%A5%AD"
+        },
+        {
+            "僕": "http://www.kanjidamage.com//kanji/1398-me-for-dudes-%E5%83%95"
+        },
+        {
+            "電": "http://www.kanjidamage.com//kanji/1403-electricity-%E9%9B%BB"
+        },
+        {
+            "局": "http://www.kanjidamage.com//kanji/1422-department-%E5%B1%80"
+        },
+        {
+            "的": "http://www.kanjidamage.com//kanji/1430-motivation-al-%E7%9A%84"
+        },
+        {
+            "温": "http://www.kanjidamage.com//kanji/1435-hot-or-warm-thing-%E6%B8%A9"
+        },
+        {
+            "節": "http://www.kanjidamage.com//kanji/1473-season-joint-%E7%AF%80"
+        },
+        {
+            "危": "http://www.kanjidamage.com//kanji/1475-dangerous-%E5%8D%B1"
+        },
+        {
+            "服": "http://www.kanjidamage.com//kanji/1481-clothes-%E6%9C%8D"
+        },
+        {
+            "組": "http://www.kanjidamage.com//kanji/1485-ones-team-%E7%B5%84"
+        },
+        {
+            "助": "http://www.kanjidamage.com//kanji/1490-save-%E5%8A%A9"
+        },
+        {
+            "社": "http://www.kanjidamage.com//kanji/1495-company-%E7%A4%BE"
+        },
+        {
+            "神": "http://www.kanjidamage.com//kanji/1498-god-kanji-%E7%A5%9E"
+        },
+        {
+            "初": "http://www.kanjidamage.com//kanji/1509-first-time-%E5%88%9D"
+        },
+        {
+            "習": "http://www.kanjidamage.com//kanji/1535-learn-%E7%BF%92"
+        },
+        {
+            "昔": "http://www.kanjidamage.com//kanji/1543-long-ago-%E6%98%94"
+        },
+        {
+            "借": "http://www.kanjidamage.com//kanji/1539-borrow-%E5%80%9F"
+        },
+        {
+            "選": "http://www.kanjidamage.com//kanji/1552-choose-%E9%81%B8"
+        },
+        {
+            "再": "http://www.kanjidamage.com//kanji/1560-again-once-more-%E5%86%8D"
+        },
+        {
+            "降": "http://www.kanjidamage.com//kanji/1571-descend-rainfall-get-out-of-vehicle-%E9%99%8D"
+        },
+        {
+            "年": "http://www.kanjidamage.com//kanji/1572-year-%E5%B9%B4"
+        },
+        {
+            "五": "http://www.kanjidamage.com//kanji/1573-five-%E4%BA%94"
+        },
+        {
+            "語": "http://www.kanjidamage.com//kanji/1574-language-%E8%AA%9E"
+        },
+        {
+            "料": "http://www.kanjidamage.com//kanji/1585-ingredients-fees-%E6%96%99"
+        },
+        {
+            "科": "http://www.kanjidamage.com//kanji/1586-science-%E7%A7%91"
+        },
+        {
+            "図": "http://www.kanjidamage.com//kanji/1587-diagram-map-%E5%9B%B3"
+        },
+        {
+            "史": "http://www.kanjidamage.com//kanji/1590-history-%E5%8F%B2"
+        },
+        {
+            "使": "http://www.kanjidamage.com//kanji/1593-use-%E4%BD%BF"
+        },
+        {
+            "便": "http://www.kanjidamage.com//kanji/1594-convenient-poop-%E4%BE%BF"
+        },
+        {
+            "地": "http://www.kanjidamage.com//kanji/1600-area-%E5%9C%B0"
+        },
+        {
+            "他": "http://www.kanjidamage.com//kanji/1602-other-%E4%BB%96"
+        },
+        {
+            "館": "http://www.kanjidamage.com//kanji/1614-big-hall-%E9%A4%A8"
+        },
+        {
+            "学": "http://www.kanjidamage.com//kanji/1624-knowledge-%E5%AD%A6"
+        },
+        {
+            "調": "http://www.kanjidamage.com//kanji/1636-check-out-%E8%AA%BF"
+        },
+        {
+            "週": "http://www.kanjidamage.com//kanji/1637-week-%E9%80%B1"
+        },
+        {
+            "高": "http://www.kanjidamage.com//kanji/1639-tall-%E9%AB%98"
+        },
+        {
+            "橋": "http://www.kanjidamage.com//kanji/1642-bridge-%E6%A9%8B"
+        },
+        {
+            "楽": "http://www.kanjidamage.com//kanji/1650-enjoy-%E6%A5%BD"
+        },
+        {
+            "薬": "http://www.kanjidamage.com//kanji/1651-medicine-%E8%96%AC"
+        },
+        {
+            "書": "http://www.kanjidamage.com//kanji/1659-write-%E6%9B%B8"
+        },
+        {
+            "事": "http://www.kanjidamage.com//kanji/1660-action-incident-%E4%BA%8B"
+        },
+        {
+            "君": "http://www.kanjidamage.com//kanji/1665-buddy-%E5%90%9B"
+        },
+        {
+            "静": "http://www.kanjidamage.com//kanji/1670-quiet-%E9%9D%99"
+        },
+        {
+            "庭": "http://www.kanjidamage.com//kanji/1155-garden-%E5%BA%AD"
+        },
+        {
+            "以": "http://www.kanjidamage.com//kanji/1721-compared-to-%E4%BB%A5"
+        },
+        {
+            "段": "http://www.kanjidamage.com//kanji/1726-step-stairs-%E6%AE%B5"
+        }
+    ],
+    "HL_IB_AND_KD_JSON": [
+        {
+            "一": "http://www.kanjidamage.com//kanji/1-one-line-radical-%E4%B8%80"
+        },
+        {
+            "二": "http://www.kanjidamage.com//kanji/2-two-%E4%BA%8C"
+        },
+        {
+            "三": "http://www.kanjidamage.com//kanji/3-three-%E4%B8%89"
+        },
+        {
+            "子": "http://www.kanjidamage.com//kanji/5-child-%E5%AD%90"
+        },
+        {
+            "女": "http://www.kanjidamage.com//kanji/6-woman-%E5%A5%B3"
+        },
+        {
+            "好": "http://www.kanjidamage.com//kanji/7-like-%E5%A5%BD"
+        },
+        {
+            "口": "http://www.kanjidamage.com//kanji/9-mouth-small-box-radical-%E5%8F%A3"
+        },
+        {
+            "品": "http://www.kanjidamage.com//kanji/10-products-%E5%93%81"
+        },
+        {
+            "言": "http://www.kanjidamage.com//kanji/11-say-%E8%A8%80"
+        },
+        {
+            "下": "http://www.kanjidamage.com//kanji/12-below-%E4%B8%8B"
+        },
+        {
+            "不": "http://www.kanjidamage.com//kanji/13-un-%E4%B8%8D"
+        },
+        {
+            "十": "http://www.kanjidamage.com//kanji/15-ten-%E5%8D%81"
+        },
+        {
+            "古": "http://www.kanjidamage.com//kanji/16-old-%E5%8F%A4"
+        },
+        {
+            "計": "http://www.kanjidamage.com//kanji/18-measure-%E8%A8%88"
+        },
+        {
+            "七": "http://www.kanjidamage.com//kanji/20-seven-%E4%B8%83"
+        },
+        {
+            "比": "http://www.kanjidamage.com//kanji/21-compare-%E6%AF%94"
+        },
+        {
+            "日": "http://www.kanjidamage.com//kanji/23-sun-day-%E6%97%A5"
+        },
+        {
+            "早": "http://www.kanjidamage.com//kanji/29-early-%E6%97%A9"
+        },
+        {
+            "白": "http://www.kanjidamage.com//kanji/31-white-%E7%99%BD"
+        },
+        {
+            "皆": "http://www.kanjidamage.com//kanji/32-everyone-%E7%9A%86"
+        },
+        {
+            "水": "http://www.kanjidamage.com//kanji/33-water-%E6%B0%B4"
+        },
+        {
+            "泳": "http://www.kanjidamage.com//kanji/37-swim-%E6%B3%B3"
+        },
+        {
+            "泊": "http://www.kanjidamage.com//kanji/38-stay-for-the-night-%E6%B3%8A"
+        },
+        {
+            "月": "http://www.kanjidamage.com//kanji/41-moon-organ-%E6%9C%88"
+        },
+        {
+            "湖": "http://www.kanjidamage.com//kanji/42-big-lake-%E6%B9%96"
+        },
+        {
+            "明": "http://www.kanjidamage.com//kanji/43-bright-%E6%98%8E"
+        },
+        {
+            "朝": "http://www.kanjidamage.com//kanji/46-morning-%E6%9C%9D"
+        },
+        {
+            "火": "http://www.kanjidamage.com//kanji/47-fire-%E7%81%AB"
+        },
+        {
+            "談": "http://www.kanjidamage.com//kanji/50-consult-%E8%AB%87"
+        },
+        {
+            "可": "http://www.kanjidamage.com//kanji/55-possible-%E5%8F%AF"
+        },
+        {
+            "田": "http://www.kanjidamage.com//kanji/56-rice-field-%E7%94%B0"
+        },
+        {
+            "町": "http://www.kanjidamage.com//kanji/57-neighborhood-small-town-%E7%94%BA"
+        },
+        {
+            "入": "http://www.kanjidamage.com//kanji/60-putgo-in-%E5%85%A5"
+        },
+        {
+            "人": "http://www.kanjidamage.com//kanji/61-person-%E4%BA%BA"
+        },
+        {
+            "何": "http://www.kanjidamage.com//kanji/62-what-%E4%BD%95"
+        },
+        {
+            "信": "http://www.kanjidamage.com//kanji/63-believe-%E4%BF%A1"
+        },
+        {
+            "化": "http://www.kanjidamage.com//kanji/64-transform-%E5%8C%96"
+        },
+        {
+            "花": "http://www.kanjidamage.com//kanji/65-flower-%E8%8A%B1"
+        },
+        {
+            "苦": "http://www.kanjidamage.com//kanji/66-suffer-%E8%8B%A6"
+        },
+        {
+            "内": "http://www.kanjidamage.com//kanji/70-the-inside-%E5%86%85"
+        },
+        {
+            "肉": "http://www.kanjidamage.com//kanji/71-meat-%E8%82%89"
+        },
+        {
+            "円": "http://www.kanjidamage.com//kanji/72-yencircle-%E5%86%86"
+        },
+        {
+            "市": "http://www.kanjidamage.com//kanji/73-small-city-dagger-radical-%E5%B8%82"
+        },
+        {
+            "姉": "http://www.kanjidamage.com//kanji/75-older-sister-%E5%A7%89"
+        },
+        {
+            "目": "http://www.kanjidamage.com//kanji/76-eye-%E7%9B%AE"
+        },
+        {
+            "自": "http://www.kanjidamage.com//kanji/78-my-own-%E8%87%AA"
+        },
+        {
+            "停": "http://www.kanjidamage.com//kanji/82-bring-to-a-halt-%E5%81%9C"
+        },
+        {
+            "卒": "http://www.kanjidamage.com//kanji/83-graduate-%E5%8D%92"
+        },
+        {
+            "方": "http://www.kanjidamage.com//kanji/84-direction-method-person-%E6%96%B9"
+        },
+        {
+            "万": "http://www.kanjidamage.com//kanji/85-10000-%E4%B8%87"
+        },
+        {
+            "文": "http://www.kanjidamage.com//kanji/92-culture-sentence-%E6%96%87"
+        },
+        {
+            "済": "http://www.kanjidamage.com//kanji/94-economy-to-be-over-%E6%B8%88"
+        },
+        {
+            "心": "http://www.kanjidamage.com//kanji/98-heart-%E5%BF%83"
+        },
+        {
+            "必": "http://www.kanjidamage.com//kanji/99-surely-%E5%BF%85"
+        },
+        {
+            "思": "http://www.kanjidamage.com//kanji/102-think-%E6%80%9D"
+        },
+        {
+            "忙": "http://www.kanjidamage.com//kanji/105-busy-%E5%BF%99"
+        },
+        {
+            "忘": "http://www.kanjidamage.com//kanji/106-forget-%E5%BF%98"
+        },
+        {
+            "悪": "http://www.kanjidamage.com//kanji/113-bad-%E6%82%AA"
+        },
+        {
+            "夕": "http://www.kanjidamage.com//kanji/114-evening-%E5%A4%95"
+        },
+        {
+            "多": "http://www.kanjidamage.com//kanji/115-many-%E5%A4%9A"
+        },
+        {
+            "夜": "http://www.kanjidamage.com//kanji/117-late-night-%E5%A4%9C"
+        },
+        {
+            "名": "http://www.kanjidamage.com//kanji/119-name-famous-%E5%90%8D"
+        },
+        {
+            "死": "http://www.kanjidamage.com//kanji/120-death-%E6%AD%BB"
+        },
+        {
+            "外": "http://www.kanjidamage.com//kanji/122-outside-%E5%A4%96"
+        },
+        {
+            "上": "http://www.kanjidamage.com//kanji/123-above-%E4%B8%8A"
+        },
+        {
+            "点": "http://www.kanjidamage.com//kanji/126-point-%E7%82%B9"
+        },
+        {
+            "宅": "http://www.kanjidamage.com//kanji/127-residence-%E5%AE%85"
+        },
+        {
+            "安": "http://www.kanjidamage.com//kanji/128-cheap-safe-%E5%AE%89"
+        },
+        {
+            "字": "http://www.kanjidamage.com//kanji/129-letter-%E5%AD%97"
+        },
+        {
+            "八": "http://www.kanjidamage.com//kanji/132-eight-%E5%85%AB"
+        },
+        {
+            "六": "http://www.kanjidamage.com//kanji/134-six-%E5%85%AD"
+        },
+        {
+            "公": "http://www.kanjidamage.com//kanji/137-public-%E5%85%AC"
+        },
+        {
+            "台": "http://www.kanjidamage.com//kanji/139-big-thing-counter-%E5%8F%B0"
+        },
+        {
+            "治": "http://www.kanjidamage.com//kanji/140-cure-%E6%B2%BB"
+        },
+        {
+            "始": "http://www.kanjidamage.com//kanji/141-begin-%E5%A7%8B"
+        },
+        {
+            "能": "http://www.kanjidamage.com//kanji/143-talent-%E8%83%BD"
+        },
+        {
+            "立": "http://www.kanjidamage.com//kanji/148-stand-up-%E7%AB%8B"
+        },
+        {
+            "泣": "http://www.kanjidamage.com//kanji/152-cry-%E6%B3%A3"
+        },
+        {
+            "位": "http://www.kanjidamage.com//kanji/153-rank-%E4%BD%8D"
+        },
+        {
+            "音": "http://www.kanjidamage.com//kanji/156-sound-%E9%9F%B3"
+        },
+        {
+            "暗": "http://www.kanjidamage.com//kanji/155-dark-%E6%9A%97"
+        },
+        {
+            "意": "http://www.kanjidamage.com//kanji/157-meaning-%E6%84%8F"
+        },
+        {
+            "億": "http://www.kanjidamage.com//kanji/158-a-hundred-million-%E5%84%84"
+        },
+        {
+            "門": "http://www.kanjidamage.com//kanji/160-gate-%E9%96%80"
+        },
+        {
+            "間": "http://www.kanjidamage.com//kanji/162-a-period-of-time-%E9%96%93"
+        },
+        {
+            "問": "http://www.kanjidamage.com//kanji/163-question-problem-%E5%95%8F"
+        },
+        {
+            "前": "http://www.kanjidamage.com//kanji/865-before-%E5%89%8D"
+        },
+        {
+            "切": "http://www.kanjidamage.com//kanji/165-cut-important-%E5%88%87"
+        },
+        {
+            "分": "http://www.kanjidamage.com//kanji/169-understand-divide-minute-%E5%88%86"
+        },
+        {
+            "力": "http://www.kanjidamage.com//kanji/175-strong-%E5%8A%9B"
+        },
+        {
+            "加": "http://www.kanjidamage.com//kanji/176-add-%E5%8A%A0"
+        },
+        {
+            "努": "http://www.kanjidamage.com//kanji/179-make-an-effort-%E5%8A%AA"
+        },
+        {
+            "男": "http://www.kanjidamage.com//kanji/180-man-%E7%94%B7"
+        },
+        {
+            "九": "http://www.kanjidamage.com//kanji/181-the-number-9-%E4%B9%9D"
+        },
+        {
+            "究": "http://www.kanjidamage.com//kanji/182-research-%E7%A9%B6"
+        },
+        {
+            "小": "http://www.kanjidamage.com//kanji/192-small-size-%E5%B0%8F"
+        },
+        {
+            "少": "http://www.kanjidamage.com//kanji/193-a-little-amount-%E5%B0%91"
+        },
+        {
+            "省": "http://www.kanjidamage.com//kanji/196-ministry-cut-down-on-%E7%9C%81"
+        },
+        {
+            "京": "http://www.kanjidamage.com//kanji/197-capital-%E4%BA%AC"
+        },
+        {
+            "宗": "http://www.kanjidamage.com//kanji/201-religion-%E5%AE%97"
+        },
+        {
+            "糸": "http://www.kanjidamage.com//kanji/209-string-%E7%B3%B8"
+        },
+        {
+            "線": "http://www.kanjidamage.com//kanji/211-line-%E7%B7%9A"
+        },
+        {
+            "細": "http://www.kanjidamage.com//kanji/213-slender-%E7%B4%B0"
+        },
+        {
+            "係": "http://www.kanjidamage.com//kanji/221-be-involved-with-%E4%BF%82"
+        },
+        {
+            "用": "http://www.kanjidamage.com//kanji/224-utilize-%E7%94%A8"
+        },
+        {
+            "宇": "http://www.kanjidamage.com//kanji/228-cosmos-%E5%AE%87"
+        },
+        {
+            "千": "http://www.kanjidamage.com//kanji/229-thousand-%E5%8D%83"
+        },
+        {
+            "話": "http://www.kanjidamage.com//kanji/231-conversation-%E8%A9%B1"
+        },
+        {
+            "活": "http://www.kanjidamage.com//kanji/232-vivid-lively-%E6%B4%BB"
+        },
+        {
+            "半": "http://www.kanjidamage.com//kanji/186-half-%E5%8D%8A"
+        },
+        {
+            "判": "http://www.kanjidamage.com//kanji/188-judgement-%E5%88%A4"
+        },
+        {
+            "平": "http://www.kanjidamage.com//kanji/187-equal-level-%E5%B9%B3"
+        },
+        {
+            "土": "http://www.kanjidamage.com//kanji/235-earth-%E5%9C%9F"
+        },
+        {
+            "黒": "http://www.kanjidamage.com//kanji/238-black-%E9%BB%92"
+        },
+        {
+            "仕": "http://www.kanjidamage.com//kanji/246-work-%E4%BB%95"
+        },
+        {
+            "結": "http://www.kanjidamage.com//kanji/250-bind-%E7%B5%90"
+        },
+        {
+            "誌": "http://www.kanjidamage.com//kanji/251-magazine-%E8%AA%8C"
+        },
+        {
+            "老": "http://www.kanjidamage.com//kanji/253-get-old-%E8%80%81"
+        },
+        {
+            "者": "http://www.kanjidamage.com//kanji/255-professional-%E8%80%85"
+        },
+        {
+            "著": "http://www.kanjidamage.com//kanji/256-author-%E8%91%97"
+        },
+        {
+            "暑": "http://www.kanjidamage.com//kanji/260-hot-place-%E6%9A%91"
+        },
+        {
+            "無": "http://www.kanjidamage.com//kanji/264-without-%E7%84%A1"
+        },
+        {
+            "準": "http://www.kanjidamage.com//kanji/268-prepare-criteria-%E6%BA%96"
+        },
+        {
+            "馬": "http://www.kanjidamage.com//kanji/270-horse-%E9%A6%AC"
+        },
+        {
+            "止": "http://www.kanjidamage.com//kanji/271-stop-%E6%AD%A2"
+        },
+        {
+            "歩": "http://www.kanjidamage.com//kanji/274-walk-%E6%AD%A9"
+        },
+        {
+            "足": "http://www.kanjidamage.com//kanji/277-foot-be-enough-%E8%B6%B3"
+        },
+        {
+            "正": "http://www.kanjidamage.com//kanji/280-correct-%E6%AD%A3"
+        },
+        {
+            "定": "http://www.kanjidamage.com//kanji/282-plan-%E5%AE%9A"
+        },
+        {
+            "走": "http://www.kanjidamage.com//kanji/286-run-%E8%B5%B0"
+        },
+        {
+            "駅": "http://www.kanjidamage.com//kanji/289-train-station-%E9%A7%85"
+        },
+        {
+            "昼": "http://www.kanjidamage.com//kanji/290-noon-%E6%98%BC"
+        },
+        {
+            "手": "http://www.kanjidamage.com//kanji/293-hand-%E6%89%8B"
+        },
+        {
+            "払": "http://www.kanjidamage.com//kanji/297-pay-%E6%89%95"
+        },
+        {
+            "招": "http://www.kanjidamage.com//kanji/302-beckon-%E6%8B%9B"
+        },
+        {
+            "接": "http://www.kanjidamage.com//kanji/305-directly-contact-%E6%8E%A5"
+        },
+        {
+            "耳": "http://www.kanjidamage.com//kanji/309-ear-%E8%80%B3"
+        },
+        {
+            "取": "http://www.kanjidamage.com//kanji/310-take-%E5%8F%96"
+        },
+        {
+            "最": "http://www.kanjidamage.com//kanji/311-most-%E6%9C%80"
+        },
+        {
+            "聞": "http://www.kanjidamage.com//kanji/1748-listen-ask-%E8%81%9E"
+        },
+        {
+            "竹": "http://www.kanjidamage.com//kanji/321-bamboo-%E7%AB%B9"
+        },
+        {
+            "簡": "http://www.kanjidamage.com//kanji/323-simplicity-%E7%B0%A1"
+        },
+        {
+            "作": "http://www.kanjidamage.com//kanji/325-make-%E4%BD%9C"
+        },
+        {
+            "昨": "http://www.kanjidamage.com//kanji/326-yesterday-%E6%98%A8"
+        },
+        {
+            "近": "http://www.kanjidamage.com//kanji/328-near-%E8%BF%91"
+        },
+        {
+            "達": "http://www.kanjidamage.com//kanji/332-pluraldelivery-%E9%81%94"
+        },
+        {
+            "進": "http://www.kanjidamage.com//kanji/333-progress-%E9%80%B2"
+        },
+        {
+            "述": "http://www.kanjidamage.com//kanji/334-refer-to-%E8%BF%B0"
+        },
+        {
+            "木": "http://www.kanjidamage.com//kanji/335-tree-%E6%9C%A8"
+        },
+        {
+            "林": "http://www.kanjidamage.com//kanji/336-grove-%E6%9E%97"
+        },
+        {
+            "森": "http://www.kanjidamage.com//kanji/337-forest-%E6%A3%AE"
+        },
+        {
+            "本": "http://www.kanjidamage.com//kanji/338-book-the-real-%E6%9C%AC"
+        },
+        {
+            "体": "http://www.kanjidamage.com//kanji/339-body-%E4%BD%93"
+        },
+        {
+            "休": "http://www.kanjidamage.com//kanji/340-rest-%E4%BC%91"
+        },
+        {
+            "新": "http://www.kanjidamage.com//kanji/345-new-%E6%96%B0"
+        },
+        {
+            "集": "http://www.kanjidamage.com//kanji/346-collect-%E9%9B%86"
+        },
+        {
+            "相": "http://www.kanjidamage.com//kanji/350-partner-%E7%9B%B8"
+        },
+        {
+            "想": "http://www.kanjidamage.com//kanji/352-ideaimagination-%E6%83%B3"
+        },
+        {
+            "禁": "http://www.kanjidamage.com//kanji/353-prohibition-%E7%A6%81"
+        },
+        {
+            "果": "http://www.kanjidamage.com//kanji/354-fruit-result-%E6%9E%9C"
+        },
+        {
+            "課": "http://www.kanjidamage.com//kanji/355-section-or-lesson-%E8%AA%B2"
+        },
+        {
+            "東": "http://www.kanjidamage.com//kanji/357-east-%E6%9D%B1"
+        },
+        {
+            "練": "http://www.kanjidamage.com//kanji/358-practice-%E7%B7%B4"
+        },
+        {
+            "案": "http://www.kanjidamage.com//kanji/359-guideproposal-%E6%A1%88"
+        },
+        {
+            "染": "http://www.kanjidamage.com//kanji/365-dye-%E6%9F%93"
+        },
+        {
+            "雑": "http://www.kanjidamage.com//kanji/366-miscellaneous-random-%E9%9B%91"
+        },
+        {
+            "和": "http://www.kanjidamage.com//kanji/369-peace-japan-%E5%92%8C"
+        },
+        {
+            "私": "http://www.kanjidamage.com//kanji/371-me-private-%E7%A7%81"
+        },
+        {
+            "秒": "http://www.kanjidamage.com//kanji/372-one-second-%E7%A7%92"
+        },
+        {
+            "移": "http://www.kanjidamage.com//kanji/373-transfer-%E7%A7%BB"
+        },
+        {
+            "利": "http://www.kanjidamage.com//kanji/374-handy-%E5%88%A9"
+        },
+        {
+            "季": "http://www.kanjidamage.com//kanji/375-season-%E5%AD%A3"
+        },
+        {
+            "秋": "http://www.kanjidamage.com//kanji/378-fall-%E7%A7%8B"
+        },
+        {
+            "妹": "http://www.kanjidamage.com//kanji/382-little-sister-%E5%A6%B9"
+        },
+        {
+            "味": "http://www.kanjidamage.com//kanji/383-flavor-%E5%91%B3"
+        },
+        {
+            "米": "http://www.kanjidamage.com//kanji/384-rice-america-%E7%B1%B3"
+        },
+        {
+            "断": "http://www.kanjidamage.com//kanji/387-decisionjudgementrefuse-%E6%96%AD"
+        },
+        {
+            "来": "http://www.kanjidamage.com//kanji/394-comefuture-%E6%9D%A5"
+        },
+        {
+            "番": "http://www.kanjidamage.com//kanji/395-number-%E7%95%AA"
+        },
+        {
+            "大": "http://www.kanjidamage.com//kanji/397-big-%E5%A4%A7"
+        },
+        {
+            "奥": "http://www.kanjidamage.com//kanji/398-waaay-in-the-back-%E5%A5%A5"
+        },
+        {
+            "器": "http://www.kanjidamage.com//kanji/403-instrument-%E5%99%A8"
+        },
+        {
+            "映": "http://www.kanjidamage.com//kanji/406-project-reflect-%E6%98%A0"
+        },
+        {
+            "英": "http://www.kanjidamage.com//kanji/407-heroic-%E8%8B%B1"
+        },
+        {
+            "犬": "http://www.kanjidamage.com//kanji/408-dog-%E7%8A%AC"
+        },
+        {
+            "然": "http://www.kanjidamage.com//kanji/411-nature-%E7%84%B6"
+        },
+        {
+            "太": "http://www.kanjidamage.com//kanji/413-fat-%E5%A4%AA"
+        },
+        {
+            "漢": "http://www.kanjidamage.com//kanji/421-chinese-%E6%BC%A2"
+        },
+        {
+            "難": "http://www.kanjidamage.com//kanji/422-difficult-%E9%9B%A3"
+        },
+        {
+            "勤": "http://www.kanjidamage.com//kanji/423-be-employed-at-%E5%8B%A4"
+        },
+        {
+            "因": "http://www.kanjidamage.com//kanji/432-origin-%E5%9B%A0"
+        },
+        {
+            "困": "http://www.kanjidamage.com//kanji/435-trouble-%E5%9B%B0"
+        },
+        {
+            "回": "http://www.kanjidamage.com//kanji/437-rotate-times-%E5%9B%9E"
+        },
+        {
+            "個": "http://www.kanjidamage.com//kanji/440-individual-%E5%80%8B"
+        },
+        {
+            "王": "http://www.kanjidamage.com//kanji/444-king-%E7%8E%8B"
+        },
+        {
+            "国": "http://www.kanjidamage.com//kanji/438-country-%E5%9B%BD"
+        },
+        {
+            "理": "http://www.kanjidamage.com//kanji/445-reason-%E7%90%86"
+        },
+        {
+            "任": "http://www.kanjidamage.com//kanji/446-have-responsibility-for-%E4%BB%BB"
+        },
+        {
+            "望": "http://www.kanjidamage.com//kanji/449-desire-%E6%9C%9B"
+        },
+        {
+            "主": "http://www.kanjidamage.com//kanji/454-mastermainly-%E4%B8%BB"
+        },
+        {
+            "喫": "http://www.kanjidamage.com//kanji/456-enjoy-a-drink-and-a-smoke-%E5%96%AB"
+        },
+        {
+            "注": "http://www.kanjidamage.com//kanji/458-pour-be-careful-%E6%B3%A8"
+        },
+        {
+            "住": "http://www.kanjidamage.com//kanji/460-dwell-%E4%BD%8F"
+        },
+        {
+            "害": "http://www.kanjidamage.com//kanji/462-damage-%E5%AE%B3"
+        },
+        {
+            "青": "http://www.kanjidamage.com//kanji/466-blue-%E9%9D%92"
+        },
+        {
+            "晴": "http://www.kanjidamage.com//kanji/470-weather-get-good-now-%E6%99%B4"
+        },
+        {
+            "情": "http://www.kanjidamage.com//kanji/471-emotion-%E6%83%85"
+        },
+        {
+            "生": "http://www.kanjidamage.com//kanji/473-life-birth-%E7%94%9F"
+        },
+        {
+            "性": "http://www.kanjidamage.com//kanji/475-sex-essential-nature-%E6%80%A7"
+        },
+        {
+            "遊": "http://www.kanjidamage.com//kanji/1753-play-around-%E9%81%8A"
+        },
+        {
+            "母": "http://www.kanjidamage.com//kanji/482-your-moms-%E6%AF%8D"
+        },
+        {
+            "毎": "http://www.kanjidamage.com//kanji/484-every-%E6%AF%8E"
+        },
+        {
+            "海": "http://www.kanjidamage.com//kanji/486-ocean-%E6%B5%B7"
+        },
+        {
+            "中": "http://www.kanjidamage.com//kanji/489-middle-%E4%B8%AD"
+        },
+        {
+            "所": "http://www.kanjidamage.com//kanji/506-area-attribute-%E6%89%80"
+        },
+        {
+            "見": "http://www.kanjidamage.com//kanji/520-look-%E8%A6%8B"
+        },
+        {
+            "境": "http://www.kanjidamage.com//kanji/523-border-%E5%A2%83"
+        },
+        {
+            "現": "http://www.kanjidamage.com//kanji/524-present-time-%E7%8F%BE"
+        },
+        {
+            "親": "http://www.kanjidamage.com//kanji/525-parentskindness-%E8%A6%AA"
+        },
+        {
+            "兄": "http://www.kanjidamage.com//kanji/526-older-brother-%E5%85%84"
+        },
+        {
+            "競": "http://www.kanjidamage.com//kanji/529-contest-%E7%AB%B6"
+        },
+        {
+            "買": "http://www.kanjidamage.com//kanji/533-buy-%E8%B2%B7"
+        },
+        {
+            "質": "http://www.kanjidamage.com//kanji/540-quality-%E8%B3%AA"
+        },
+        {
+            "員": "http://www.kanjidamage.com//kanji/544-clerk-%E5%93%A1"
+        },
+        {
+            "側": "http://www.kanjidamage.com//kanji/547-side-of-something-%E5%81%B4"
+        },
+        {
+            "責": "http://www.kanjidamage.com//kanji/551-condemn-%E8%B2%AC"
+        },
+        {
+            "負": "http://www.kanjidamage.com//kanji/559-lose-%E8%B2%A0"
+        },
+        {
+            "魚": "http://www.kanjidamage.com//kanji/560-fish-%E9%AD%9A"
+        },
+        {
+            "売": "http://www.kanjidamage.com//kanji/564-sell-%E5%A3%B2"
+        },
+        {
+            "続": "http://www.kanjidamage.com//kanji/565-continue-%E7%B6%9A"
+        },
+        {
+            "読": "http://www.kanjidamage.com//kanji/566-read-%E8%AA%AD"
+        },
+        {
+            "窓": "http://www.kanjidamage.com//kanji/567-window-%E7%AA%93"
+        },
+        {
+            "探": "http://www.kanjidamage.com//kanji/568-look-for-%E6%8E%A2"
+        },
+        {
+            "深": "http://www.kanjidamage.com//kanji/569-deep-%E6%B7%B1"
+        },
+        {
+            "具": "http://www.kanjidamage.com//kanji/570-tool-%E5%85%B7"
+        },
+        {
+            "元": "http://www.kanjidamage.com//kanji/571-original-%E5%85%83"
+        },
+        {
+            "完": "http://www.kanjidamage.com//kanji/572-complete-%E5%AE%8C"
+        },
+        {
+            "西": "http://www.kanjidamage.com//kanji/574-west-%E8%A5%BF"
+        },
+        {
+            "酒": "http://www.kanjidamage.com//kanji/578-liquor-%E9%85%92"
+        },
+        {
+            "価": "http://www.kanjidamage.com//kanji/580-value-%E4%BE%A1"
+        },
+        {
+            "要": "http://www.kanjidamage.com//kanji/581-important-%E8%A6%81"
+        },
+        {
+            "煙": "http://www.kanjidamage.com//kanji/583-smoky-%E7%85%99"
+        },
+        {
+            "才": "http://www.kanjidamage.com//kanji/1744-skill-age-%E6%89%8D"
+        },
+        {
+            "閉": "http://www.kanjidamage.com//kanji/587-close-store-%E9%96%89"
+        },
+        {
+            "夫": "http://www.kanjidamage.com//kanji/588-husband-%E5%A4%AB"
+        },
+        {
+            "賛": "http://www.kanjidamage.com//kanji/589-agree-%E8%B3%9B"
+        },
+        {
+            "単": "http://www.kanjidamage.com//kanji/596-merely-%E5%8D%98"
+        },
+        {
+            "消": "http://www.kanjidamage.com//kanji/601-erase-%E6%B6%88"
+        },
+        {
+            "受": "http://www.kanjidamage.com//kanji/604-receive-%E5%8F%97"
+        },
+        {
+            "授": "http://www.kanjidamage.com//kanji/606-instruct-%E6%8E%88"
+        },
+        {
+            "各": "http://www.kanjidamage.com//kanji/609-each-%E5%90%84"
+        },
+        {
+            "愛": "http://www.kanjidamage.com//kanji/610-love-%E6%84%9B"
+        },
+        {
+            "客": "http://www.kanjidamage.com//kanji/611-customer-%E5%AE%A2"
+        },
+        {
+            "落": "http://www.kanjidamage.com//kanji/612-falldrop-%E8%90%BD"
+        },
+        {
+            "格": "http://www.kanjidamage.com//kanji/613-character-aspect-%E6%A0%BC"
+        },
+        {
+            "絡": "http://www.kanjidamage.com//kanji/614-get-entangled-%E7%B5%A1"
+        },
+        {
+            "略": "http://www.kanjidamage.com//kanji/615-abbreviation-%E7%95%A5"
+        },
+        {
+            "条": "http://www.kanjidamage.com//kanji/617-clause-%E6%9D%A1"
+        },
+        {
+            "緑": "http://www.kanjidamage.com//kanji/632-green-%E7%B7%91"
+        },
+        {
+            "急": "http://www.kanjidamage.com//kanji/633-urgent-%E6%80%A5"
+        },
+        {
+            "当": "http://www.kanjidamage.com//kanji/634-hit-the-target-%E5%BD%93"
+        },
+        {
+            "帰": "http://www.kanjidamage.com//kanji/638-go-back-home-%E5%B8%B0"
+        },
+        {
+            "曜": "http://www.kanjidamage.com//kanji/644-day-of-the-week-%E6%9B%9C"
+        },
+        {
+            "工": "http://www.kanjidamage.com//kanji/645-craft-or-industry-%E5%B7%A5"
+        },
+        {
+            "空": "http://www.kanjidamage.com//kanji/646-air-%E7%A9%BA"
+        },
+        {
+            "功": "http://www.kanjidamage.com//kanji/648-success-%E5%8A%9F"
+        },
+        {
+            "写": "http://www.kanjidamage.com//kanji/652-copy-%E5%86%99"
+        },
+        {
+            "汚": "http://www.kanjidamage.com//kanji/653-dirty-%E6%B1%9A"
+        },
+        {
+            "号": "http://www.kanjidamage.com//kanji/656-id-number-%E5%8F%B7"
+        },
+        {
+            "考": "http://www.kanjidamage.com//kanji/657-consider-%E8%80%83"
+        },
+        {
+            "式": "http://www.kanjidamage.com//kanji/659-ritual-%E5%BC%8F"
+        },
+        {
+            "試": "http://www.kanjidamage.com//kanji/661-attempt-to-do-%E8%A9%A6"
+        },
+        {
+            "代": "http://www.kanjidamage.com//kanji/663-generation-instead-of-%E4%BB%A3"
+        },
+        {
+            "貸": "http://www.kanjidamage.com//kanji/664-lend-%E8%B2%B8"
+        },
+        {
+            "戦": "http://www.kanjidamage.com//kanji/672-fight-%E6%88%A6"
+        },
+        {
+            "機": "http://www.kanjidamage.com//kanji/675-machine-%E6%A9%9F"
+        },
+        {
+            "職": "http://www.kanjidamage.com//kanji/677-employment-%E8%81%B7"
+        },
+        {
+            "識": "http://www.kanjidamage.com//kanji/679-be-conscious-%E8%AD%98"
+        },
+        {
+            "区": "http://www.kanjidamage.com//kanji/680-ward-%E5%8C%BA"
+        },
+        {
+            "四": "http://www.kanjidamage.com//kanji/694-the-numeral-4-%E5%9B%9B"
+        },
+        {
+            "欠": "http://www.kanjidamage.com//kanji/697-lack-%E6%AC%A0"
+        },
+        {
+            "欧": "http://www.kanjidamage.com//kanji/699-europe-%E6%AC%A7"
+        },
+        {
+            "歌": "http://www.kanjidamage.com//kanji/700-sing-%E6%AD%8C"
+        },
+        {
+            "数": "http://www.kanjidamage.com//kanji/703-integer-to-count-%E6%95%B0"
+        },
+        {
+            "政": "http://www.kanjidamage.com//kanji/708-politics-%E6%94%BF"
+        },
+        {
+            "教": "http://www.kanjidamage.com//kanji/710-teach-%E6%95%99"
+        },
+        {
+            "適": "http://www.kanjidamage.com//kanji/716-suitable-%E9%81%A9"
+        },
+        {
+            "起": "http://www.kanjidamage.com//kanji/721-wake-up-occur-%E8%B5%B7"
+        },
+        {
+            "記": "http://www.kanjidamage.com//kanji/723-diary-%E8%A8%98"
+        },
+        {
+            "配": "http://www.kanjidamage.com//kanji/724-distribute-%E9%85%8D"
+        },
+        {
+            "求": "http://www.kanjidamage.com//kanji/725-demandask-%E6%B1%82"
+        },
+        {
+            "球": "http://www.kanjidamage.com//kanji/727-sphere-%E7%90%83"
+        },
+        {
+            "歴": "http://www.kanjidamage.com//kanji/731-chronicle-%E6%AD%B4"
+        },
+        {
+            "備": "http://www.kanjidamage.com//kanji/734-furnish-%E5%82%99"
+        },
+        {
+            "産": "http://www.kanjidamage.com//kanji/736-childbirth-production-of-things-%E7%94%A3"
+        },
+        {
+            "原": "http://www.kanjidamage.com//kanji/737-original-high-plain-%E5%8E%9F"
+        },
+        {
+            "反": "http://www.kanjidamage.com//kanji/739-anti-%E5%8F%8D"
+        },
+        {
+            "返": "http://www.kanjidamage.com//kanji/740-return-or-respond-%E8%BF%94"
+        },
+        {
+            "成": "http://www.kanjidamage.com//kanji/745-become-%E6%88%90"
+        },
+        {
+            "気": "http://www.kanjidamage.com//kanji/983-mood-%E6%B0%97"
+        },
+        {
+            "決": "http://www.kanjidamage.com//kanji/984-decide-%E6%B1%BA"
+        },
+        {
+            "減": "http://www.kanjidamage.com//kanji/754-decrease-%E6%B8%9B"
+        },
+        {
+            "感": "http://www.kanjidamage.com//kanji/755-feeling-%E6%84%9F"
+        },
+        {
+            "同": "http://www.kanjidamage.com//kanji/974-same-%E5%90%8C"
+        },
+        {
+            "旅": "http://www.kanjidamage.com//kanji/758-trip-%E6%97%85"
+        },
+        {
+            "遠": "http://www.kanjidamage.com//kanji/762-far-%E9%81%A0"
+        },
+        {
+            "園": "http://www.kanjidamage.com//kanji/763-public-park-%E5%9C%92"
+        },
+        {
+            "環": "http://www.kanjidamage.com//kanji/764-environment-%E7%92%B0"
+        },
+        {
+            "表": "http://www.kanjidamage.com//kanji/767-express-%E8%A1%A8"
+        },
+        {
+            "良": "http://www.kanjidamage.com//kanji/775-good-%E8%89%AF"
+        },
+        {
+            "階": "http://www.kanjidamage.com//kanji/786-story-of-a-building-%E9%9A%8E"
+        },
+        {
+            "院": "http://www.kanjidamage.com//kanji/788-institution-%E9%99%A2"
+        },
+        {
+            "都": "http://www.kanjidamage.com//kanji/791-major-city-%E9%83%BD"
+        },
+        {
+            "部": "http://www.kanjidamage.com//kanji/795-section-%E9%83%A8"
+        },
+        {
+            "倍": "http://www.kanjidamage.com//kanji/797-double-%E5%80%8D"
+        },
+        {
+            "寝": "http://www.kanjidamage.com//kanji/802-go-to-bed-%E5%AF%9D"
+        },
+        {
+            "北": "http://www.kanjidamage.com//kanji/803-north-%E5%8C%97"
+        },
+        {
+            "告": "http://www.kanjidamage.com//kanji/807-inform-%E5%91%8A"
+        },
+        {
+            "先": "http://www.kanjidamage.com//kanji/810-earlier-the-tip-%E5%85%88"
+        },
+        {
+            "洗": "http://www.kanjidamage.com//kanji/811-wash-%E6%B4%97"
+        },
+        {
+            "百": "http://www.kanjidamage.com//kanji/814-hundred-%E7%99%BE"
+        },
+        {
+            "宿": "http://www.kanjidamage.com//kanji/817-lodge-at-%E5%AE%BF"
+        },
+        {
+            "石": "http://www.kanjidamage.com//kanji/819-rock-%E7%9F%B3"
+        },
+        {
+            "山": "http://www.kanjidamage.com//kanji/823-mountain-%E5%B1%B1"
+        },
+        {
+            "島": "http://www.kanjidamage.com//kanji/835-island-%E5%B3%B6"
+        },
+        {
+            "喜": "http://www.kanjidamage.com//kanji/838-rejoice-%E5%96%9C"
+        },
+        {
+            "頭": "http://www.kanjidamage.com//kanji/841-head-%E9%A0%AD"
+        },
+        {
+            "夏": "http://www.kanjidamage.com//kanji/842-summer-%E5%A4%8F"
+        },
+        {
+            "願": "http://www.kanjidamage.com//kanji/843-beseech-%E9%A1%98"
+        },
+        {
+            "類": "http://www.kanjidamage.com//kanji/848-categorytype-%E9%A1%9E"
+        },
+        {
+            "題": "http://www.kanjidamage.com//kanji/849-topic-%E9%A1%8C"
+        },
+        {
+            "川": "http://www.kanjidamage.com//kanji/853-river-%E5%B7%9D"
+        },
+        {
+            "州": "http://www.kanjidamage.com//kanji/855-state-%E5%B7%9E"
+        },
+        {
+            "道": "http://www.kanjidamage.com//kanji/861-street-%E9%81%93"
+        },
+        {
+            "説": "http://www.kanjidamage.com//kanji/863-explain-%E8%AA%AC"
+        },
+        {
+            "南": "http://www.kanjidamage.com//kanji/869-south-%E5%8D%97"
+        },
+        {
+            "美": "http://www.kanjidamage.com//kanji/965-beauty-%E7%BE%8E"
+        },
+        {
+            "洋": "http://www.kanjidamage.com//kanji/872-pacific-ocean-the-west-%E6%B4%8B"
+        },
+        {
+            "遅": "http://www.kanjidamage.com//kanji/873-slow-late-%E9%81%85"
+        },
+        {
+            "着": "http://www.kanjidamage.com//kanji/875-wear-arrive-%E7%9D%80"
+        },
+        {
+            "義": "http://www.kanjidamage.com//kanji/877-righteousness-%E7%BE%A9"
+        },
+        {
+            "様": "http://www.kanjidamage.com//kanji/879-important-person-%E6%A7%98"
+        },
+        {
+            "天": "http://www.kanjidamage.com//kanji/880-heaven-%E5%A4%A9"
+        },
+        {
+            "笑": "http://www.kanjidamage.com//kanji/882-laugh-%E7%AC%91"
+        },
+        {
+            "送": "http://www.kanjidamage.com//kanji/885-send-%E9%80%81"
+        },
+        {
+            "関": "http://www.kanjidamage.com//kanji/887-connected-to-%E9%96%A2"
+        },
+        {
+            "勝": "http://www.kanjidamage.com//kanji/891-win-%E5%8B%9D"
+        },
+        {
+            "弟": "http://www.kanjidamage.com//kanji/893-younger-brother-%E5%BC%9F"
+        },
+        {
+            "第": "http://www.kanjidamage.com//kanji/894-rank-or-number-in-series-%E7%AC%AC"
+        },
+        {
+            "費": "http://www.kanjidamage.com//kanji/896-expenses-%E8%B2%BB"
+        },
+        {
+            "強": "http://www.kanjidamage.com//kanji/897-burly-%E5%BC%B7"
+        },
+        {
+            "引": "http://www.kanjidamage.com//kanji/898-pull-%E5%BC%95"
+        },
+        {
+            "赤": "http://www.kanjidamage.com//kanji/900-red-%E8%B5%A4"
+        },
+        {
+            "変": "http://www.kanjidamage.com//kanji/904-change-%E5%A4%89"
+        },
+        {
+            "長": "http://www.kanjidamage.com//kanji/905-long-boss-%E9%95%B7"
+        },
+        {
+            "険": "http://www.kanjidamage.com//kanji/792-steep-risky-%E9%99%BA"
+        },
+        {
+            "験": "http://www.kanjidamage.com//kanji/419-test-%E9%A8%93"
+        },
+        {
+            "金": "http://www.kanjidamage.com//kanji/909-gold-%E9%87%91"
+        },
+        {
+            "銀": "http://www.kanjidamage.com//kanji/915-silver-%E9%8A%80"
+        },
+        {
+            "茶": "http://www.kanjidamage.com//kanji/917-tea-%E8%8C%B6"
+        },
+        {
+            "全": "http://www.kanjidamage.com//kanji/919-all-%E5%85%A8"
+        },
+        {
+            "食": "http://www.kanjidamage.com//kanji/921-eat-%E9%A3%9F"
+        },
+        {
+            "飲": "http://www.kanjidamage.com//kanji/922-drink-%E9%A3%B2"
+        },
+        {
+            "飯": "http://www.kanjidamage.com//kanji/924-rice-meal-%E9%A3%AF"
+        },
+        {
+            "界": "http://www.kanjidamage.com//kanji/935-the-world-%E7%95%8C"
+        },
+        {
+            "合": "http://www.kanjidamage.com//kanji/936-to-suit-%E5%90%88"
+        },
+        {
+            "給": "http://www.kanjidamage.com//kanji/937-provide-%E7%B5%A6"
+        },
+        {
+            "答": "http://www.kanjidamage.com//kanji/941-answer-%E7%AD%94"
+        },
+        {
+            "今": "http://www.kanjidamage.com//kanji/943-now-%E4%BB%8A"
+        },
+        {
+            "念": "http://www.kanjidamage.com//kanji/945-concern-%E5%BF%B5"
+        },
+        {
+            "命": "http://www.kanjidamage.com//kanji/949-life-%E5%91%BD"
+        },
+        {
+            "冷": "http://www.kanjidamage.com//kanji/951-cold-thing-%E5%86%B7"
+        },
+        {
+            "冬": "http://www.kanjidamage.com//kanji/954-winter-%E5%86%AC"
+        },
+        {
+            "終": "http://www.kanjidamage.com//kanji/955-end-%E7%B5%82"
+        },
+        {
+            "次": "http://www.kanjidamage.com//kanji/956-next-%E6%AC%A1"
+        },
+        {
+            "資": "http://www.kanjidamage.com//kanji/958-capital-as-in-%E8%B3%87"
+        },
+        {
+            "寒": "http://www.kanjidamage.com//kanji/960-cold-%E5%AF%92"
+        },
+        {
+            "春": "http://www.kanjidamage.com//kanji/962-spring-sexy-%E6%98%A5"
+        },
+        {
+            "実": "http://www.kanjidamage.com//kanji/964-truth-%E5%AE%9F"
+        },
+        {
+            "論": "http://www.kanjidamage.com//kanji/972-make-a-case-for-%E8%AB%96"
+        },
+        {
+            "村": "http://www.kanjidamage.com//kanji/994-hicktown-%E6%9D%91"
+        },
+        {
+            "寺": "http://www.kanjidamage.com//kanji/1000-temple-%E5%AF%BA"
+        },
+        {
+            "時": "http://www.kanjidamage.com//kanji/1002-time-%E6%99%82"
+        },
+        {
+            "持": "http://www.kanjidamage.com//kanji/1003-hold-%E6%8C%81"
+        },
+        {
+            "等": "http://www.kanjidamage.com//kanji/1005-equal-etcplural-%E7%AD%89"
+        },
+        {
+            "父": "http://www.kanjidamage.com//kanji/1008-dad-%E7%88%B6"
+        },
+        {
+            "交": "http://www.kanjidamage.com//kanji/1009-combine-%E4%BA%A4"
+        },
+        {
+            "対": "http://www.kanjidamage.com//kanji/1010-against-%E5%AF%BE"
+        },
+        {
+            "校": "http://www.kanjidamage.com//kanji/1011-school-%E6%A0%A1"
+        },
+        {
+            "郊": "http://www.kanjidamage.com//kanji/1012-suburb-%E9%83%8A"
+        },
+        {
+            "専": "http://www.kanjidamage.com//kanji/1016-specialty-%E5%B0%82"
+        },
+        {
+            "画": "http://www.kanjidamage.com//kanji/1039-a-drawing-%E7%94%BB"
+        },
+        {
+            "両": "http://www.kanjidamage.com//kanji/1040-both-%E4%B8%A1"
+        },
+        {
+            "満": "http://www.kanjidamage.com//kanji/1041-full-%E6%BA%80"
+        },
+        {
+            "出": "http://www.kanjidamage.com//kanji/1024-pull-out-hand-over-%E5%87%BA"
+        },
+        {
+            "世": "http://www.kanjidamage.com//kanji/1029-society-%E4%B8%96"
+        },
+        {
+            "葉": "http://www.kanjidamage.com//kanji/1030-leaf-%E8%91%89"
+        },
+        {
+            "疑": "http://www.kanjidamage.com//kanji/1044-doubt-%E7%96%91"
+        },
+        {
+            "短": "http://www.kanjidamage.com//kanji/1046-short-brief-%E7%9F%AD"
+        },
+        {
+            "医": "http://www.kanjidamage.com//kanji/1047-doctor-%E5%8C%BB"
+        },
+        {
+            "族": "http://www.kanjidamage.com//kanji/1048-family-%E6%97%8F"
+        },
+        {
+            "候": "http://www.kanjidamage.com//kanji/1049-climatecandidate-%E5%80%99"
+        },
+        {
+            "知": "http://www.kanjidamage.com//kanji/1050-know-%E7%9F%A5"
+        },
+        {
+            "失": "http://www.kanjidamage.com//kanji/1051-miss-out-on-%E5%A4%B1"
+        },
+        {
+            "鉄": "http://www.kanjidamage.com//kanji/1052-iron-%E9%89%84"
+        },
+        {
+            "観": "http://www.kanjidamage.com//kanji/1054-point-of-view-%E8%A6%B3"
+        },
+        {
+            "車": "http://www.kanjidamage.com//kanji/1058-car-%E8%BB%8A"
+        },
+        {
+            "重": "http://www.kanjidamage.com//kanji/1059-heavy-overlap-%E9%87%8D"
+        },
+        {
+            "乗": "http://www.kanjidamage.com//kanji/1061-ride-a-vehicle-%E4%B9%97"
+        },
+        {
+            "連": "http://www.kanjidamage.com//kanji/1070-take-with-inform-of-%E9%80%A3"
+        },
+        {
+            "運": "http://www.kanjidamage.com//kanji/1071-carry-luck-%E9%81%8B"
+        },
+        {
+            "郵": "http://www.kanjidamage.com//kanji/1075-mail-%E9%83%B5"
+        },
+        {
+            "種": "http://www.kanjidamage.com//kanji/1077-seed-type-or-kind-%E7%A8%AE"
+        },
+        {
+            "動": "http://www.kanjidamage.com//kanji/1078-movement-%E5%8B%95"
+        },
+        {
+            "働": "http://www.kanjidamage.com//kanji/1079-to-do-your-job-%E5%83%8D"
+        },
+        {
+            "非": "http://www.kanjidamage.com//kanji/1081-injustice-mistake-%E9%9D%9E"
+        },
+        {
+            "悲": "http://www.kanjidamage.com//kanji/1083-sad-%E6%82%B2"
+        },
+        {
+            "軽": "http://www.kanjidamage.com//kanji/1088-lightweight-%E8%BB%BD"
+        },
+        {
+            "経": "http://www.kanjidamage.com//kanji/1089-experience-%E7%B5%8C"
+        },
+        {
+            "友": "http://www.kanjidamage.com//kanji/1105-friend-%E5%8F%8B"
+        },
+        {
+            "希": "http://www.kanjidamage.com//kanji/1095-request-uncommon-%E5%B8%8C"
+        },
+        {
+            "右": "http://www.kanjidamage.com//kanji/1097-right-%E5%8F%B3"
+        },
+        {
+            "左": "http://www.kanjidamage.com//kanji/1098-left-%E5%B7%A6"
+        },
+        {
+            "若": "http://www.kanjidamage.com//kanji/1099-young-%E8%8B%A5"
+        },
+        {
+            "有": "http://www.kanjidamage.com//kanji/1100-exist-%E6%9C%89"
+        },
+        {
+            "差": "http://www.kanjidamage.com//kanji/874-discriminate-%E5%B7%AE"
+        },
+        {
+            "在": "http://www.kanjidamage.com//kanji/1103-be-real-%E5%9C%A8"
+        },
+        {
+            "存": "http://www.kanjidamage.com//kanji/1104-be-aware-of-%E5%AD%98"
+        },
+        {
+            "暖": "http://www.kanjidamage.com//kanji/1109-warm-place-%E6%9A%96"
+        },
+        {
+            "顔": "http://www.kanjidamage.com//kanji/1116-face-%E9%A1%94"
+        },
+        {
+            "参": "http://www.kanjidamage.com//kanji/1117-admit-defeat-visit-%E5%8F%82"
+        },
+        {
+            "珍": "http://www.kanjidamage.com//kanji/1121-very-rare-%E7%8F%8D"
+        },
+        {
+            "府": "http://www.kanjidamage.com//kanji/1129-government-%E5%BA%9C"
+        },
+        {
+            "店": "http://www.kanjidamage.com//kanji/1132-shop-%E5%BA%97"
+        },
+        {
+            "座": "http://www.kanjidamage.com//kanji/1133-sit-%E5%BA%A7"
+        },
+        {
+            "広": "http://www.kanjidamage.com//kanji/1139-wide-%E5%BA%83"
+        },
+        {
+            "席": "http://www.kanjidamage.com//kanji/1143-seat-%E5%B8%AD"
+        },
+        {
+            "度": "http://www.kanjidamage.com//kanji/1144-times-%E5%BA%A6"
+        },
+        {
+            "渡": "http://www.kanjidamage.com//kanji/1145-pass-by-%E6%B8%A1"
+        },
+        {
+            "紙": "http://www.kanjidamage.com//kanji/1161-paper-%E7%B4%99"
+        },
+        {
+            "低": "http://www.kanjidamage.com//kanji/1162-low-%E4%BD%8E"
+        },
+        {
+            "婚": "http://www.kanjidamage.com//kanji/1163-marriage-%E5%A9%9A"
+        },
+        {
+            "民": "http://www.kanjidamage.com//kanji/1165-folk-%E6%B0%91"
+        },
+        {
+            "眠": "http://www.kanjidamage.com//kanji/1166-sleepy-%E7%9C%A0"
+        },
+        {
+            "登": "http://www.kanjidamage.com//kanji/1179-climb-%E7%99%BB"
+        },
+        {
+            "祭": "http://www.kanjidamage.com//kanji/1180-festival-%E7%A5%AD"
+        },
+        {
+            "際": "http://www.kanjidamage.com//kanji/1181-edge-%E9%9A%9B"
+        },
+        {
+            "察": "http://www.kanjidamage.com//kanji/1182-police-%E5%AF%9F"
+        },
+        {
+            "開": "http://www.kanjidamage.com//kanji/1185-open-%E9%96%8B"
+        },
+        {
+            "発": "http://www.kanjidamage.com//kanji/1186-launch-%E7%99%BA"
+        },
+        {
+            "研": "http://www.kanjidamage.com//kanji/1189-polish-sharpen-%E7%A0%94"
+        },
+        {
+            "午": "http://www.kanjidamage.com//kanji/1192-noon-%E5%8D%88"
+        },
+        {
+            "許": "http://www.kanjidamage.com//kanji/1193-allow-%E8%A8%B1"
+        },
+        {
+            "牛": "http://www.kanjidamage.com//kanji/1194-cow-%E7%89%9B"
+        },
+        {
+            "件": "http://www.kanjidamage.com//kanji/1195-incident-%E4%BB%B6"
+        },
+        {
+            "特": "http://www.kanjidamage.com//kanji/1196-special-%E7%89%B9"
+        },
+        {
+            "解": "http://www.kanjidamage.com//kanji/1199-solve-untie-%E8%A7%A3"
+        },
+        {
+            "物": "http://www.kanjidamage.com//kanji/1201-animal-thing-%E7%89%A9"
+        },
+        {
+            "易": "http://www.kanjidamage.com//kanji/1203-easy-%E6%98%93"
+        },
+        {
+            "場": "http://www.kanjidamage.com//kanji/1208-place-%E5%A0%B4"
+        },
+        {
+            "色": "http://www.kanjidamage.com//kanji/1210-color-%E8%89%B2"
+        },
+        {
+            "晩": "http://www.kanjidamage.com//kanji/1213-night-%E6%99%A9"
+        },
+        {
+            "絶": "http://www.kanjidamage.com//kanji/1214-extinct-%E7%B5%B6"
+        },
+        {
+            "勉": "http://www.kanjidamage.com//kanji/1215-try-hard-%E5%8B%89"
+        },
+        {
+            "家": "http://www.kanjidamage.com//kanji/1223-home-%E5%AE%B6"
+        },
+        {
+            "行": "http://www.kanjidamage.com//kanji/1229-go-%E8%A1%8C"
+        },
+        {
+            "徒": "http://www.kanjidamage.com//kanji/1232-pupil-follower-%E5%BE%92"
+        },
+        {
+            "後": "http://www.kanjidamage.com//kanji/1234-afterwards-behind-%E5%BE%8C"
+        },
+        {
+            "待": "http://www.kanjidamage.com//kanji/1236-wait-%E5%BE%85"
+        },
+        {
+            "術": "http://www.kanjidamage.com//kanji/1240-art-technique-%E8%A1%93"
+        },
+        {
+            "育": "http://www.kanjidamage.com//kanji/1247-grow-up-be-raised-%E8%82%B2"
+        },
+        {
+            "流": "http://www.kanjidamage.com//kanji/1248-flow-%E6%B5%81"
+        },
+        {
+            "到": "http://www.kanjidamage.com//kanji/1254-arrive-%E5%88%B0"
+        },
+        {
+            "去": "http://www.kanjidamage.com//kanji/1257-past-tense-%E5%8E%BB"
+        },
+        {
+            "法": "http://www.kanjidamage.com//kanji/1258-law-%E6%B3%95"
+        },
+        {
+            "屋": "http://www.kanjidamage.com//kanji/1260-store-%E5%B1%8B"
+        },
+        {
+            "室": "http://www.kanjidamage.com//kanji/1261-room-suffix-%E5%AE%A4"
+        },
+        {
+            "貿": "http://www.kanjidamage.com//kanji/1263-international-trading-%E8%B2%BF"
+        },
+        {
+            "留": "http://www.kanjidamage.com//kanji/1264-absent-stopped-%E7%95%99"
+        },
+        {
+            "転": "http://www.kanjidamage.com//kanji/1266-roll-over-%E8%BB%A2"
+        },
+        {
+            "伝": "http://www.kanjidamage.com//kanji/1267-transmit-%E4%BC%9D"
+        },
+        {
+            "会": "http://www.kanjidamage.com//kanji/1269-big-meeting-%E4%BC%9A"
+        },
+        {
+            "絵": "http://www.kanjidamage.com//kanji/1270-picture-%E7%B5%B5"
+        },
+        {
+            "陸": "http://www.kanjidamage.com//kanji/1277-continent-%E9%99%B8"
+        },
+        {
+            "熱": "http://www.kanjidamage.com//kanji/1279-hot-thing-fever-%E7%86%B1"
+        },
+        {
+            "風": "http://www.kanjidamage.com//kanji/1285-wind-the-flu-style-%E9%A2%A8"
+        },
+        {
+            "投": "http://www.kanjidamage.com//kanji/1294-throw-%E6%8A%95"
+        },
+        {
+            "役": "http://www.kanjidamage.com//kanji/1293-role-%E5%BD%B9"
+        },
+        {
+            "設": "http://www.kanjidamage.com//kanji/1295-establish-%E8%A8%AD"
+        },
+        {
+            "殺": "http://www.kanjidamage.com//kanji/1297-kill-%E6%AE%BA"
+        },
+        {
+            "真": "http://www.kanjidamage.com//kanji/1304-really-%E7%9C%9F"
+        },
+        {
+            "県": "http://www.kanjidamage.com//kanji/1306-prefecture-%E7%9C%8C"
+        },
+        {
+            "直": "http://www.kanjidamage.com//kanji/1308-correct-a-probem-direct-contact-%E7%9B%B4"
+        },
+        {
+            "値": "http://www.kanjidamage.com//kanji/1310-price-or-ranking-%E5%80%A4"
+        },
+        {
+            "植": "http://www.kanjidamage.com//kanji/1311-plant-%E6%A4%8D"
+        },
+        {
+            "別": "http://www.kanjidamage.com//kanji/1314-separate-%E5%88%A5"
+        },
+        {
+            "例": "http://www.kanjidamage.com//kanji/1318-example-%E4%BE%8B"
+        },
+        {
+            "彼": "http://www.kanjidamage.com//kanji/1326-him-%E5%BD%BC"
+        },
+        {
+            "技": "http://www.kanjidamage.com//kanji/1321-technique-%E6%8A%80"
+        },
+        {
+            "予": "http://www.kanjidamage.com//kanji/1329-beforehand-%E4%BA%88"
+        },
+        {
+            "柔": "http://www.kanjidamage.com//kanji/1334-flexible-%E6%9F%94"
+        },
+        {
+            "速": "http://www.kanjidamage.com//kanji/1339-fast-%E9%80%9F"
+        },
+        {
+            "通": "http://www.kanjidamage.com//kanji/1342-pass-%E9%80%9A"
+        },
+        {
+            "病": "http://www.kanjidamage.com//kanji/1347-sick-kanji-%E7%97%85"
+        },
+        {
+            "痛": "http://www.kanjidamage.com//kanji/1348-hurts-%E7%97%9B"
+        },
+        {
+            "疲": "http://www.kanjidamage.com//kanji/1349-get-tired-from-hard-work-%E7%96%B2"
+        },
+        {
+            "輸": "http://www.kanjidamage.com//kanji/1358-transport-%E8%BC%B8"
+        },
+        {
+            "由": "http://www.kanjidamage.com//kanji/1374-freedom-reason-%E7%94%B1"
+        },
+        {
+            "宙": "http://www.kanjidamage.com//kanji/1376-space-%E5%AE%99"
+        },
+        {
+            "雨": "http://www.kanjidamage.com//kanji/1383-rain-%E9%9B%A8"
+        },
+        {
+            "雪": "http://www.kanjidamage.com//kanji/1391-snow-%E9%9B%AA"
+        },
+        {
+            "業": "http://www.kanjidamage.com//kanji/1397-business-%E6%A5%AD"
+        },
+        {
+            "僕": "http://www.kanjidamage.com//kanji/1398-me-for-dudes-%E5%83%95"
+        },
+        {
+            "電": "http://www.kanjidamage.com//kanji/1403-electricity-%E9%9B%BB"
+        },
+        {
+            "敬": "http://www.kanjidamage.com//kanji/1419-respect-%E6%95%AC"
+        },
+        {
+            "警": "http://www.kanjidamage.com//kanji/1420-the-fuzz-%E8%AD%A6"
+        },
+        {
+            "局": "http://www.kanjidamage.com//kanji/1422-department-%E5%B1%80"
+        },
+        {
+            "約": "http://www.kanjidamage.com//kanji/1429-promise-roughly-speaking-%E7%B4%84"
+        },
+        {
+            "的": "http://www.kanjidamage.com//kanji/1430-motivation-al-%E7%9A%84"
+        },
+        {
+            "均": "http://www.kanjidamage.com//kanji/1432-average-%E5%9D%87"
+        },
+        {
+            "温": "http://www.kanjidamage.com//kanji/1435-hot-or-warm-thing-%E6%B8%A9"
+        },
+        {
+            "挙": "http://www.kanjidamage.com//kanji/1447-raise-cite-mention-%E6%8C%99"
+        },
+        {
+            "般": "http://www.kanjidamage.com//kanji/1451-general-overall-%E8%88%AC"
+        },
+        {
+            "狭": "http://www.kanjidamage.com//kanji/1462-narrow-%E7%8B%AD"
+        },
+        {
+            "節": "http://www.kanjidamage.com//kanji/1473-season-joint-%E7%AF%80"
+        },
+        {
+            "危": "http://www.kanjidamage.com//kanji/1475-dangerous-%E5%8D%B1"
+        },
+        {
+            "服": "http://www.kanjidamage.com//kanji/1481-clothes-%E6%9C%8D"
+        },
+        {
+            "報": "http://www.kanjidamage.com//kanji/1482-data-%E5%A0%B1"
+        },
+        {
+            "組": "http://www.kanjidamage.com//kanji/1485-ones-team-%E7%B5%84"
+        },
+        {
+            "助": "http://www.kanjidamage.com//kanji/1490-save-%E5%8A%A9"
+        },
+        {
+            "祝": "http://www.kanjidamage.com//kanji/1494-celebrate-%E7%A5%9D"
+        },
+        {
+            "社": "http://www.kanjidamage.com//kanji/1495-company-%E7%A4%BE"
+        },
+        {
+            "神": "http://www.kanjidamage.com//kanji/1498-god-kanji-%E7%A5%9E"
+        },
+        {
+            "礼": "http://www.kanjidamage.com//kanji/1504-polite-%E7%A4%BC"
+        },
+        {
+            "初": "http://www.kanjidamage.com//kanji/1509-first-time-%E5%88%9D"
+        },
+        {
+            "容": "http://www.kanjidamage.com//kanji/1521-appearance-%E5%AE%B9"
+        },
+        {
+            "算": "http://www.kanjidamage.com//kanji/1527-calculate-%E7%AE%97"
+        },
+        {
+            "械": "http://www.kanjidamage.com//kanji/1531-contraption-%E6%A2%B0"
+        },
+        {
+            "飛": "http://www.kanjidamage.com//kanji/1533-fly-%E9%A3%9B"
+        },
+        {
+            "習": "http://www.kanjidamage.com//kanji/1535-learn-%E7%BF%92"
+        },
+        {
+            "弱": "http://www.kanjidamage.com//kanji/1536-weak-%E5%BC%B1"
+        },
+        {
+            "展": "http://www.kanjidamage.com//kanji/1541-exhibit-%E5%B1%95"
+        },
+        {
+            "昔": "http://www.kanjidamage.com//kanji/1543-long-ago-%E6%98%94"
+        },
+        {
+            "借": "http://www.kanjidamage.com//kanji/1539-borrow-%E5%80%9F"
+        },
+        {
+            "横": "http://www.kanjidamage.com//kanji/1547-side-arrogant-%E6%A8%AA"
+        },
+        {
+            "並": "http://www.kanjidamage.com//kanji/1549-line-up-ordinary-%E4%B8%A6"
+        },
+        {
+            "普": "http://www.kanjidamage.com//kanji/1550-normal-%E6%99%AE"
+        },
+        {
+            "選": "http://www.kanjidamage.com//kanji/1552-choose-%E9%81%B8"
+        },
+        {
+            "異": "http://www.kanjidamage.com//kanji/1556-to-differ-%E7%95%B0"
+        },
+        {
+            "再": "http://www.kanjidamage.com//kanji/1560-again-once-more-%E5%86%8D"
+        },
+        {
+            "降": "http://www.kanjidamage.com//kanji/1571-descend-rainfall-get-out-of-vehicle-%E9%99%8D"
+        },
+        {
+            "年": "http://www.kanjidamage.com//kanji/1572-year-%E5%B9%B4"
+        },
+        {
+            "五": "http://www.kanjidamage.com//kanji/1573-five-%E4%BA%94"
+        },
+        {
+            "語": "http://www.kanjidamage.com//kanji/1574-language-%E8%AA%9E"
+        },
+        {
+            "違": "http://www.kanjidamage.com//kanji/1577-different-and-therefore-wrong-%E9%81%95"
+        },
+        {
+            "料": "http://www.kanjidamage.com//kanji/1585-ingredients-fees-%E6%96%99"
+        },
+        {
+            "科": "http://www.kanjidamage.com//kanji/1586-science-%E7%A7%91"
+        },
+        {
+            "図": "http://www.kanjidamage.com//kanji/1587-diagram-map-%E5%9B%B3"
+        },
+        {
+            "史": "http://www.kanjidamage.com//kanji/1590-history-%E5%8F%B2"
+        },
+        {
+            "使": "http://www.kanjidamage.com//kanji/1593-use-%E4%BD%BF"
+        },
+        {
+            "便": "http://www.kanjidamage.com//kanji/1594-convenient-poop-%E4%BE%BF"
+        },
+        {
+            "身": "http://www.kanjidamage.com//kanji/1595-ones-own-flesh-%E8%BA%AB"
+        },
+        {
+            "地": "http://www.kanjidamage.com//kanji/1600-area-%E5%9C%B0"
+        },
+        {
+            "他": "http://www.kanjidamage.com//kanji/1602-other-%E4%BB%96"
+        },
+        {
+            "増": "http://www.kanjidamage.com//kanji/1605-increase-%E5%A2%97"
+        },
+        {
+            "官": "http://www.kanjidamage.com//kanji/1613-federal-%E5%AE%98"
+        },
+        {
+            "館": "http://www.kanjidamage.com//kanji/1614-big-hall-%E9%A4%A8"
+        },
+        {
+            "師": "http://www.kanjidamage.com//kanji/1619-master-teacher-%E5%B8%AB"
+        },
+        {
+            "営": "http://www.kanjidamage.com//kanji/1621-manage-a-business-%E5%96%B6"
+        },
+        {
+            "労": "http://www.kanjidamage.com//kanji/1622-labor-%E5%8A%B4"
+        },
+        {
+            "学": "http://www.kanjidamage.com//kanji/1624-knowledge-%E5%AD%A6"
+        },
+        {
+            "覚": "http://www.kanjidamage.com//kanji/1625-bear-in-mind-%E8%A6%9A"
+        },
+        {
+            "調": "http://www.kanjidamage.com//kanji/1636-check-out-%E8%AA%BF"
+        },
+        {
+            "週": "http://www.kanjidamage.com//kanji/1637-week-%E9%80%B1"
+        },
+        {
+            "高": "http://www.kanjidamage.com//kanji/1639-tall-%E9%AB%98"
+        },
+        {
+            "商": "http://www.kanjidamage.com//kanji/1641-merchandise-%E5%95%86"
+        },
+        {
+            "橋": "http://www.kanjidamage.com//kanji/1642-bridge-%E6%A9%8B"
+        },
+        {
+            "過": "http://www.kanjidamage.com//kanji/1644-surpass-too-much-%E9%81%8E"
+        },
+        {
+            "率": "http://www.kanjidamage.com//kanji/1648-ratio-%E7%8E%87"
+        },
+        {
+            "楽": "http://www.kanjidamage.com//kanji/1650-enjoy-%E6%A5%BD"
+        },
+        {
+            "薬": "http://www.kanjidamage.com//kanji/1651-medicine-%E8%96%AC"
+        },
+        {
+            "書": "http://www.kanjidamage.com//kanji/1659-write-%E6%9B%B8"
+        },
+        {
+            "事": "http://www.kanjidamage.com//kanji/1660-action-incident-%E4%BA%8B"
+        },
+        {
+            "康": "http://www.kanjidamage.com//kanji/1663-health-%E5%BA%B7"
+        },
+        {
+            "君": "http://www.kanjidamage.com//kanji/1665-buddy-%E5%90%9B"
+        },
+        {
+            "妻": "http://www.kanjidamage.com//kanji/1667-wife-%E5%A6%BB"
+        },
+        {
+            "争": "http://www.kanjidamage.com//kanji/1669-battle-%E4%BA%89"
+        },
+        {
+            "静": "http://www.kanjidamage.com//kanji/1670-quiet-%E9%9D%99"
+        },
+        {
+            "健": "http://www.kanjidamage.com//kanji/1156-healthy-%E5%81%A5"
+        },
+        {
+            "庭": "http://www.kanjidamage.com//kanji/1155-garden-%E5%BA%AD"
+        },
+        {
+            "残": "http://www.kanjidamage.com//kanji/1678-remain-behind-%E6%AE%8B"
+        },
+        {
+            "刻": "http://www.kanjidamage.com//kanji/1696-engrave-%E5%88%BB"
+        },
+        {
+            "期": "http://www.kanjidamage.com//kanji/1706-period-of-time-%E6%9C%9F"
+        },
+        {
+            "逆": "http://www.kanjidamage.com//kanji/1720-opposite-%E9%80%86"
+        },
+        {
+            "以": "http://www.kanjidamage.com//kanji/1721-compared-to-%E4%BB%A5"
+        },
+        {
+            "段": "http://www.kanjidamage.com//kanji/1726-step-stairs-%E6%AE%B5"
+        },
+        {
+            "拝": "http://www.kanjidamage.com//kanji/1746-worship-%E6%8B%9D"
+        }
+    ],
+    "HL_EXTRA_IB_AND_KD_JSON": [
+        {
+            "不": "http://www.kanjidamage.com//kanji/13-un-%E4%B8%8D"
+        },
+        {
+            "泊": "http://www.kanjidamage.com//kanji/38-stay-for-the-night-%E6%B3%8A"
+        },
+        {
+            "湖": "http://www.kanjidamage.com//kanji/42-big-lake-%E6%B9%96"
+        },
+        {
+            "談": "http://www.kanjidamage.com//kanji/50-consult-%E8%AB%87"
+        },
+        {
+            "可": "http://www.kanjidamage.com//kanji/55-possible-%E5%8F%AF"
+        },
+        {
+            "信": "http://www.kanjidamage.com//kanji/63-believe-%E4%BF%A1"
+        },
+        {
+            "苦": "http://www.kanjidamage.com//kanji/66-suffer-%E8%8B%A6"
+        },
+        {
+            "停": "http://www.kanjidamage.com//kanji/82-bring-to-a-halt-%E5%81%9C"
+        },
+        {
+            "済": "http://www.kanjidamage.com//kanji/94-economy-to-be-over-%E6%B8%88"
+        },
+        {
+            "宅": "http://www.kanjidamage.com//kanji/127-residence-%E5%AE%85"
+        },
+        {
+            "治": "http://www.kanjidamage.com//kanji/140-cure-%E6%B2%BB"
+        },
+        {
+            "能": "http://www.kanjidamage.com//kanji/143-talent-%E8%83%BD"
+        },
+        {
+            "泣": "http://www.kanjidamage.com//kanji/152-cry-%E6%B3%A3"
+        },
+        {
+            "億": "http://www.kanjidamage.com//kanji/158-a-hundred-million-%E5%84%84"
+        },
+        {
+            "加": "http://www.kanjidamage.com//kanji/176-add-%E5%8A%A0"
+        },
+        {
+            "努": "http://www.kanjidamage.com//kanji/179-make-an-effort-%E5%8A%AA"
+        },
+        {
+            "究": "http://www.kanjidamage.com//kanji/182-research-%E7%A9%B6"
+        },
+        {
+            "省": "http://www.kanjidamage.com//kanji/196-ministry-cut-down-on-%E7%9C%81"
+        },
+        {
+            "宗": "http://www.kanjidamage.com//kanji/201-religion-%E5%AE%97"
+        },
+        {
+            "線": "http://www.kanjidamage.com//kanji/211-line-%E7%B7%9A"
+        },
+        {
+            "細": "http://www.kanjidamage.com//kanji/213-slender-%E7%B4%B0"
+        },
+        {
+            "宇": "http://www.kanjidamage.com//kanji/228-cosmos-%E5%AE%87"
+        },
+        {
+            "判": "http://www.kanjidamage.com//kanji/188-judgement-%E5%88%A4"
+        },
+        {
+            "結": "http://www.kanjidamage.com//kanji/250-bind-%E7%B5%90"
+        },
+        {
+            "誌": "http://www.kanjidamage.com//kanji/251-magazine-%E8%AA%8C"
+        },
+        {
+            "老": "http://www.kanjidamage.com//kanji/253-get-old-%E8%80%81"
+        },
+        {
+            "著": "http://www.kanjidamage.com//kanji/256-author-%E8%91%97"
+        },
+        {
+            "準": "http://www.kanjidamage.com//kanji/268-prepare-criteria-%E6%BA%96"
+        },
+        {
+            "払": "http://www.kanjidamage.com//kanji/297-pay-%E6%89%95"
+        },
+        {
+            "招": "http://www.kanjidamage.com//kanji/302-beckon-%E6%8B%9B"
+        },
+        {
+            "接": "http://www.kanjidamage.com//kanji/305-directly-contact-%E6%8E%A5"
+        },
+        {
+            "取": "http://www.kanjidamage.com//kanji/310-take-%E5%8F%96"
+        },
+        {
+            "進": "http://www.kanjidamage.com//kanji/333-progress-%E9%80%B2"
+        },
+        {
+            "述": "http://www.kanjidamage.com//kanji/334-refer-to-%E8%BF%B0"
+        },
+        {
+            "相": "http://www.kanjidamage.com//kanji/350-partner-%E7%9B%B8"
+        },
+        {
+            "想": "http://www.kanjidamage.com//kanji/352-ideaimagination-%E6%83%B3"
+        },
+        {
+            "禁": "http://www.kanjidamage.com//kanji/353-prohibition-%E7%A6%81"
+        },
+        {
+            "果": "http://www.kanjidamage.com//kanji/354-fruit-result-%E6%9E%9C"
+        },
+        {
+            "課": "http://www.kanjidamage.com//kanji/355-section-or-lesson-%E8%AA%B2"
+        },
+        {
+            "案": "http://www.kanjidamage.com//kanji/359-guideproposal-%E6%A1%88"
+        },
+        {
+            "染": "http://www.kanjidamage.com//kanji/365-dye-%E6%9F%93"
+        },
+        {
+            "雑": "http://www.kanjidamage.com//kanji/366-miscellaneous-random-%E9%9B%91"
+        },
+        {
+            "移": "http://www.kanjidamage.com//kanji/373-transfer-%E7%A7%BB"
+        },
+        {
+            "味": "http://www.kanjidamage.com//kanji/383-flavor-%E5%91%B3"
+        },
+        {
+            "断": "http://www.kanjidamage.com//kanji/387-decisionjudgementrefuse-%E6%96%AD"
+        },
+        {
+            "奥": "http://www.kanjidamage.com//kanji/398-waaay-in-the-back-%E5%A5%A5"
+        },
+        {
+            "器": "http://www.kanjidamage.com//kanji/403-instrument-%E5%99%A8"
+        },
+        {
+            "然": "http://www.kanjidamage.com//kanji/411-nature-%E7%84%B6"
+        },
+        {
+            "難": "http://www.kanjidamage.com//kanji/422-difficult-%E9%9B%A3"
+        },
+        {
+            "勤": "http://www.kanjidamage.com//kanji/423-be-employed-at-%E5%8B%A4"
+        },
+        {
+            "困": "http://www.kanjidamage.com//kanji/435-trouble-%E5%9B%B0"
+        },
+        {
+            "個": "http://www.kanjidamage.com//kanji/440-individual-%E5%80%8B"
+        },
+        {
+            "任": "http://www.kanjidamage.com//kanji/446-have-responsibility-for-%E4%BB%BB"
+        },
+        {
+            "喫": "http://www.kanjidamage.com//kanji/456-enjoy-a-drink-and-a-smoke-%E5%96%AB"
+        },
+        {
+            "情": "http://www.kanjidamage.com//kanji/471-emotion-%E6%83%85"
+        },
+        {
+            "性": "http://www.kanjidamage.com//kanji/475-sex-essential-nature-%E6%80%A7"
+        },
+        {
+            "境": "http://www.kanjidamage.com//kanji/523-border-%E5%A2%83"
+        },
+        {
+            "競": "http://www.kanjidamage.com//kanji/529-contest-%E7%AB%B6"
+        },
+        {
+            "側": "http://www.kanjidamage.com//kanji/547-side-of-something-%E5%81%B4"
+        },
+        {
+            "責": "http://www.kanjidamage.com//kanji/551-condemn-%E8%B2%AC"
+        },
+        {
+            "窓": "http://www.kanjidamage.com//kanji/567-window-%E7%AA%93"
+        },
+        {
+            "探": "http://www.kanjidamage.com//kanji/568-look-for-%E6%8E%A2"
+        },
+        {
+            "深": "http://www.kanjidamage.com//kanji/569-deep-%E6%B7%B1"
+        },
+        {
+            "具": "http://www.kanjidamage.com//kanji/570-tool-%E5%85%B7"
+        },
+        {
+            "価": "http://www.kanjidamage.com//kanji/580-value-%E4%BE%A1"
+        },
+        {
+            "煙": "http://www.kanjidamage.com//kanji/583-smoky-%E7%85%99"
+        },
+        {
+            "夫": "http://www.kanjidamage.com//kanji/588-husband-%E5%A4%AB"
+        },
+        {
+            "消": "http://www.kanjidamage.com//kanji/601-erase-%E6%B6%88"
+        },
+        {
+            "受": "http://www.kanjidamage.com//kanji/604-receive-%E5%8F%97"
+        },
+        {
+            "各": "http://www.kanjidamage.com//kanji/609-each-%E5%90%84"
+        },
+        {
+            "愛": "http://www.kanjidamage.com//kanji/610-love-%E6%84%9B"
+        },
+        {
+            "落": "http://www.kanjidamage.com//kanji/612-falldrop-%E8%90%BD"
+        },
+        {
+            "格": "http://www.kanjidamage.com//kanji/613-character-aspect-%E6%A0%BC"
+        },
+        {
+            "絡": "http://www.kanjidamage.com//kanji/614-get-entangled-%E7%B5%A1"
+        },
+        {
+            "略": "http://www.kanjidamage.com//kanji/615-abbreviation-%E7%95%A5"
+        },
+        {
+            "条": "http://www.kanjidamage.com//kanji/617-clause-%E6%9D%A1"
+        },
+        {
+            "緑": "http://www.kanjidamage.com//kanji/632-green-%E7%B7%91"
+        },
+        {
+            "急": "http://www.kanjidamage.com//kanji/633-urgent-%E6%80%A5"
+        },
+        {
+            "工": "http://www.kanjidamage.com//kanji/645-craft-or-industry-%E5%B7%A5"
+        },
+        {
+            "功": "http://www.kanjidamage.com//kanji/648-success-%E5%8A%9F"
+        },
+        {
+            "汚": "http://www.kanjidamage.com//kanji/653-dirty-%E6%B1%9A"
+        },
+        {
+            "試": "http://www.kanjidamage.com//kanji/661-attempt-to-do-%E8%A9%A6"
+        },
+        {
+            "代": "http://www.kanjidamage.com//kanji/663-generation-instead-of-%E4%BB%A3"
+        },
+        {
+            "戦": "http://www.kanjidamage.com//kanji/672-fight-%E6%88%A6"
+        },
+        {
+            "機": "http://www.kanjidamage.com//kanji/675-machine-%E6%A9%9F"
+        },
+        {
+            "職": "http://www.kanjidamage.com//kanji/677-employment-%E8%81%B7"
+        },
+        {
+            "識": "http://www.kanjidamage.com//kanji/679-be-conscious-%E8%AD%98"
+        },
+        {
+            "欧": "http://www.kanjidamage.com//kanji/699-europe-%E6%AC%A7"
+        },
+        {
+            "政": "http://www.kanjidamage.com//kanji/708-politics-%E6%94%BF"
+        },
+        {
+            "求": "http://www.kanjidamage.com//kanji/725-demandask-%E6%B1%82"
+        },
+        {
+            "球": "http://www.kanjidamage.com//kanji/727-sphere-%E7%90%83"
+        },
+        {
+            "備": "http://www.kanjidamage.com//kanji/734-furnish-%E5%82%99"
+        },
+        {
+            "産": "http://www.kanjidamage.com//kanji/736-childbirth-production-of-things-%E7%94%A3"
+        },
+        {
+            "減": "http://www.kanjidamage.com//kanji/754-decrease-%E6%B8%9B"
+        },
+        {
+            "環": "http://www.kanjidamage.com//kanji/764-environment-%E7%92%B0"
+        },
+        {
+            "表": "http://www.kanjidamage.com//kanji/767-express-%E8%A1%A8"
+        },
+        {
+            "告": "http://www.kanjidamage.com//kanji/807-inform-%E5%91%8A"
+        },
+        {
+            "喜": "http://www.kanjidamage.com//kanji/838-rejoice-%E5%96%9C"
+        },
+        {
+            "類": "http://www.kanjidamage.com//kanji/848-categorytype-%E9%A1%9E"
+        },
+        {
+            "義": "http://www.kanjidamage.com//kanji/877-righteousness-%E7%BE%A9"
+        },
+        {
+            "笑": "http://www.kanjidamage.com//kanji/882-laugh-%E7%AC%91"
+        },
+        {
+            "験": "http://www.kanjidamage.com//kanji/419-test-%E9%A8%93"
+        },
+        {
+            "念": "http://www.kanjidamage.com//kanji/945-concern-%E5%BF%B5"
+        },
+        {
+            "命": "http://www.kanjidamage.com//kanji/949-life-%E5%91%BD"
+        },
+        {
+            "資": "http://www.kanjidamage.com//kanji/958-capital-as-in-%E8%B3%87"
+        },
+        {
+            "論": "http://www.kanjidamage.com//kanji/972-make-a-case-for-%E8%AB%96"
+        },
+        {
+            "等": "http://www.kanjidamage.com//kanji/1005-equal-etcplural-%E7%AD%89"
+        },
+        {
+            "郊": "http://www.kanjidamage.com//kanji/1012-suburb-%E9%83%8A"
+        },
+        {
+            "専": "http://www.kanjidamage.com//kanji/1016-specialty-%E5%B0%82"
+        },
+        {
+            "満": "http://www.kanjidamage.com//kanji/1041-full-%E6%BA%80"
+        },
+        {
+            "葉": "http://www.kanjidamage.com//kanji/1030-leaf-%E8%91%89"
+        },
+        {
+            "疑": "http://www.kanjidamage.com//kanji/1044-doubt-%E7%96%91"
+        },
+        {
+            "候": "http://www.kanjidamage.com//kanji/1049-climatecandidate-%E5%80%99"
+        },
+        {
+            "観": "http://www.kanjidamage.com//kanji/1054-point-of-view-%E8%A6%B3"
+        },
+        {
+            "連": "http://www.kanjidamage.com//kanji/1070-take-with-inform-of-%E9%80%A3"
+        },
+        {
+            "運": "http://www.kanjidamage.com//kanji/1071-carry-luck-%E9%81%8B"
+        },
+        {
+            "郵": "http://www.kanjidamage.com//kanji/1075-mail-%E9%83%B5"
+        },
+        {
+            "種": "http://www.kanjidamage.com//kanji/1077-seed-type-or-kind-%E7%A8%AE"
+        },
+        {
+            "非": "http://www.kanjidamage.com//kanji/1081-injustice-mistake-%E9%9D%9E"
+        },
+        {
+            "悲": "http://www.kanjidamage.com//kanji/1083-sad-%E6%82%B2"
+        },
+        {
+            "経": "http://www.kanjidamage.com//kanji/1089-experience-%E7%B5%8C"
+        },
+        {
+            "差": "http://www.kanjidamage.com//kanji/874-discriminate-%E5%B7%AE"
+        },
+        {
+            "暖": "http://www.kanjidamage.com//kanji/1109-warm-place-%E6%9A%96"
+        },
+        {
+            "参": "http://www.kanjidamage.com//kanji/1117-admit-defeat-visit-%E5%8F%82"
+        },
+        {
+            "珍": "http://www.kanjidamage.com//kanji/1121-very-rare-%E7%8F%8D"
+        },
+        {
+            "府": "http://www.kanjidamage.com//kanji/1129-government-%E5%BA%9C"
+        },
+        {
+            "座": "http://www.kanjidamage.com//kanji/1133-sit-%E5%BA%A7"
+        },
+        {
+            "渡": "http://www.kanjidamage.com//kanji/1145-pass-by-%E6%B8%A1"
+        },
+        {
+            "婚": "http://www.kanjidamage.com//kanji/1163-marriage-%E5%A9%9A"
+        },
+        {
+            "眠": "http://www.kanjidamage.com//kanji/1166-sleepy-%E7%9C%A0"
+        },
+        {
+            "登": "http://www.kanjidamage.com//kanji/1179-climb-%E7%99%BB"
+        },
+        {
+            "際": "http://www.kanjidamage.com//kanji/1181-edge-%E9%9A%9B"
+        },
+        {
+            "察": "http://www.kanjidamage.com//kanji/1182-police-%E5%AF%9F"
+        },
+        {
+            "研": "http://www.kanjidamage.com//kanji/1189-polish-sharpen-%E7%A0%94"
+        },
+        {
+            "許": "http://www.kanjidamage.com//kanji/1193-allow-%E8%A8%B1"
+        },
+        {
+            "件": "http://www.kanjidamage.com//kanji/1195-incident-%E4%BB%B6"
+        },
+        {
+            "解": "http://www.kanjidamage.com//kanji/1199-solve-untie-%E8%A7%A3"
+        },
+        {
+            "易": "http://www.kanjidamage.com//kanji/1203-easy-%E6%98%93"
+        },
+        {
+            "絶": "http://www.kanjidamage.com//kanji/1214-extinct-%E7%B5%B6"
+        },
+        {
+            "術": "http://www.kanjidamage.com//kanji/1240-art-technique-%E8%A1%93"
+        },
+        {
+            "到": "http://www.kanjidamage.com//kanji/1254-arrive-%E5%88%B0"
+        },
+        {
+            "法": "http://www.kanjidamage.com//kanji/1258-law-%E6%B3%95"
+        },
+        {
+            "貿": "http://www.kanjidamage.com//kanji/1263-international-trading-%E8%B2%BF"
+        },
+        {
+            "陸": "http://www.kanjidamage.com//kanji/1277-continent-%E9%99%B8"
+        },
+        {
+            "風": "http://www.kanjidamage.com//kanji/1285-wind-the-flu-style-%E9%A2%A8"
+        },
+        {
+            "投": "http://www.kanjidamage.com//kanji/1294-throw-%E6%8A%95"
+        },
+        {
+            "役": "http://www.kanjidamage.com//kanji/1293-role-%E5%BD%B9"
+        },
+        {
+            "設": "http://www.kanjidamage.com//kanji/1295-establish-%E8%A8%AD"
+        },
+        {
+            "殺": "http://www.kanjidamage.com//kanji/1297-kill-%E6%AE%BA"
+        },
+        {
+            "値": "http://www.kanjidamage.com//kanji/1310-price-or-ranking-%E5%80%A4"
+        },
+        {
+            "植": "http://www.kanjidamage.com//kanji/1311-plant-%E6%A4%8D"
+        },
+        {
+            "技": "http://www.kanjidamage.com//kanji/1321-technique-%E6%8A%80"
+        },
+        {
+            "柔": "http://www.kanjidamage.com//kanji/1334-flexible-%E6%9F%94"
+        },
+        {
+            "痛": "http://www.kanjidamage.com//kanji/1348-hurts-%E7%97%9B"
+        },
+        {
+            "疲": "http://www.kanjidamage.com//kanji/1349-get-tired-from-hard-work-%E7%96%B2"
+        },
+        {
+            "輸": "http://www.kanjidamage.com//kanji/1358-transport-%E8%BC%B8"
+        },
+        {
+            "宙": "http://www.kanjidamage.com//kanji/1376-space-%E5%AE%99"
+        },
+        {
+            "敬": "http://www.kanjidamage.com//kanji/1419-respect-%E6%95%AC"
+        },
+        {
+            "警": "http://www.kanjidamage.com//kanji/1420-the-fuzz-%E8%AD%A6"
+        },
+        {
+            "約": "http://www.kanjidamage.com//kanji/1429-promise-roughly-speaking-%E7%B4%84"
+        },
+        {
+            "均": "http://www.kanjidamage.com//kanji/1432-average-%E5%9D%87"
+        },
+        {
+            "挙": "http://www.kanjidamage.com//kanji/1447-raise-cite-mention-%E6%8C%99"
+        },
+        {
+            "般": "http://www.kanjidamage.com//kanji/1451-general-overall-%E8%88%AC"
+        },
+        {
+            "狭": "http://www.kanjidamage.com//kanji/1462-narrow-%E7%8B%AD"
+        },
+        {
+            "報": "http://www.kanjidamage.com//kanji/1482-data-%E5%A0%B1"
+        },
+        {
+            "祝": "http://www.kanjidamage.com//kanji/1494-celebrate-%E7%A5%9D"
+        },
+        {
+            "礼": "http://www.kanjidamage.com//kanji/1504-polite-%E7%A4%BC"
+        },
+        {
+            "容": "http://www.kanjidamage.com//kanji/1521-appearance-%E5%AE%B9"
+        },
+        {
+            "算": "http://www.kanjidamage.com//kanji/1527-calculate-%E7%AE%97"
+        },
+        {
+            "械": "http://www.kanjidamage.com//kanji/1531-contraption-%E6%A2%B0"
+        },
+        {
+            "飛": "http://www.kanjidamage.com//kanji/1533-fly-%E9%A3%9B"
+        },
+        {
+            "弱": "http://www.kanjidamage.com//kanji/1536-weak-%E5%BC%B1"
+        },
+        {
+            "展": "http://www.kanjidamage.com//kanji/1541-exhibit-%E5%B1%95"
+        },
+        {
+            "横": "http://www.kanjidamage.com//kanji/1547-side-arrogant-%E6%A8%AA"
+        },
+        {
+            "並": "http://www.kanjidamage.com//kanji/1549-line-up-ordinary-%E4%B8%A6"
+        },
+        {
+            "普": "http://www.kanjidamage.com//kanji/1550-normal-%E6%99%AE"
+        },
+        {
+            "異": "http://www.kanjidamage.com//kanji/1556-to-differ-%E7%95%B0"
+        },
+        {
+            "違": "http://www.kanjidamage.com//kanji/1577-different-and-therefore-wrong-%E9%81%95"
+        },
+        {
+            "身": "http://www.kanjidamage.com//kanji/1595-ones-own-flesh-%E8%BA%AB"
+        },
+        {
+            "増": "http://www.kanjidamage.com//kanji/1605-increase-%E5%A2%97"
+        },
+        {
+            "官": "http://www.kanjidamage.com//kanji/1613-federal-%E5%AE%98"
+        },
+        {
+            "師": "http://www.kanjidamage.com//kanji/1619-master-teacher-%E5%B8%AB"
+        },
+        {
+            "営": "http://www.kanjidamage.com//kanji/1621-manage-a-business-%E5%96%B6"
+        },
+        {
+            "労": "http://www.kanjidamage.com//kanji/1622-labor-%E5%8A%B4"
+        },
+        {
+            "覚": "http://www.kanjidamage.com//kanji/1625-bear-in-mind-%E8%A6%9A"
+        },
+        {
+            "商": "http://www.kanjidamage.com//kanji/1641-merchandise-%E5%95%86"
+        },
+        {
+            "過": "http://www.kanjidamage.com//kanji/1644-surpass-too-much-%E9%81%8E"
+        },
+        {
+            "率": "http://www.kanjidamage.com//kanji/1648-ratio-%E7%8E%87"
+        },
+        {
+            "康": "http://www.kanjidamage.com//kanji/1663-health-%E5%BA%B7"
+        },
+        {
+            "妻": "http://www.kanjidamage.com//kanji/1667-wife-%E5%A6%BB"
+        },
+        {
+            "争": "http://www.kanjidamage.com//kanji/1669-battle-%E4%BA%89"
+        },
+        {
+            "健": "http://www.kanjidamage.com//kanji/1156-healthy-%E5%81%A5"
+        },
+        {
+            "残": "http://www.kanjidamage.com//kanji/1678-remain-behind-%E6%AE%8B"
+        },
+        {
+            "刻": "http://www.kanjidamage.com//kanji/1696-engrave-%E5%88%BB"
+        },
+        {
+            "期": "http://www.kanjidamage.com//kanji/1706-period-of-time-%E6%9C%9F"
+        },
+        {
+            "逆": "http://www.kanjidamage.com//kanji/1720-opposite-%E9%80%86"
+        },
+        {
+            "拝": "http://www.kanjidamage.com//kanji/1746-worship-%E6%8B%9D"
+        }
+    ]
+}

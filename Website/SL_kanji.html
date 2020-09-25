@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--Custom CSS-->
-    <link rel="stylesheet" href="SL_kanji.css">
+    <link rel="stylesheet" href="kanji.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -50,10 +50,9 @@
 			$(".kanji-display").append("<h5 style='text-align:center;'>There are "+ data.SL_Kanji.length +" to learn for SL Japanese B</h5>")
 			$.each(data.SL_Kanji, function(index, kanji){
 				var $jisho_url = "https://jisho.org/search/"+ kanji+"%20%23kanji";
-				$(".kanji-display").append("<a class='SL-kanji'style='margin:50px;padding:5px;'href='"+$jisho_url+"'>"+kanji+"</a>");	
+				$(".kanji-display").append("<a class='kanji jisho SL-kanji'style='margin:50px;padding:5px;'href='"+$jisho_url+"'>"+kanji+"</a>");	
 			});			
 		  });
-        
       });
     </script>
   </body>
