@@ -1,0 +1,10 @@
+1.
+python -m PyInstaller --name IB_Kanji_Viewer --icon C:\Users\dimit\Desktop\Cloned_Repos\Japanese-projects\Kanji_Viewer_App\web_hi_res_512.ico C:\Users\dimit\Desktop\Cloned_Repos\Japanese-projects\Kanji_Viewer_App\main.py
+
+2. 
+
+
+
+// Notes and file paths
+Tree("C:\\Users\\dimit\\AppData\\Local\\Programs\\Python\\Python38\\share\\sdl2\\bin"),
+Tree("C:\\Users\\dimit\\AppData\\Local\\Programs\\Python\\Python38\\share\\glew\\bin"),
