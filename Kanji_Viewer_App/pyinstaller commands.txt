@@ -1,7 +1,22 @@
 1.
-python -m PyInstaller --name IB_Kanji_Viewer --icon C:\Users\dimit\Desktop\Cloned_Repos\Japanese-projects\Kanji_Viewer_App\web_hi_res_512.ico C:\Users\dimit\Desktop\Cloned_Repos\Japanese-projects\Kanji_Viewer_App\main.py
+python -m PyInstaller --noconsole --noupx --onefile -y --clean --windowed --name IB_Kanji_Viewer --icon C:\Users\dimit\Desktop\Cloned_Repos\Japanese-projects\Kanji_Viewer_App\web_hi_res_512.ico C:\Users\dimit\Desktop\Cloned_Repos\Japanese-projects\Kanji_Viewer_App\main.py 
+
+or 1.1:
+python -m PyInstaller --noconsole --windowed --name IB_Kanji_Viewer --icon C:\Users\dimit\Desktop\Cloned_Repos\Japanese-projects\Kanji_Viewer_App\web_hi_res_512.ico C:\Users\dimit\Desktop\Cloned_Repos\Japanese-projects\Kanji_Viewer_App\main.py 
+
+or 1.2:
+pyi-makespec --name IB_Kanji_Viewer --onefile --icon C:\Users\dimit\Desktop\Cloned_Repos\Japanese-projects\Kanji_Viewer_App\web_hi_res_512.ico C:\Users\dimit\Desktop\Cloned_Repos\Japanese-projects\Kanji_Viewer_App\main.py
+
+// No one file args
+python -m PyInstaller --noconsole --windowed -y --clean --name IB_Kanji_Viewer --icon C:\Users\dimit\Desktop\Cloned_Repos\Japanese-projects\Kanji_Viewer_App\web_hi_res_512.ico C:\Users\dimit\Desktop\Cloned_Repos\Japanese-projects\Kanji_Viewer_App\main.py 
 
 2. 
+https://stackoverflow.com/questions/43741763/import-error-using-kivymd-and-pyinstaller
+Add kivymd hooks in app.spec
+
+3. 
+python -m PyInstaller --onefile IB_Kanji_Viewer.spec
+Add --onefile arg when compiling (spec or main.py ?)
 
 
 

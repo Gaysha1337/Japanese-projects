@@ -6,16 +6,18 @@ from kivymd.uix.relativelayout import MDRelativeLayout
 from kivymd.uix.gridlayout import MDGridLayout
 
 # Widgets
-from kivymd.uix.button import MDIconButton, MDRectangleFlatIconButton, MDRectangleFlatButton
+from kivymd.uix.button import MDFlatButton, MDIconButton, MDRaisedButton, MDRectangleFlatIconButton, MDRectangleFlatButton
 from kivymd.uix.label import MDLabel, Label
+from kivymd.uix.dialog import MDDialog
 from kivy.uix.image import AsyncImage
 from kivy.uix.carousel import Carousel
 from kivy.uix.scrollview import ScrollView
 
+
 # Utils
 from utils import get_kanji_data, get_kanji_from_level
 from kivy.clock import Clock
-
+from kivy.core.window import Window
 
 class StrokeImage(AsyncImage):
     def __init__(self, source,width=200, height=200, **kwargs):
@@ -46,8 +48,15 @@ class KanjiStrokeImageCarousel(Carousel):
 class KanjiViewer(ScrollView):
     def __init__(self, master, level,**kwargs):
         super().__init__(**kwargs)
+        self._keyboard = Window.request_keyboard(self._keyboard_closed, self, 'text')
+        if self._keyboard.widget:
+            # If it exists, this widget is a VKeyboard object which you can use to change the keyboard layout.
+            pass
+        self._keyboard.bind(on_key_down=self._on_keyboard_down)
+        
         self.master = master
         self.level = level
+        self.dialog = None
 
         self.effect_cls = "ScrollEffect"
         self.scroll_type = ["bars"]
@@ -63,6 +72,8 @@ class KanjiViewer(ScrollView):
         else:
             for k,v in self.kanji_data.items():
                 setattr(self,k,v)
+
+            self.btn_texts = ["       Show Radicals       ", "Show Example Words"]
             
             self.kanji_layout.add_widget(Label(text=str(self.kanji), font_size=75,halign="center", pos_hint={"center_y":.8}))
             self.kanji_layout.add_widget(Label(text=str(self.stroke_count), font_size=20,halign="center", pos_hint={"center_y":.7}))
@@ -78,15 +89,61 @@ class KanjiViewer(ScrollView):
             for i, reading in enumerate(self.readings):
                 self.kanji_layout.add_widget(Label(text=reading,font_size=20, pos_hint={"center_x":.5,"center_y":.3-(i/20)}))
             
-            self.kanji_layout.add_widget(Label(text="Radical Info",font_size=20 ,pos_hint={"center_x":.5,"center_y":.2}))
-            for i, rad in enumerate(self.radicals_data):
-                #self.kanji_layout.add_widget(MDLabel(text=str(rad), font_size=12 ,pos_hint={"center_x":.5,"center_y":.2-(i/20)}))
-                pass
             #print(self.radicals_data, "\n")
             #print(" ".join([j for j in [" ".join(i) for i in self.radicals_data]]))
             formated_radicals = " \n".join([rad for rad in [":".join(tup) for tup in self.radicals_data]])
-            self.kanji_layout.add_widget(Label(text=formated_radicals,halign="center", font_size=15, pos_hint={"center_x":.5,"center_y":.1}))
+
+            formated_word_examples = "\n".join(self.example_words)
+
+            print(self.radicals_data, self.example_words, sep="\n")
             
+            #self.kanji_layout.add_widget(Label(text=formated_radicals,halign="center", font_size=15, pos_hint={"center_x":.5,"center_y":.1}))
+            self.radicals_btn = MDRaisedButton(text=self.btn_texts[0], pos_hint={"center_x":.5,"center_y":.15}, on_release=lambda x:self.showDialog("Radicals",formated_radicals))
+            self.kanji_layout.add_widget(self.radicals_btn)
+            self.examples_btn = MDRaisedButton(text=self.btn_texts[1], pos_hint={"center_x":.5,"center_y":.05}, on_release=lambda x:self.showDialog("Example Words",formated_word_examples))
+            self.kanji_layout.add_widget(self.examples_btn)
             self.add_widget(self.kanji_layout)
+
+
+    def showDialog(self, title, text):
+        self.dialog = None
+        if not self.dialog:
+            self.dialog = MDDialog(title=title,text=text,buttons=[MDFlatButton(text="CLOSE", on_release=lambda *args:self.dialog.dismiss())])
+            self.dialog.open()
+
+    # Keyboard methods
+    def _keyboard_closed(self):
+        print('My keyboard have been closed!')
+        self._keyboard.unbind(on_key_down=self._on_keyboard_down)
+        self._keyboard = None
+
+    def _on_keyboard_down(self, keyboard, keycode, text, modifiers):
+        print('The key', keycode, 'have been pressed', ' - text is %r' % text, ' - modifiers are %r' % modifiers, sep="\n")
+ 
+        if keycode[1] == "right":
+            self.carousel.load_next()
+        if keycode[1] == "left":
+            self.carousel.load_previous()
+
+        if keycode[1] == "n":
+            # Load new kanji by pressing 'r'
+            current_screen = self.master.screen_manager.get_screen(self.master.screen_manager.current)
+            current_screen.toolbar.load_new_kanji()
+
+        if keycode[1] == "r":
+            if isinstance(self.dialog, MDDialog):
+                self.dialog.dismiss()
+            self.radicals_btn.trigger_action(0)
+            
+            
+        if keycode[1] == "e":
+            if isinstance(self.dialog, MDDialog):
+                self.dialog.dismiss()
+            self.examples_btn.trigger_action(0)
+        
+        # Return True to accept the key. Otherwise, it will be used by the system.
+        return True
+
+
 
             

@@ -15,6 +15,7 @@ from KanjiViewer import KanjiViewer
 
 # Utils
 from kivy.config import Config
+import kivy.resources
 
 from kivy.core.text import LabelBase, DEFAULT_FONT
 LabelBase.register(DEFAULT_FONT, 'NotoSansCJKjp-Regular.otf')
@@ -42,11 +43,9 @@ class ToolBar(MDToolbar):
         self.master.screen_manager.current = "Landing Page"
 
     def load_new_kanji(self):
-        print("in here in load kanji")
         screen_name = "Kanji Viewer"
-        kanji_level = self.master.kanji_level
         self.master.screen_manager.clear_widgets(screens=[self.master.screen_manager.get_screen(screen_name)])
-        self.master.create_kanji_page(kanji_level)
+        self.master.create_kanji_page(self.master.kanji_level)
         self.master.screen_manager.current = screen_name
 
 class GeneralScreen(Screen): 
@@ -63,7 +62,7 @@ class GeneralScreen(Screen):
 
     def go_to_home_screen(self):
         #self.manager.current = "Search page"
-        self.manager.current = "Landing Page"
+        self.screen_manager.current = "Landing Page"
 
 
 class IBKanjiReviewer(MDApp):
@@ -93,6 +92,16 @@ class IBKanjiReviewer(MDApp):
         screen.add_widget(self.page)
         self.screen_manager.add_widget(screen)
 
+"""
+# Needed for PyInstaller (Not apart of the root class)
+def resourcePath():
+    '''Returns path containing content - either locally or in pyinstaller tmp file'''
+    if hasattr(sys, '_MEIPASS'):
+        return os.path.join(sys._MEIPASS)
 
+    return os.path.join(os.path.abspath("."))
+
+"""
 if __name__ == "__main__":
+    #kivy.resources.resource_add_path(resourcePath()) # add this line
     IBKanjiReviewer().run()

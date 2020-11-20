@@ -19,13 +19,18 @@ def get_kanji_data(kanji):
 
             radicals_text = [radical.text.strip() for radical in soup.select("ul.list-group.list-group-flush h3")]
             radicals_meaning = [radical.text.strip() for radical in soup.select("ul.list-group.list-group-flush p") if not radical.has_attr("class")]
-            return {
+
+            #word_examples_kanji = [word for word in soup.select("ul.list-group a") if "/kanji" not in word.attrs.get("href")] # if word.name in ("a","p","span","h4")
+            #word_examples_kanji = list(filter(lambda i: i[0] is not None,[[word.select_one("h4"), word.select_one("span"), word.select_one("p")] for word in soup.select("ul.list-group a")])) # if word.name in ("a","p","span","h4")
+            word_examples_kanji = [f"{word.select_one('h4').text.strip()} ({word.select_one('span').text.strip()}) : {word.select_one('p').text.strip()}" for word in soup.select("ul.list-group a") if word.select_one("h4") is not None] # if word.name in ("a","p","span","h4")
+            return  {
                 "kanji":kanji,
                 "readings":readings,
                 "meanings":english_meanings,
                 "stroke_count":stroke_count,
                 "stroke_order_images":stroke_imgs,
-                "radicals_data":list(zip(radicals_text, radicals_meaning))
+                "radicals_data":list(zip(radicals_text, radicals_meaning)),
+                "example_words": word_examples_kanji
             }
     
         except:
@@ -39,5 +44,6 @@ def get_kanji_from_level(level):
         return get_kanji_data(random.choice(data.get(level))) or None
 
 if __name__ == "__main__":
-    print(get_kanji_data("数"))
+    k = "晩" #"数"
+    print(get_kanji_data(k))
     #get_kanji_from_level("SL Kanji")
