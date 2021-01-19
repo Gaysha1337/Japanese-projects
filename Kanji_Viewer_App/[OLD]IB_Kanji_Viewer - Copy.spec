@@ -8,8 +8,8 @@ block_cipher = None
 a = Analysis(['C:\\Users\\dimit\\Desktop\\Cloned_Repos\\Japanese-projects\\Kanji_Viewer_App\\main.py'],
              pathex=['C:\\Users\\dimit\\Desktop\\Cloned_Repos\\Japanese-projects\\Kanji_Viewer_App'],
              binaries=[],
-             datas=[],
-             hiddenimports=[],
+             datas=[(".ib kanji.json",".")],
+             hiddenimports=['win32file','win32timezone'],
              hookspath=[kivymd_hooks_path],
              runtime_hooks=[],
              excludes=[],
@@ -17,6 +17,8 @@ a = Analysis(['C:\\Users\\dimit\\Desktop\\Cloned_Repos\\Japanese-projects\\Kanji
              win_private_assemblies=False,
              cipher=block_cipher,
              noarchive=False)
+
+
 pyz = PYZ(a.pure, a.zipped_data, cipher=block_cipher)
 exe = EXE(pyz,
           a.scripts,

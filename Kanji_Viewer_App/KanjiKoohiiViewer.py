@@ -1,6 +1,8 @@
 from kivymd.app import MDApp
 from kivymd.toast.kivytoast.kivytoast import toast
 
+import random
+
 # Layouts
 from kivymd.uix.relativelayout import MDRelativeLayout
 from kivymd.uix.gridlayout import MDGridLayout
@@ -16,6 +18,7 @@ from kivy.uix.scrollview import ScrollView
 
 # Utils
 from utils import get_kanji_data, get_kanji_from_level, resource_path
+from KanjiKoohiiAPI import get_koohii_from_ib_kanji_json, stories_csv_to_json
 from kivy.clock import Clock
 from kivy.core.window import Window
 
@@ -23,7 +26,7 @@ from kivy.core.window import Window
 class StrokeImage(AsyncImage):
     def __init__(self, source, width=200, height=200, **kwargs):
         super().__init__(**kwargs)
-        self.source = source # Source is online
+        self.source = resource_path(source)
         self.allow_stretch=True
         self.keep_ratio=True
         self.pos_hint = {"center_x":.5, "center_y":.5}
@@ -46,8 +49,8 @@ class KanjiStrokeImageCarousel(Carousel):
         #Clock.schedule_interval(lambda *args:self.load_next(),2)
     
     
-class KanjiViewer(ScrollView):
-    def __init__(self, master, level,**kwargs):
+class KanjiKoohiiViewer(ScrollView):
+    def __init__(self, master,**kwargs):
         super().__init__(**kwargs)
         self._keyboard = Window.request_keyboard(self._keyboard_closed, self, 'text')
         if self._keyboard.widget:
@@ -56,7 +59,8 @@ class KanjiViewer(ScrollView):
         self._keyboard.bind(on_key_down=self._on_keyboard_down)
         
         self.master = master
-        self.level = level
+        self.kanji = random.choice(self.master.kanji_koohi_stories_list)
+        self.kanji_data = get_koohii_from_ib_kanji_json(self.kanji)
         self.dialog = None
 
         self.effect_cls = "ScrollEffect"
@@ -65,15 +69,14 @@ class KanjiViewer(ScrollView):
 
         self.kanji_layout = MDRelativeLayout(adaptive_height=True)
 
-        self.kanji_data =  get_kanji_from_level(self.level)
+        #self.kanji_data =  get_kanji_from_level(self.level)
 
-        if self.kanji_data is {} or self.kanji_data is None:
-            toast("Error has occured; No internet connection; Site may be blocked")
-            self.kanji_layout.add_widget(Label(text="Can't connect to the internet\nthe API may be blocked\nor poor connection", halign="center"))
-        else:
-            for k,v in self.kanji_data.items():
-                setattr(self,k,v)
+        print(self.kanji_data)
+        for k,v in self.kanji_data.items():
+            setattr(self,k,v)
 
+
+        """
             self.btn_texts = ["     Show Meanings     ","       Show Radicals       ", "Show Example Words"]
             
             self.kanji_layout.add_widget(Label(text=str(self.kanji), font_size=75,halign="center", pos_hint={"center_y":.8}))
@@ -85,14 +88,14 @@ class KanjiViewer(ScrollView):
             self.next_btn = MDIconButton(icon="menu-right", user_font_size ="200sp", on_release = lambda x:self.carousel.load_next(), pos_hint={"center_x":.9, "center_y":.5}) # pos_hint={"right":.8, "y":.5}
             self.kanji_layout.add_widget(self.prev_btn)
             self.kanji_layout.add_widget(self.next_btn)
-            print(self.kanji)
+        
 
             for i, reading in enumerate(self.readings):
                 self.kanji_layout.add_widget(Label(text=reading,font_size=20, pos_hint={"center_x":.5,"center_y":.3-(i/20)}))
             
             #print(self.radicals_data, "\n")
             #print(" ".join([j for j in [" ".join(i) for i in self.radicals_data]]))
-            formated_radicals = " \n".join([rad.strip() for rad in [" :".join(tup) for tup in self.radicals_data]])
+            formated_radicals = " \n".join([rad for rad in [":".join(tup) for tup in self.radicals_data]])
 
             formated_word_examples = "\n".join(self.example_words)
 
@@ -106,6 +109,7 @@ class KanjiViewer(ScrollView):
             self.examples_btn = MDRaisedButton(text=self.btn_texts[2], pos_hint={"center_x":.9,"center_y":.15}, on_release=lambda x:self.showDialog("Example Words",formated_word_examples))
             self.kanji_layout.add_widget(self.examples_btn)
             self.add_widget(self.kanji_layout)
+        """
 
 
     def showDialog(self, title, text):
@@ -113,10 +117,6 @@ class KanjiViewer(ScrollView):
         if not self.dialog:
             self.dialog = MDDialog(title=title,text=text,buttons=[MDFlatButton(text="CLOSE", on_release=lambda *args:self.dialog.dismiss())])
             self.dialog.open()
-
-    def load_new_screen(self):
-        current_screen = self.master.screen_manager.get_screen(self.master.screen_manager.current)
-        current_screen.toolbar.load_new_kanji()
 
     # Keyboard methods
     def _keyboard_closed(self):
@@ -129,26 +129,20 @@ class KanjiViewer(ScrollView):
         if keycode[1] == "left" or keycode[1] == "a":
             self.carousel.load_previous()
 
-        if keycode[1] in ["right","d"]:
+        if keycode[1] == "right" or keycode[1] == "d":
             self.carousel.load_next()
-        
-        if keycode[1] == "enter" and not isinstance(self.dialog, MDDialog): 
-            self.load_new_screen()
-        
-        if keycode[1] in ["escape","enter",27]:
+        if keycode[1] == "escape" or keycode[1] == 277:
             if isinstance(self.dialog, MDDialog):
                 self.dialog.dismiss()
 
-            
-
         if keycode[1] == "n":
             # Load new kanji by pressing 'r'
-            self.load_new_screen()
-            
+            current_screen = self.master.screen_manager.get_screen(self.master.screen_manager.current)
+            current_screen.toolbar.load_new_kanji()
 
         if keycode[1] == "m":
             if isinstance(self.dialog, MDDialog):
-                #print("about to close dialog should exist") 
+                print("about to close dialog should exist") 
                 self.dialog.dismiss()
             self.meanings_btn.trigger_action(0)
             
