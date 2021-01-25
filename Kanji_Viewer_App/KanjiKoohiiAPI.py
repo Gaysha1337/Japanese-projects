@@ -7,13 +7,15 @@ import pandas as pd
 from requests_html import HTMLSession, AsyncHTMLSession
 from multiprocessing import Pool
 import ankipandas
+from utils import resource_path
 
 def stories_csv_to_json():
-    with open("ib kanji.json", "r",encoding="utf-8")as f:
+    
+    with open(resource_path("DATA/ib kanji.json"), "r",encoding="utf-8")as f:
         data = json.load(f)
         HL_kanji = data.get("HL_Kanji")
 
-    csv_file = pd.DataFrame(pd.read_csv("my_stories.csv", sep = ",", index_col=False))
+    csv_file = pd.DataFrame(pd.read_csv(resource_path("DATA/my_stories.csv"), sep = ",", index_col=False))
     csv_file = csv_file.drop(["public", "last_edited"],axis=1)
 
     koohii_kanji = {k[0] for k in csv_file[["kanji"]].values}
@@ -130,7 +132,7 @@ def get_koohii_from_ib_kanji_json(kanji):
 
             
                 if koohii_data:
-                    with open("kanji_koohii.json","ab+") as f:
+                    with open(resource_path("DATA/kanji_koohii.json"),"ab+") as f:
                         f.write(json.dumps(koohii_data, ensure_ascii=False, indent=4).encode("utf-8"))
             
 
@@ -138,10 +140,10 @@ def get_koohii_from_ib_kanji_json(kanji):
         
 
 if __name__ == "__main__":
-    anki_filename, notes_filename = "Anki Remembering the Kanji.txt", "Notes Anki Remembering the Kanji.txt"
-    anki_json = "deck.json"
+    anki_filename, notes_filename = resource_path("DATA/Anki Remembering the Kanji.txt"), resource_path("DATA/Notes Anki Remembering the Kanji.txt")
+    anki_json = resource_path("DATA/deck.json")
 
-    anki_col_path = "Remembering the Kanji.apkg"
+    anki_col_path = resource_path("DATA/Remembering the Kanji.apkg")
 
     pd.set_option('display.max_colwidth', None)
     col = ankipandas.Collection()#"C:\Users\dimit\AppData\Roaming\Anki2\User 1\collection.anki2")

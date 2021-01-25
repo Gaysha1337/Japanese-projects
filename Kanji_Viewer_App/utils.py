@@ -45,7 +45,7 @@ def get_kanji_data(kanji):
             
 def get_kanji_from_level(level):
     level = level.strip().replace(" ","_")
-    with open("ib kanji.json","r", encoding="utf-8") as f:
+    with open(resource_path("DATA/ib kanji.json"),"r", encoding="utf-8") as f:
         data = json.load(f)
         return get_kanji_data(random.choice(data.get(level))) or None
 

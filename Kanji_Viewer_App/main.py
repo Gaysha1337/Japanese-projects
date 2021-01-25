@@ -21,12 +21,12 @@ from KanjiKoohiiViewer import KanjiKoohiiViewer
 
 # Utils
 from utils import resource_path
+from kivy.resources import resource_add_path
 from KanjiKoohiiAPI import stories_csv_to_json
 
 
-
 from kivy.core.text import LabelBase, DEFAULT_FONT
-LabelBase.register(DEFAULT_FONT, 'NotoSansCJKjp-Regular.otf')
+LabelBase.register(DEFAULT_FONT, resource_path('DATA/NotoSansCJKjp-Regular.otf'))
 
 class ToolBar(MDToolbar):
     def __init__(self,**kwargs):
@@ -72,7 +72,7 @@ class IBKanjiReviewer(MDApp):
         
     def build(self):
         self.title = "IB Kanji Reviewer"
-        self.icon = "web_hi_res_512.ico"
+        self.icon = resource_path("web_hi_res_512.ico")
 
         self.kanji_koohi_stories_list = stories_csv_to_json()
 

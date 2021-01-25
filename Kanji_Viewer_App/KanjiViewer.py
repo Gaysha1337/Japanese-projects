@@ -92,7 +92,7 @@ class KanjiViewer(ScrollView):
             
             #print(self.radicals_data, "\n")
             #print(" ".join([j for j in [" ".join(i) for i in self.radicals_data]]))
-            formated_radicals = " \n".join([rad.strip() for rad in [" :".join(tup) for tup in self.radicals_data]])
+            formated_radicals = " \n".join([rad for rad in [" :".join(tup) for tup in self.radicals_data]])
 
             formated_word_examples = "\n".join(self.example_words)
 
@@ -120,7 +120,7 @@ class KanjiViewer(ScrollView):
 
     # Keyboard methods
     def _keyboard_closed(self):
-        print('My keyboard have been closed!')
+        #print('My keyboard have been closed!')
         self._keyboard.unbind(on_key_down=self._on_keyboard_down)
         self._keyboard = None
 
@@ -140,10 +140,8 @@ class KanjiViewer(ScrollView):
                 self.dialog.dismiss()
 
             
-
-        if keycode[1] == "n":
-            # Load new kanji by pressing 'r'
-            self.load_new_screen()
+         # Load new kanji by pressing 'n'
+        if keycode[1] == "n": self.load_new_screen()
             
 
         if keycode[1] == "m":
