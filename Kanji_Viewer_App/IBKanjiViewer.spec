@@ -4,11 +4,16 @@ from kivymd import hooks_path as kivymd_hooks_path
 
 block_cipher = None
 
+added_files = [
+    ("DATA","DATA"),
+    ("C:\\Users\\dimit\\Desktop\\Cloned_Repos\\Japanese-projects\\Kanji_Viewer_App\\web_hi_res_512.ico","."),
+    ("C:\\Users\\dimit\\Desktop\\Cloned_Repos\\Japanese-projects\\Kanji_Viewer_App\\web_hi_res_512.png",".")
+    ]
 
-a = Analysis(['main.py'],
+a = Analysis(['C:\\Users\\dimit\\Desktop\\Cloned_Repos\\Japanese-projects\\Kanji_Viewer_App\\main.py'],
              pathex=['C:\\Users\\dimit\\Desktop\\Cloned_Repos\\Japanese-projects\\Kanji_Viewer_App'],
              binaries=[],
-             datas=[("DATA","DATA")],
+             datas=added_files,
              hiddenimports=['win32file','win32timezone'],
              hookspath=[kivymd_hooks_path],
              runtime_hooks=[],
@@ -27,11 +32,11 @@ exe = EXE(pyz,
           a.datas,
           *[Tree(p) for p in (sdl2.dep_bins + glew.dep_bins)],
           name='IB Kanji Viewer',
-          debug=False,
+          debug=True,
           bootloader_ignore_signals=False,
           strip=False,
           upx=True,
           upx_exclude=[],
           runtime_tmpdir=None,
-          console=False , 
+          console=True , 
           icon='C:\\Users\\dimit\\Desktop\\Cloned_Repos\\Japanese-projects\\Kanji_Viewer_App\\web_hi_res_512.ico')

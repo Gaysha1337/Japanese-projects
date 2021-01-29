@@ -15,7 +15,7 @@ from kivy.uix.scrollview import ScrollView
 
 
 # Utils
-from utils import get_kanji_data, get_kanji_from_level, resource_path
+from utils import get_kanji_data, get_kanji_from_level, resource_path, kill_screen, switch_to_screen
 from kivy.clock import Clock
 from kivy.core.window import Window
 
@@ -80,12 +80,15 @@ class KanjiViewer(ScrollView):
             self.kanji_layout.add_widget(Label(text=str(self.stroke_count), font_size=20,halign="center", pos_hint={"center_y":.7}))
             
             self.carousel = KanjiStrokeImageCarousel(self.stroke_order_images)
-            self.kanji_layout.add_widget(self.carousel)
+            #self.kanji_layout.add_widget(self.carousel)
             self.prev_btn = MDIconButton(icon="menu-left", user_font_size ="200sp", on_release = lambda x:self.carousel.load_previous(), pos_hint={"center_x":.1, "center_y":.5}) # pos_hint={"left":.2, "y":.5},
             self.next_btn = MDIconButton(icon="menu-right", user_font_size ="200sp", on_release = lambda x:self.carousel.load_next(), pos_hint={"center_x":.9, "center_y":.5}) # pos_hint={"right":.8, "y":.5}
-            self.kanji_layout.add_widget(self.prev_btn)
-            self.kanji_layout.add_widget(self.next_btn)
+            #self.kanji_layout.add_widget(self.prev_btn)
+            #self.kanji_layout.add_widget(self.next_btn)
             print(self.kanji)
+
+            for widget in [self.carousel, self.prev_btn, self.next_btn]:
+                self.kanji_layout.add_widget(widget)
 
             for i, reading in enumerate(self.readings):
                 self.kanji_layout.add_widget(Label(text=reading,font_size=20, pos_hint={"center_x":.5,"center_y":.3-(i/20)}))
@@ -134,6 +137,7 @@ class KanjiViewer(ScrollView):
         
         if keycode[1] == "enter" and not isinstance(self.dialog, MDDialog): 
             self.load_new_screen()
+            #kill_screen("Kanji Viewer",self.master.create_kanji_page)
         
         if keycode[1] in ["escape","enter",27]:
             if isinstance(self.dialog, MDDialog):
@@ -143,11 +147,8 @@ class KanjiViewer(ScrollView):
          # Load new kanji by pressing 'n'
         if keycode[1] == "n": self.load_new_screen()
             
-
         if keycode[1] == "m":
-            if isinstance(self.dialog, MDDialog):
-                #print("about to close dialog should exist") 
-                self.dialog.dismiss()
+            if isinstance(self.dialog, MDDialog): self.dialog.dismiss()
             self.meanings_btn.trigger_action(0)
             
         if keycode[1] == "r":

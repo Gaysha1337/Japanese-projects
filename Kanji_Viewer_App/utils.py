@@ -2,6 +2,7 @@ import json, requests, random, sys, os
 from bs4 import BeautifulSoup
 
 # Kivy
+from kivymd.app import MDApp
 from kivymd.toast import toast
 
 
@@ -9,6 +10,29 @@ def resource_path(relative_path):
     # Get absolute path to resource, works for dev and for PyInstaller
     base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
     return os.path.join(base_path, relative_path)
+
+""" Screen Methods"""
+
+def create_screen(name, content, *args, **kwargs):
+    from KanjiScreen import GeneralScreen
+    screen = GeneralScreen(name=name)
+    screen.add_widget(content)
+    MDApp.get_running_app().screen_manager.add_widget(screen)
+
+def switch_to_screen(screen_name):
+    master = MDApp.get_running_app()
+    master.screen_manager.current = screen_name
+    master.current_screen = master.screen_manager.get_screen(master.screen_manager.current)
+    
+    #print(MDApp.get_running_app().current_screen.name, "switch method")
+
+# Kill and reload a screen to show any GUI changes
+def kill_screen(screen_name, reload_func, *args):
+    master = MDApp.get_running_app()
+    if master.screen_manager.has_screen(screen_name):
+        master.screen_manager.clear_widgets(screens=[master.screen_manager.get_screen(screen_name)])
+    reload_func()
+    switch_to_screen(screen_name)
 
 def get_kanji_data(kanji):
     # 家庭

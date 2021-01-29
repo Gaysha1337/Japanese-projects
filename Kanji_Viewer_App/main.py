@@ -14,13 +14,14 @@ from kivymd.uix.button import MDIconButton, MDRectangleFlatButton, MDRectangleFl
 from kivymd.uix.toolbar import MDToolbar
 
 # Screens and Screen-related
+from KanjiScreen import GeneralScreen
 from kivy.uix.screenmanager import ScreenManager, Screen
 from LandingPage import LandingPage#, LevelSelectionPage
 from KanjiViewer import KanjiViewer
-from KanjiKoohiiViewer import KanjiKoohiiViewer
+#from KanjiKoohiiViewer import KanjiKoohiiViewer
 
 # Utils
-from utils import resource_path
+from utils import resource_path, create_screen
 from kivy.resources import resource_add_path
 from KanjiKoohiiAPI import stories_csv_to_json
 
@@ -28,41 +29,7 @@ from KanjiKoohiiAPI import stories_csv_to_json
 from kivy.core.text import LabelBase, DEFAULT_FONT
 LabelBase.register(DEFAULT_FONT, resource_path('DATA/NotoSansCJKjp-Regular.otf'))
 
-class ToolBar(MDToolbar):
-    def __init__(self,**kwargs):
-        super().__init__(**kwargs)
-        self.master = MDApp.get_running_app()
-        self.title = MDApp.get_running_app().title
-        self.id = "Toolbar"
-        self.pos_hint = {"top":1}#{"center_y":.955}
-        self.elevation = 10
-        #self.left_action_items = [["cog", lambda x: MDApp.get_running_app().open_settings()]]
-        
-        self.right_action_items = [["home", lambda x: self.go_to_home_screen()]]
-        if self.master.screen_manager.current == "Kanji Viewer":
-            self.right_action_items.append(["autorenew", lambda x: self.load_new_kanji()])
-        
-        
-    def go_to_home_screen(self):
-        self.master.screen_manager.current = "Landing Page"
 
-    def load_new_kanji(self):
-        screen_name = "Kanji Viewer"
-        self.master.screen_manager.clear_widgets(screens=[self.master.screen_manager.get_screen(screen_name)])
-        self.master.create_kanji_page(self.master.kanji_level)
-        self.master.screen_manager.current = screen_name
-
-class GeneralScreen(Screen): 
-    def __init__(self,**kwargs):
-        super().__init__(**kwargs)
-           
-    def on_pre_enter(self, *args, **kwargs):
-        self.toolbar = ToolBar()
-        self.add_widget(self.toolbar) 
-
-    def go_to_home_screen(self):
-        #self.manager.current = "Search page"
-        self.screen_manager.current = "Landing Page"
 
 
 class IBKanjiReviewer(MDApp):
@@ -92,27 +59,22 @@ class IBKanjiReviewer(MDApp):
     # Creates the page where kanji are displayed (stroke order + count, radicals, examples words, meanings)
     def create_kanji_page(self,level):
         self.page = KanjiViewer(self, level)
+        create_screen("Kanji Viewer", self.page)
+        """
         screen = GeneralScreen(name="Kanji Viewer")
         screen.add_widget(self.page)
         self.screen_manager.add_widget(screen)
+        """
 
     # Creates the page where kanji are displayed (stroke order + count, radicals, examples words, meanings)
+    """
     def create_kanjikoohii_page(self):
         self.page = KanjiKoohiiViewer(self)
         screen = GeneralScreen(name="Kanji Koohii Viewer")
         screen.add_widget(self.page)
         self.screen_manager.add_widget(screen)
+    """
 
-"""
-# Needed for PyInstaller (Not apart of the root class)
-def resourcePath():
-    '''Returns path containing content - either locally or in pyinstaller tmp file'''
-    if hasattr(sys, '_MEIPASS'):
-        return os.path.join(sys._MEIPASS)
-
-    return os.path.join(os.path.abspath("."))
-
-"""
 if __name__ == "__main__":
     #kivy.resources.resource_add_path(resourcePath()) # add this line
     if hasattr(sys, '_MEIPASS'):
