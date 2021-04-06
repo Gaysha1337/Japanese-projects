@@ -45,7 +45,11 @@ class KanjiStrokeImageCarousel(Carousel):
         
         #Clock.schedule_interval(lambda *args:self.load_next(),2)
     
-    
+class SelectableDialog(MDDialog):
+    def __init__(self) -> None:
+        self.rel = MDRelativeLayout()
+
+
 class KanjiViewer(ScrollView):
     def __init__(self, master, level,**kwargs):
         super().__init__(**kwargs)
@@ -114,7 +118,7 @@ class KanjiViewer(ScrollView):
     def showDialog(self, title, text):
         self.dialog = None
         if not self.dialog:
-            self.dialog = MDDialog(title=title,text=text,buttons=[MDFlatButton(text="CLOSE", on_release=lambda *args:self.dialog.dismiss())])
+            self.dialog = MDDialog(title=title,text=text,buttons=[MDFlatButton(text="CLOSE", on_release = lambda *args:self.dialog.dismiss())])
             self.dialog.open()
 
     def load_new_screen(self):

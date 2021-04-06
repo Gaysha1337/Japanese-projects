@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
-import os, json, plyer, sys, pathlib
+import os, sys
+
+# This needs to be here to display images on Android
+os.environ['KIVY_IMAGE'] = 'pil,sdl2'
 
 from kivy.config import Config
 
@@ -18,19 +21,14 @@ from KanjiScreen import GeneralScreen
 from kivy.uix.screenmanager import ScreenManager, Screen
 from LandingPage import LandingPage#, LevelSelectionPage
 from KanjiViewer import KanjiViewer
-#from KanjiKoohiiViewer import KanjiKoohiiViewer
 
 # Utils
 from utils import resource_path, create_screen
 from kivy.resources import resource_add_path
-from KanjiKoohiiAPI import stories_csv_to_json
 
 
 from kivy.core.text import LabelBase, DEFAULT_FONT
 LabelBase.register(DEFAULT_FONT, resource_path('DATA/NotoSansCJKjp-Regular.otf'))
-
-
-
 
 class IBKanjiReviewer(MDApp):
     kanji_level = StringProperty(None)
@@ -39,9 +37,9 @@ class IBKanjiReviewer(MDApp):
         
     def build(self):
         self.title = "IB Kanji Reviewer"
-        self.icon = resource_path("web_hi_res_512.ico")
+        self.icon = resource_path("web_hi_res_512.png")
 
-        self.kanji_koohi_stories_list = stories_csv_to_json()
+        #self.kanji_koohi_stories_list = stories_csv_to_json()
 
         # Customizable Settings
         self.theme_cls.theme_style = "Dark" # Dark or Light

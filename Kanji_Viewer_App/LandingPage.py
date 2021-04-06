@@ -22,7 +22,6 @@ class LandingPage(MDRelativeLayout):
         super().__init__(**kwargs)
         self.master = master
         # self.size_hint = (None, None)
-        # DO NOT DELETE THE SPACES IN "Read Manga"
         self.btn_texts = ["AB Initio Kanji","      SL Kanji      ", "     HL Kanji      ", "HL Extra Kanji", "Kanji Koohii"]
 
         self.AB_initio_btn = MDRectangleFlatButton(text=self.btn_texts[0],  pos_hint={"center_x": .5, "center_y": .8}, user_font_size="64sp", on_release=self.go_to_screen)
