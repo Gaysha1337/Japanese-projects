@@ -1,5 +1,6 @@
 from kivymd.app import MDApp
 from kivymd.toast.kivytoast.kivytoast import toast
+from kivymd.uix.boxlayout import MDBoxLayout
 
 # Layouts
 from kivymd.uix.relativelayout import MDRelativeLayout
@@ -12,6 +13,10 @@ from kivymd.uix.dialog import MDDialog
 from kivy.uix.image import AsyncImage
 from kivy.uix.carousel import Carousel
 from kivy.uix.scrollview import ScrollView
+from kivymd.uix.textfield import MDTextField
+from kivymd.uix.list import OneLineListItem
+
+
 
 
 # Utils
@@ -45,10 +50,88 @@ class KanjiStrokeImageCarousel(Carousel):
         
         #Clock.schedule_interval(lambda *args:self.load_next(),2)
     
-class SelectableDialog(MDDialog):
-    def __init__(self) -> None:
-        self.rel = MDRelativeLayout()
+    def on_touch_down(self, touch):
+        if touch.is_double_tap:
+            print(touch)
+            print("-"*15)
+            for child in self.walk():
+                if self.collide_widget(child) and isinstance(child, HighlightableText):
+                    print(child, "coll with ef")
+                    child.select_all()
 
+            print("-"*15, "\n")
+    
+    
+class HighlightableText(MDTextField):
+    def __init__(self,*args, **kwargs):
+        super().__init__(*args,**kwargs)
+        self.master = MDApp.get_running_app()
+        self.multiline = True
+        self.readonly = True
+        self.cursor_blink = False
+        self.cursor_color = (0,0,0,0)
+        self.active_line = False
+        self.line_color_normal = (0,0,0,0)
+        self.halign = "center"
+        self.mode = "line" 
+        #self.pos_hint = {"center_x":.5, "center_y":.5}
+        #self.size_hint_x = 0.11 * len(self._lines) + 0.1
+        #self.size_hint = (0.11 * len(self._lines) + 0.1, None)
+        self.allow_copy = True
+        #self.disabled = True
+        self.bind(text=self.text_changed)
+        #self.parent.width = max([line.width for line in self._lines_labels])
+    def text_changed(self, text_input, text):
+        if len(text) > 0:
+            #text_input.size_hint_x = None
+            # text_input.width = text_input._lines_labels[0].width + 5
+            for line in text_input._lines_labels:
+                text_input.parent.width += line.width + 5
+    
+    """
+    def on_selection_text(self, instance, value):
+        super().on_selection_text(instance, value)
+        if self._selection_finished:
+            print("selection finished")
+            #self.focus = False
+    """
+        
+    """
+    def on_touch_move(self, touch):
+        if self.collide_point(*touch.pos):
+            self.select_all()      
+            #self.select_text(self.cursor_offset(), self.cursor_index())
+            #print(self.cursor_offset())
+            
+        return super().on_touch_move(touch)
+    """
+
+    def on_text(self, *args, **kwargs):
+        pass
+
+class DialogContent(MDBoxLayout):
+    def __init__(self, **kwargs):
+        self.adaptive_size = True
+        super().__init__(**kwargs)
+
+
+"""    
+class InfoDialog(MDDialog):
+    def __init__(self,title, text,*args,**kwargs):
+        
+        self.type = "custom"
+        self.title = title
+        self.text = text
+        #self.content_cls = DialogContent()
+        
+        self.buttons = [MDFlatButton(text="CLOSE", on_release =self.dismiss)]
+        
+        #self.create_items()
+        super().__init__(*args,**kwargs)
+        self.content_cls = DialogContent()
+        
+        #self.add_widget(HighlightableText("text"))
+"""
 
 class KanjiViewer(ScrollView):
     def __init__(self, master, level,**kwargs):
@@ -80,22 +163,39 @@ class KanjiViewer(ScrollView):
 
             self.btn_texts = ["     Show Meanings     ","       Show Radicals       ", "Show Example Words"]
             
-            self.kanji_layout.add_widget(Label(text=str(self.kanji), font_size=75,halign="center", pos_hint={"center_y":.8}))
-            self.kanji_layout.add_widget(Label(text=str(self.stroke_count), font_size=20,halign="center", pos_hint={"center_y":.7}))
+            #self.kanji_layout.add_widget(Label(text=str(self.kanji), font_size=75,halign="center", pos_hint={"center_y":.8}))
+            #self.kanji_layout.add_widget(Label(text=str(self.stroke_count), font_size=20,halign="center", pos_hint={"center_y":.7}))
             
+
+            self.kanji_layout.add_widget(
+                HighlightableText(text=f"{str(self.kanji)}\n{self.stroke_count}", font_size=40, pos_hint={"center_x":.5,"center_y":.8})
+            )
+            """
+            self.kanji_layout.add_widget(
+                HighlightableText(text=str(self.stroke_count), font_size=15,  pos_hint={"center_x":.7,"center_y":.8})
+            )
+            """
+
             self.carousel = KanjiStrokeImageCarousel(self.stroke_order_images)
-            #self.kanji_layout.add_widget(self.carousel)
             self.prev_btn = MDIconButton(icon="menu-left", user_font_size ="200sp", on_release = lambda x:self.carousel.load_previous(), pos_hint={"center_x":.1, "center_y":.5}) # pos_hint={"left":.2, "y":.5},
             self.next_btn = MDIconButton(icon="menu-right", user_font_size ="200sp", on_release = lambda x:self.carousel.load_next(), pos_hint={"center_x":.9, "center_y":.5}) # pos_hint={"right":.8, "y":.5}
-            #self.kanji_layout.add_widget(self.prev_btn)
-            #self.kanji_layout.add_widget(self.next_btn)
+
             print(self.kanji)
 
             for widget in [self.carousel, self.prev_btn, self.next_btn]:
                 self.kanji_layout.add_widget(widget)
 
+            """
             for i, reading in enumerate(self.readings):
-                self.kanji_layout.add_widget(Label(text=reading,font_size=20, pos_hint={"center_x":.5,"center_y":.3-(i/20)}))
+                # HighlightableText(text=reading, font_size=20, pos_hint={"center_x":.5,"center_y":.3-(i/20)})
+                self.kanji_layout.add_widget(
+                    HighlightableText(text=reading, font_size=20, pos_hint={"center_x":.4,"center_y":.3-(i/30)})
+                )
+            """
+            self.readings_formatted = '\n'.join(self.readings)
+            self.kanji_layout.add_widget(
+                HighlightableText(text=f"{self.readings_formatted}", font_size=20, pos_hint={"center_x":.5,"center_y":.25})
+            )
             
             #print(self.radicals_data, "\n")
             #print(" ".join([j for j in [" ".join(i) for i in self.radicals_data]]))
@@ -106,11 +206,11 @@ class KanjiViewer(ScrollView):
             #print(self.radicals_data, self.example_words, sep="\n")
             
             #self.kanji_layout.add_widget(Label(text=formated_radicals,halign="center", font_size=15, pos_hint={"center_x":.5,"center_y":.1}))
-            self.meanings_btn = MDRaisedButton(text=self.btn_texts[0], pos_hint={"center_x":.1,"center_y":.15}, on_release=lambda x:self.showDialog("Meanings",self.meanings))
+            self.meanings_btn = MDRaisedButton(text=self.btn_texts[0], pos_hint={"center_x":.1,"center_y":.1}, on_release=lambda x:self.showDialog("Meanings",self.meanings))
             self.kanji_layout.add_widget(self.meanings_btn)
-            self.radicals_btn = MDRaisedButton(text=self.btn_texts[1], pos_hint={"center_x":.5,"center_y":.15}, on_release=lambda x:self.showDialog("Radicals",formated_radicals))
+            self.radicals_btn = MDRaisedButton(text=self.btn_texts[1], pos_hint={"center_x":.5,"center_y":.1}, on_release=lambda x:self.showDialog("Radicals",formated_radicals))
             self.kanji_layout.add_widget(self.radicals_btn)
-            self.examples_btn = MDRaisedButton(text=self.btn_texts[2], pos_hint={"center_x":.9,"center_y":.15}, on_release=lambda x:self.showDialog("Example Words",formated_word_examples))
+            self.examples_btn = MDRaisedButton(text=self.btn_texts[2], pos_hint={"center_x":.9,"center_y":.1}, on_release=lambda x:self.showDialog("Example Words",formated_word_examples))
             self.kanji_layout.add_widget(self.examples_btn)
             self.add_widget(self.kanji_layout)
 
@@ -118,7 +218,16 @@ class KanjiViewer(ScrollView):
     def showDialog(self, title, text):
         self.dialog = None
         if not self.dialog:
-            self.dialog = MDDialog(title=title,text=text,buttons=[MDFlatButton(text="CLOSE", on_release = lambda *args:self.dialog.dismiss())])
+            #self.dialog = MDDialog(title=title,text=text,buttons=[MDFlatButton(text="CLOSE", on_release = lambda *args:self.dialog.dismiss())])
+            MDApp.get_running_app().dialog_text = text
+            self.dialog = MDDialog(
+                title=title,
+                type="custom",
+                content_cls = DialogContent(),
+                buttons=[MDFlatButton(text="CLOSE", on_release = lambda *args:self.dialog.dismiss())]
+                )
+            
+            #self.dialog = InfoDialog(title=title,text=text)
             self.dialog.open()
 
     def load_new_screen(self):
@@ -165,7 +274,4 @@ class KanjiViewer(ScrollView):
         
         # Return True to accept the key. Otherwise, it will be used by the system.
         return True
-
-
-
             

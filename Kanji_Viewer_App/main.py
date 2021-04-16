@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 import os, sys
 
+from kivymd.uix.boxlayout import MDBoxLayout
+
 # This needs to be here to display images on Android
 os.environ['KIVY_IMAGE'] = 'pil,sdl2'
 
@@ -10,11 +12,13 @@ _USERAGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 Config.set("network","useragent",_USERAGENT)
 
 from kivymd.app import MDApp
+from kivy.lang import Builder
 from kivy.properties import StringProperty, DictProperty
 
 # Widgets
 from kivymd.uix.button import MDIconButton, MDRectangleFlatButton, MDRectangleFlatIconButton
 from kivymd.uix.toolbar import MDToolbar
+from KanjiViewer import HighlightableText, DialogContent
 
 # Screens and Screen-related
 from KanjiScreen import GeneralScreen
@@ -30,8 +34,42 @@ from kivy.resources import resource_add_path
 from kivy.core.text import LabelBase, DEFAULT_FONT
 LabelBase.register(DEFAULT_FONT, resource_path('DATA/NotoSansCJKjp-Regular.otf'))
 
+
+
+KV = '''
+#:import HighlightableText KanjiViewer.HighlightableText
+<DialogContent>
+    orientation: "vertical"
+    #height: "120dp"
+    #spacing: "12dp"
+    size_hint_y: None
+    #size_hint_x: None
+    #size_x: dialog_id.size[0]
+
+    ScrollView:
+        id: scroll_view_id
+        do_scroll_x: False
+        do_scroll_y: True
+        #height: (len(dialog_id._lines)+1) *dialog_id.line_height
+        HighlightableText:
+            #mode: "line"
+            id: dialog_id
+            text: app.dialog_text
+            #height: self.minimum_height
+            #height: scroll_view_id.height
+            multiline: True
+            #width: self.minimum_height
+
+'''
+
+class DialogContent(MDBoxLayout):
+    pass
+Builder.load_string(KV)
+
+
 class IBKanjiReviewer(MDApp):
     kanji_level = StringProperty(None)
+    dialog_text = StringProperty(None)
     def __init__(self):
         super().__init__()
         

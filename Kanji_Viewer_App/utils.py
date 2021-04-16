@@ -4,8 +4,8 @@ from bs4 import BeautifulSoup
 # Kivy
 from kivymd.app import MDApp
 from kivymd.toast import toast
-
-
+    
+ 
 def resource_path(relative_path):
     # Get absolute path to resource, works for dev and for PyInstaller
     base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
@@ -57,7 +57,7 @@ def get_kanji_data(kanji):
                 "kanji":kanji,
                 "readings":readings,
                 "meanings":english_meanings,
-                "stroke_count":stroke_count,
+                "stroke_count":stroke_count.replace("Number of strokes: ","") + " Strokes",
                 "stroke_order_images":stroke_imgs,
                 "radicals_data":list(zip(radicals_text, radicals_meaning)),
                 "example_words": word_examples_kanji
