@@ -1,3 +1,4 @@
+from sys import platform
 from kivymd.app import MDApp
 from kivymd.toast.kivytoast.kivytoast import toast
 from kivymd.uix.boxlayout import MDBoxLayout
@@ -31,7 +32,7 @@ class StrokeImage(AsyncImage):
         self.source = source # Source is online
         self.allow_stretch=True
         self.keep_ratio=True
-        self.pos_hint = {"center_x":.5, "center_y":.5}
+        self.pos_hint = {"center_x":.5, "center_y":.6}
         self.size_hint=(None,None)
         self.width=width
         self.height=height
@@ -136,12 +137,14 @@ class InfoDialog(MDDialog):
 class KanjiViewer(ScrollView):
     def __init__(self, master, level,**kwargs):
         super().__init__(**kwargs)
-        self._keyboard = Window.request_keyboard(self._keyboard_closed, self, 'text')
-        if self._keyboard.widget:
-            # If it exists, this widget is a VKeyboard object which you can use to change the keyboard layout.
-            pass
-        self._keyboard.bind(on_key_down=self._on_keyboard_down)
         
+        if platform != "android":
+            self._keyboard = Window.request_keyboard(self._keyboard_closed, self, 'text')
+            if self._keyboard.widget:
+                # If it exists, this widget is a VKeyboard object which you can use to change the keyboard layout.
+                pass
+            self._keyboard.bind(on_key_down=self._on_keyboard_down)
+    
         self.master = master
         self.level = level
         self.dialog = None
@@ -149,6 +152,7 @@ class KanjiViewer(ScrollView):
         self.effect_cls = "ScrollEffect"
         self.scroll_type = ["bars"]
         self.bar_width = "10dp"
+        self.pos_hint = {"top":.9}
 
         self.kanji_layout = MDRelativeLayout(adaptive_height=True)
 
@@ -168,17 +172,11 @@ class KanjiViewer(ScrollView):
             
 
             self.kanji_layout.add_widget(
-                HighlightableText(text=f"{str(self.kanji)}\n{self.stroke_count}", font_size=40, pos_hint={"center_x":.5,"center_y":.8})
+                HighlightableText(text=f"{str(self.kanji)}\n{self.stroke_count}", font_size="40sp", pos_hint={"center_x":.5,"center_y":.9})
             )
-            """
-            self.kanji_layout.add_widget(
-                HighlightableText(text=str(self.stroke_count), font_size=15,  pos_hint={"center_x":.7,"center_y":.8})
-            )
-            """
-
             self.carousel = KanjiStrokeImageCarousel(self.stroke_order_images)
-            self.prev_btn = MDIconButton(icon="menu-left", user_font_size ="200sp", on_release = lambda x:self.carousel.load_previous(), pos_hint={"center_x":.1, "center_y":.5}) # pos_hint={"left":.2, "y":.5},
-            self.next_btn = MDIconButton(icon="menu-right", user_font_size ="200sp", on_release = lambda x:self.carousel.load_next(), pos_hint={"center_x":.9, "center_y":.5}) # pos_hint={"right":.8, "y":.5}
+            self.prev_btn = MDIconButton(icon="menu-left", user_font_size ="200sp", on_release = lambda x:self.carousel.load_previous(), pos_hint={"center_x":.1, "center_y":.6}) # pos_hint={"left":.2, "y":.5},
+            self.next_btn = MDIconButton(icon="menu-right", user_font_size ="200sp", on_release = lambda x:self.carousel.load_next(), pos_hint={"center_x":.9, "center_y":.6}) # pos_hint={"right":.8, "y":.5}
 
             print(self.kanji)
 
@@ -192,26 +190,26 @@ class KanjiViewer(ScrollView):
                     HighlightableText(text=reading, font_size=20, pos_hint={"center_x":.4,"center_y":.3-(i/30)})
                 )
             """
-            self.readings_formatted = '\n'.join(self.readings)
+            self.readings_formatted = "\n".join([f"{k}: {v}" for k,v in self.readings.items()])
             self.kanji_layout.add_widget(
-                HighlightableText(text=f"{self.readings_formatted}", font_size=20, pos_hint={"center_x":.5,"center_y":.25})
+                HighlightableText(text=f"{self.readings_formatted}", font_size="20sp", pos_hint={"center_x":.5,"center_y":.35})
             )
-            
-            #print(self.radicals_data, "\n")
+
             #print(" ".join([j for j in [" ".join(i) for i in self.radicals_data]]))
             formated_radicals = " \n".join([rad for rad in [" :".join(tup) for tup in self.radicals_data]])
 
             formated_word_examples = "\n".join(self.example_words)
-
-            #print(self.radicals_data, self.example_words, sep="\n")
             
             #self.kanji_layout.add_widget(Label(text=formated_radicals,halign="center", font_size=15, pos_hint={"center_x":.5,"center_y":.1}))
-            self.meanings_btn = MDRaisedButton(text=self.btn_texts[0], pos_hint={"center_x":.1,"center_y":.1}, on_release=lambda x:self.showDialog("Meanings",self.meanings))
-            self.kanji_layout.add_widget(self.meanings_btn)
-            self.radicals_btn = MDRaisedButton(text=self.btn_texts[1], pos_hint={"center_x":.5,"center_y":.1}, on_release=lambda x:self.showDialog("Radicals",formated_radicals))
-            self.kanji_layout.add_widget(self.radicals_btn)
-            self.examples_btn = MDRaisedButton(text=self.btn_texts[2], pos_hint={"center_x":.9,"center_y":.1}, on_release=lambda x:self.showDialog("Example Words",formated_word_examples))
-            self.kanji_layout.add_widget(self.examples_btn)
+            self.meanings_btn = MDRaisedButton(text=self.btn_texts[0], pos_hint={"center_x":.1,"center_y":.2}, on_release=lambda x:self.showDialog("Meanings",self.meanings))
+            
+            self.radicals_btn = MDRaisedButton(text=self.btn_texts[1], pos_hint={"center_x":.5,"center_y":.2}, on_release=lambda x:self.showDialog("Radicals",formated_radicals))
+            #self.kanji_layout.add_widget(self.radicals_btn)
+            self.examples_btn = MDRaisedButton(text=self.btn_texts[2], pos_hint={"center_x":.9,"center_y":.2}, on_release=lambda x:self.showDialog("Example Words",formated_word_examples))
+            #self.kanji_layout.add_widget(self.examples_btn)
+            
+            for btn in [self.meanings_btn, self.radicals_btn, self.examples_btn]:
+                self.kanji_layout.add_widget(btn)
             self.add_widget(self.kanji_layout)
 
 
@@ -242,7 +240,7 @@ class KanjiViewer(ScrollView):
 
     def _on_keyboard_down(self, keyboard, keycode, text, modifiers):
         print('The key', keycode, 'have been pressed', ' - text is %r' % text, ' - modifiers are %r' % modifiers, sep="\n")
-        if keycode[1] == "left" or keycode[1] == "a":
+        if keycode[1] in ["left","a"]:
             self.carousel.load_previous()
 
         if keycode[1] in ["right","d"]:
@@ -256,22 +254,16 @@ class KanjiViewer(ScrollView):
             if isinstance(self.dialog, MDDialog):
                 self.dialog.dismiss()
 
-            
          # Load new kanji by pressing 'n'
-        if keycode[1] == "n": self.load_new_screen()
+        if keycode[1] == "n": 
+            self.load_new_screen()
             
-        if keycode[1] == "m":
-            if isinstance(self.dialog, MDDialog): self.dialog.dismiss()
-            self.meanings_btn.trigger_action(0)
-            
-        if keycode[1] == "r":
-            if isinstance(self.dialog, MDDialog): self.dialog.dismiss()
-            self.radicals_btn.trigger_action(0)
-        
-        if keycode[1] == "e":
-            if isinstance(self.dialog, MDDialog): self.dialog.dismiss()
-            self.examples_btn.trigger_action(0)
-        
+    
+        btn_actions = {"m":self.meanings_btn, "r":self.radicals_btn, "e":self.examples_btn}
+        if keycode[1] in btn_actions:
+            if isinstance(self.dialog, MDDialog): 
+                self.dialog.dismiss()
+            btn_actions[keycode[1]].trigger_action(0)
         # Return True to accept the key. Otherwise, it will be used by the system.
         return True
             

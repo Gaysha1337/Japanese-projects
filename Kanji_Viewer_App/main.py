@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import os, sys
 
-from kivymd.uix.boxlayout import MDBoxLayout
+
 
 # This needs to be here to display images on Android
 os.environ['KIVY_IMAGE'] = 'pil,sdl2'
@@ -19,6 +19,7 @@ from kivy.properties import StringProperty, DictProperty
 from kivymd.uix.button import MDIconButton, MDRectangleFlatButton, MDRectangleFlatIconButton
 from kivymd.uix.toolbar import MDToolbar
 from KanjiViewer import HighlightableText, DialogContent
+from kivymd.uix.boxlayout import MDBoxLayout
 
 # Screens and Screen-related
 from KanjiScreen import GeneralScreen
@@ -61,11 +62,9 @@ KV = '''
             #width: self.minimum_height
 
 '''
-
 class DialogContent(MDBoxLayout):
     pass
 Builder.load_string(KV)
-
 
 class IBKanjiReviewer(MDApp):
     kanji_level = StringProperty(None)

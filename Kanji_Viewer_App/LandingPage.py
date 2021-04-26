@@ -9,9 +9,7 @@ class StudyMethodPage(MDRelativeLayout):
     def __init__(self, master,**kwargs):
         super().__init__(**kwargs)
         self.master = master
-
         # Search Bar needs to be written in .kv lang
-
         self.btn_texts = ["List all kanji", "Load one kanji"]
 
         self.list_all_kanji_btn = MDRectangleFlatButton(text=self.btn_texts[0], pos_hint={"center_x": .5, "center_y": .6}, user_font_size="64sp", on_release=self.go_to_screen)
@@ -40,22 +38,3 @@ class LandingPage(MDRelativeLayout):
         screen_name, self.master.kanji_level, level = "Kanji Viewer", inst.text.strip(), inst.text.strip()
         
         kill_screen("Kanji Viewer", lambda *args: self.master.create_kanji_page(self.master.kanji_level))
-        """
-        if self.master.screen_manager.has_screen(screen_name): 
-            self.master.screen_manager.clear_widgets(screens=[self.master.screen_manager.get_screen(screen_name)])
-        else: 
-            self.master.create_kanji_page(level)
-        self.master.screen_manager.current = screen_name
-        """
-
-    """
-    def go_to_koohii_screen(self, inst):
-        screen_name = "Kanji Koohii Viewer"
-        if self.master.screen_manager.has_screen(screen_name): 
-            self.master.screen_manager.clear_widgets(screens=[self.master.screen_manager.get_screen(screen_name)])
-        else: 
-            self.master.create_kanjikoohii_page()
-        self.master.screen_manager.current = screen_name
-    """
-
-        
