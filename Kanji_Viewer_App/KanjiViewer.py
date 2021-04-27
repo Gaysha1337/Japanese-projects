@@ -193,7 +193,7 @@ class KanjiViewer(ScrollView):
             self.carousel = KanjiStrokeImageCarousel(self.stroke_order_images)
             self.kanji_layout.add_widget(self.carousel)
 
-            if platform != "Android":
+            if platform != "android":
                 self.prev_btn = MDIconButton(icon="menu-left", user_font_size ="200sp", on_release = lambda x:self.carousel.load_previous(), pos_hint={"center_x":.1, "center_y":.6}) # pos_hint={"left":.2, "y":.5},
                 self.next_btn = MDIconButton(icon="menu-right", user_font_size ="200sp", on_release = lambda x:self.carousel.load_next(), pos_hint={"center_x":.9, "center_y":.6}) # pos_hint={"right":.8, "y":.5}
                 self.kanji_layout.add_widget(self.prev_btn)
