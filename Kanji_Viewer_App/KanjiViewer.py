@@ -1,4 +1,3 @@
-from sys import platform
 from kivymd.app import MDApp
 from kivymd.toast.kivytoast.kivytoast import toast
 from kivymd.uix.boxlayout import MDBoxLayout
@@ -17,17 +16,15 @@ from kivy.uix.scrollview import ScrollView
 from kivymd.uix.textfield import MDTextField
 from kivymd.uix.list import OneLineListItem
 
-
-
-
 # Utils
 from utils import get_kanji_data, get_kanji_from_level, resource_path, kill_screen, switch_to_screen
 from kivy.clock import Clock
 from kivy.core.window import Window
+from kivy.utils import platform
 
 
 class StrokeImage(AsyncImage):
-    def __init__(self, source, width=200, height=200, **kwargs):
+    def __init__(self, source, width=250, height=250, **kwargs):
         super().__init__(**kwargs)
         self.source = source # Source is online
         self.allow_stretch=True
