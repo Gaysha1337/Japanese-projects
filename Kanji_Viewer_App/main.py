@@ -95,11 +95,7 @@ class IBKanjiReviewer(MDApp):
     def create_kanji_page(self,level):
         self.page = KanjiViewer(self, level)
         create_screen("Kanji Viewer", self.page)
-        """
-        screen = GeneralScreen(name="Kanji Viewer")
-        screen.add_widget(self.page)
-        self.screen_manager.add_widget(screen)
-        """
+        
 
     # Creates the page where kanji are displayed (stroke order + count, radicals, examples words, meanings)
     """

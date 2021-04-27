@@ -59,9 +59,9 @@ def get_kanji_data(kanji):
                 if "Nanori" in i.text: 
                     continue
                 if "On'yomi" in i.text:
-                    readings_dict["On'yomi"] = " ".join([p.text + " ," for r in i for p in r if not isinstance(p, str)])
+                    readings_dict["On'yomi"] = ", ".join([p.text for r in i for p in r if not isinstance(p, str)])
                 if "Kun'yomi" in i.text:
-                    readings_dict["Kun'yomi"] = " ".join([p.text + " ," for r in i for p in r if not isinstance(p, str)])
+                    readings_dict["Kun'yomi"] = ", ".join([p.text for r in i for p in r if not isinstance(p, str)])
             
             print("Radicals: ", list(zip(radicals_text, radicals_meaning)))
             
