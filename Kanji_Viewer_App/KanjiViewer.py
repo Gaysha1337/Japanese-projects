@@ -122,7 +122,7 @@ class HighlightableText(MDTextField):
 
 class DialogContent(MDBoxLayout):
     def __init__(self, *args,**kwargs):
-        self.adaptive_size = True
+        #self.adaptive_size = True
         super().__init__(*args, **kwargs)
 
 
@@ -185,14 +185,15 @@ class KanjiViewer(ScrollView):
                 HighlightableText(text=f"{str(self.kanji)}: {self.stroke_count}", font_size="40sp", pos_hint={"center_x":.5,"center_y":.9})
             )
             self.carousel = KanjiStrokeImageCarousel(self.stroke_order_images)
-            self.prev_btn = MDIconButton(icon="menu-left", user_font_size ="200sp", on_release = lambda x:self.carousel.load_previous(), pos_hint={"center_x":.1, "center_y":.6}) # pos_hint={"left":.2, "y":.5},
-            self.next_btn = MDIconButton(icon="menu-right", user_font_size ="200sp", on_release = lambda x:self.carousel.load_next(), pos_hint={"center_x":.9, "center_y":.6}) # pos_hint={"right":.8, "y":.5}
+            self.kanji_layout.add_widget(self.carousel)
 
             if platform != "Android":
-                for widget in [self.carousel, self.prev_btn, self.next_btn]:
-                    self.kanji_layout.add_widget(widget)
-            else:
-                self.kanji_layout.add_widget(self.carousel)
+                self.prev_btn = MDIconButton(icon="menu-left", user_font_size ="200sp", on_release = lambda x:self.carousel.load_previous(), pos_hint={"center_x":.1, "center_y":.6}) # pos_hint={"left":.2, "y":.5},
+                self.next_btn = MDIconButton(icon="menu-right", user_font_size ="200sp", on_release = lambda x:self.carousel.load_next(), pos_hint={"center_x":.9, "center_y":.6}) # pos_hint={"right":.8, "y":.5}
+                self.kanji_layout.add_widget(self.prev_btn)
+                self.kanji_layout.add_widget(self.next_btn)
+            
+            
 
 
             """
@@ -245,11 +246,13 @@ class KanjiViewer(ScrollView):
         current_screen.toolbar.load_new_kanji()
 
     # Keyboard methods
+
     def _keyboard_closed(self):
         #print('My keyboard have been closed!')
         #self._keyboard.unbind(on_key_down=self._on_keyboard_down)
         #self._keyboard = None
         pass
+        
 
     def _on_keyboard_down(self, keyboard, keycode, text, modifiers):
         print('The key', keycode, 'have been pressed', ' - text is %r' % text, ' - modifiers are %r' % modifiers, sep="\n")

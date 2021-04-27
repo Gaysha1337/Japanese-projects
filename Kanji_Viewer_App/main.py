@@ -62,8 +62,10 @@ KV = '''
             #width: self.minimum_height
 
 '''
+
 class DialogContent(MDBoxLayout):
     pass
+
 Builder.load_string(KV)
 
 class IBKanjiReviewer(MDApp):
