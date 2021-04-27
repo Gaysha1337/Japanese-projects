@@ -39,6 +39,7 @@ LabelBase.register(DEFAULT_FONT, resource_path('DATA/NotoSansCJKjp-Regular.otf')
 
 KV = '''
 #:import HighlightableText KanjiViewer.HighlightableText
+
 <DialogContent>
     orientation: "vertical"
     #height: "120dp"

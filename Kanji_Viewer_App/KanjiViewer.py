@@ -80,7 +80,7 @@ class HighlightableText(MDTextField):
         self.readonly = True
         self.cursor_blink = False
         self.cursor_color = (0,0,0,0)
-        self.active_line = False
+        #self.active_line = False
         self.line_color_normal = (0,0,0,0)
         self.halign = "center"
         self.mode = "line"
@@ -91,12 +91,18 @@ class HighlightableText(MDTextField):
         #self.disabled = True
         self.bind(text=self.text_changed)
         #self.parent.width = max([line.width for line in self._lines_labels])
+        self.use_handles = True
+        self.use_bubble = True
+        
     def text_changed(self, text_input, text):
+        pass
+        """
         if len(text) > 0:
             #text_input.size_hint_x = None
             # text_input.width = text_input._lines_labels[0].width + 5
             for line in text_input._lines_labels:
-                text_input.parent.width += line.width + 5        
+                text_input.parent.width += line.width + 5   
+        """  
     """
     def on_touch_move(self, touch):
         if self.collide_point(*touch.pos):
@@ -118,13 +124,25 @@ class HighlightableText(MDTextField):
             print("in on_focus meth, if not focus: -->","higlight text focus: ", self.focus, self.selection_text)
         super().on_focus(*args)
     """
-            
+    """
+    def on_focus(self, *args):
+        #return super().on_focus(*args)
+        for child in self.walk(loopback=True):
+            if isinstance(child, HighlightableText) and not child.focus:
+                print(child.text, child._selection_finished)
+    """
+
     def on_selection_text(self, instance, value):
-        super().on_selection_text(instance, value)
-        if value == "":
+        #super().on_selection_text(instance, value)
+        #self.delete_selection()
+        print(f"val {value}, sel_text={self.selection_text}, inst={instance}")
+        
+        if value == "" or not instance.focus:
             print("Blank", value)
-            self.focus = False
-            self.cancel_selection()
+            instance.cancel_selection()
+            instance._hide_handles()
+            instance._hide_cut_copy_paste()
+            instance.focus = False
         
 
 class DialogContent(MDBoxLayout):
@@ -193,7 +211,7 @@ class KanjiViewer(ScrollView):
             self.carousel = KanjiStrokeImageCarousel(self.stroke_order_images)
             self.kanji_layout.add_widget(self.carousel)
 
-            if platform != "android":
+            if platform != "Android":
                 self.prev_btn = MDIconButton(icon="menu-left", user_font_size ="200sp", on_release = lambda x:self.carousel.load_previous(), pos_hint={"center_x":.1, "center_y":.6}) # pos_hint={"left":.2, "y":.5},
                 self.next_btn = MDIconButton(icon="menu-right", user_font_size ="200sp", on_release = lambda x:self.carousel.load_next(), pos_hint={"center_x":.9, "center_y":.6}) # pos_hint={"right":.8, "y":.5}
                 self.kanji_layout.add_widget(self.prev_btn)
