@@ -83,7 +83,7 @@ class HighlightableText(MDTextField):
         self.active_line = False
         self.line_color_normal = (0,0,0,0)
         self.halign = "center"
-        self.mode = "line" 
+        self.mode = "line"
         #self.pos_hint = {"center_x":.5, "center_y":.5}
         #self.size_hint_x = 0.11 * len(self._lines) + 0.1
         #self.size_hint = (0.11 * len(self._lines) + 0.1, None)
@@ -96,16 +96,7 @@ class HighlightableText(MDTextField):
             #text_input.size_hint_x = None
             # text_input.width = text_input._lines_labels[0].width + 5
             for line in text_input._lines_labels:
-                text_input.parent.width += line.width + 5
-    
-    """
-    def on_selection_text(self, instance, value):
-        super().on_selection_text(instance, value)
-        if self._selection_finished:
-            print("selection finished")
-            #self.focus = False
-    """
-        
+                text_input.parent.width += line.width + 5        
     """
     def on_touch_move(self, touch):
         if self.collide_point(*touch.pos):
@@ -119,12 +110,28 @@ class HighlightableText(MDTextField):
     def on_text(self, *args, **kwargs):
         pass
     """
+    """
+    def on_focus(self, *args):
+        #print("higlight text focus: ", self.focus, self.text)
+        if self._selection_finished and self.selection_text == "":
+            #self.focus = False
+            print("in on_focus meth, if not focus: -->","higlight text focus: ", self.focus, self.selection_text)
+        super().on_focus(*args)
+    """
+            
+    def on_selection_text(self, instance, value):
+        super().on_selection_text(instance, value)
+        self.delete_selection()
+        if value == "":
+            print("Blank", value)
+            self.focus = False
+            self.cancel_selection()
+        
 
 class DialogContent(MDBoxLayout):
     def __init__(self, *args,**kwargs):
         #self.adaptive_size = True
         super().__init__(*args, **kwargs)
-
 
 """    
 class InfoDialog(MDDialog):
@@ -187,7 +194,7 @@ class KanjiViewer(ScrollView):
             self.carousel = KanjiStrokeImageCarousel(self.stroke_order_images)
             self.kanji_layout.add_widget(self.carousel)
 
-            if platform != "android":
+            if platform != "Android":
                 self.prev_btn = MDIconButton(icon="menu-left", user_font_size ="200sp", on_release = lambda x:self.carousel.load_previous(), pos_hint={"center_x":.1, "center_y":.6}) # pos_hint={"left":.2, "y":.5},
                 self.next_btn = MDIconButton(icon="menu-right", user_font_size ="200sp", on_release = lambda x:self.carousel.load_next(), pos_hint={"center_x":.9, "center_y":.6}) # pos_hint={"right":.8, "y":.5}
                 self.kanji_layout.add_widget(self.prev_btn)
