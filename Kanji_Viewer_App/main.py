@@ -55,10 +55,10 @@ KV = '''
         HighlightableText:
             #mode: "line"
             id: dialog_id
+            multiline: True
             text: app.dialog_text
             #height: self.minimum_height
             #height: scroll_view_id.height
-            multiline: True
             #width: self.minimum_height
 
 '''
