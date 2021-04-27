@@ -37,20 +37,23 @@ class StrokeImage(AsyncImage):
         self.width=width
         self.height=height
         self.anim_delay = 0
+        
 
 
 class KanjiStrokeImageCarousel(Carousel):
     def __init__(self, imgs, **kwargs):
         super().__init__(**kwargs)
+        self.master = MDApp.get_running_app()
         self.imgs = imgs
         self.loop = True
         self.anim_type = "linear"#"in_back"
+        self.size_hint = (1, .5)
+        self.pos_hint = {"center_y":.6}
 
-        for img in self.imgs:
-            self.add_widget(StrokeImage(img))
+        for img in self.imgs: self.add_widget(StrokeImage(img))
         
         #Clock.schedule_interval(lambda *args:self.load_next(),2)
-    
+    """
     def on_touch_down(self, touch):
         if touch.is_double_tap:
             print(touch)
@@ -61,10 +64,19 @@ class KanjiStrokeImageCarousel(Carousel):
                     child.select_all()
 
             print("-"*15, "\n")
+
+
+    def on_touch_move(self, touch):
+        #return super().on_touch_move(touch)
+        print(touch, touch.grab_current,touch.__dict__, sep="\n")
+        for child in self.walk():
+            if self.collide_widget(child) and isinstance(child, (HighlightableText)):
+                print(child, "coll with ef")
+    """
     
     
 class HighlightableText(MDTextField):
-    def __init__(self,*args, **kwargs):
+    def __init__(self, *args, **kwargs):
         super().__init__(*args,**kwargs)
         self.master = MDApp.get_running_app()
         self.multiline = True
@@ -111,9 +123,9 @@ class HighlightableText(MDTextField):
         pass
 
 class DialogContent(MDBoxLayout):
-    def __init__(self, **kwargs):
+    def __init__(self, *args,**kwargs):
         self.adaptive_size = True
-        super().__init__(**kwargs)
+        super().__init__(*args, **kwargs)
 
 
 """    
@@ -154,7 +166,7 @@ class KanjiViewer(ScrollView):
         self.bar_width = "10dp"
         self.pos_hint = {"top":.9}
 
-        self.kanji_layout = MDRelativeLayout(adaptive_height=True)
+        self.kanji_layout = MDRelativeLayout()
 
         self.kanji_data =  get_kanji_from_level(self.level)
 
@@ -172,16 +184,18 @@ class KanjiViewer(ScrollView):
             
 
             self.kanji_layout.add_widget(
-                HighlightableText(text=f"{str(self.kanji)}\n{self.stroke_count}", font_size="40sp", pos_hint={"center_x":.5,"center_y":.9})
+                HighlightableText(text=f"{str(self.kanji)}: {self.stroke_count}", font_size="40sp", pos_hint={"center_x":.5,"center_y":.9})
             )
             self.carousel = KanjiStrokeImageCarousel(self.stroke_order_images)
             self.prev_btn = MDIconButton(icon="menu-left", user_font_size ="200sp", on_release = lambda x:self.carousel.load_previous(), pos_hint={"center_x":.1, "center_y":.6}) # pos_hint={"left":.2, "y":.5},
             self.next_btn = MDIconButton(icon="menu-right", user_font_size ="200sp", on_release = lambda x:self.carousel.load_next(), pos_hint={"center_x":.9, "center_y":.6}) # pos_hint={"right":.8, "y":.5}
 
-            print(self.kanji)
+            if platform != "Android":
+                for widget in [self.carousel, self.prev_btn, self.next_btn]:
+                    self.kanji_layout.add_widget(widget)
+            else:
+                self.kanji_layout.add_widget(self.carousel)
 
-            for widget in [self.carousel, self.prev_btn, self.next_btn]:
-                self.kanji_layout.add_widget(widget)
 
             """
             for i, reading in enumerate(self.readings):
@@ -235,8 +249,9 @@ class KanjiViewer(ScrollView):
     # Keyboard methods
     def _keyboard_closed(self):
         #print('My keyboard have been closed!')
-        self._keyboard.unbind(on_key_down=self._on_keyboard_down)
-        self._keyboard = None
+        #self._keyboard.unbind(on_key_down=self._on_keyboard_down)
+        #self._keyboard = None
+        pass
 
     def _on_keyboard_down(self, keyboard, keycode, text, modifiers):
         print('The key', keycode, 'have been pressed', ' - text is %r' % text, ' - modifiers are %r' % modifiers, sep="\n")
