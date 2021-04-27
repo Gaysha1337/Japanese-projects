@@ -115,9 +115,10 @@ class HighlightableText(MDTextField):
             
         return super().on_touch_move(touch)
     """
-
+    """
     def on_text(self, *args, **kwargs):
         pass
+    """
 
 class DialogContent(MDBoxLayout):
     def __init__(self, *args,**kwargs):
