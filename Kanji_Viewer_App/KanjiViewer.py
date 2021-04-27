@@ -121,7 +121,6 @@ class HighlightableText(MDTextField):
             
     def on_selection_text(self, instance, value):
         super().on_selection_text(instance, value)
-        self.delete_selection()
         if value == "":
             print("Blank", value)
             self.focus = False
